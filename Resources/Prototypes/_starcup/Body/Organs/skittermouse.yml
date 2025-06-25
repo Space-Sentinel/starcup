@@ -32,7 +32,7 @@
   id: OrganSkittermouseEyes
   parent: BaseSkittermouseOrgan
   name: "Skittermouse Eyes"
-  description: "Brimming with violence. Great night vision."
+  description: "Brimming with violence and very good night vision."
   components:
   - type: Sprite
     layers:

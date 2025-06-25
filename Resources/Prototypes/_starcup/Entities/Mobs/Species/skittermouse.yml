@@ -164,10 +164,10 @@
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
-#    - map: [ "clownedon" ]
-#      sprite: "_starcup/Effects/creampie.rsi"
-#      state: "creampie_skittermouse" # Not default
-#      visible: false
+    - map: [ "clownedon" ]
+      sprite: "_starcup/Effects/creampie.rsi"
+      state: "creampie_skittermouse" # Not default
+      visible: false
 
 - type: entity
   parent: BaseSpeciesDummy
