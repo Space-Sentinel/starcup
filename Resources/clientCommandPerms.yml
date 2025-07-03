@@ -38,6 +38,7 @@
     - replay_stop
     - replay_load
     - saveconfig
+    - chatwindow
 
 - Flags: DEBUG
   Commands:
@@ -78,9 +79,14 @@
     - mapping
     - toggleautosave
     - toggledecals
+    - mappingclientsidesetup  # starcup
 
 - Flags: QUERY
   Commands:
     - uploadfile
     - loadprototype
     - uploadfolder
+
+- Flags: ADMINCHAT
+  Commands:
+    - achatwindow

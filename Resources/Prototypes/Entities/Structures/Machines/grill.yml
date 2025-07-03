@@ -2,7 +2,7 @@
   parent: BaseHeaterMachine
   id: KitchenElectricGrill
   name: electric grill
-  description: A microwave? No, a real man cooks steaks on a grill!
+  description: Huh. That's a funny looking microwave. # starcup: rewritten for tone
   components:
   - type: Sprite
     # TODO: draw a sprite
@@ -17,7 +17,7 @@
   - type: ApcPowerReceiver
     powerLoad: 0 # off by default
   - type: EntityHeater
-    settingSound: 
+    settingSound:
       path: /Audio/Weapons/click.ogg
       params:
         volume: -6
@@ -29,6 +29,7 @@
   - type: PlaceableSurface
   - type: Machine
     board: ElectricGrillMachineCircuitboard
+  - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.EntityHeaterVisuals.Setting:

@@ -28,10 +28,10 @@
 - type: startingGear
   id: ClownGear
   equipment:
-    mask: ClothingMaskClown
+#    mask: ClothingMaskClown # starcup: replaced with loadout
     pocket1: BikeHorn
     pocket2: ClownRecorder
-    id: ClownPDA
+#    id: ClownPDA # DeltaV: different PDAs in loadouts
     ears: ClothingHeadsetService
   storage:
     back:

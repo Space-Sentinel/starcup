@@ -63,3 +63,14 @@
     sprite: _DeltaV/Clothing/Uniforms/Jumpsuit/kilt.rsi
   - type: Clothing
     sprite: _DeltaV/Clothing/Uniforms/Jumpsuit/kilt.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitRoboNeuroticist
+  name: neuroroboticist jumpsuit # starcup: neuroroboticist, was robo-neuroticist's
+  description: A suit fit with dozens of cybernetic gadgets.
+  components:
+  - type: Sprite
+    sprite: _DeltaV/Clothing/Uniforms/Jumpsuit/roboneuroticistpurple.rsi
+  - type: Clothing
+    sprite: _DeltaV/Clothing/Uniforms/Jumpsuit/roboneuroticistpurple.rsi

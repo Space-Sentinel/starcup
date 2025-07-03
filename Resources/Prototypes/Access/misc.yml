@@ -32,4 +32,7 @@
   - Chapel
   - Hydroponics
   - Atmospherics
+  - GenpopEnter
+  - GenpopLeave
   - Mail # DeltaV
+  - Robotics # DeltaV: Robotics access

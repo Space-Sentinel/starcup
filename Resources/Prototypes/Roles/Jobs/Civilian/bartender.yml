@@ -23,8 +23,8 @@
 - type: startingGear
   id: BartenderGear
   equipment:
-    shoes: ClothingShoesColorBlack
-    id: BartenderPDA
+#    shoes: ClothingShoesColorBlack # starcup: moved to loadouts
+#    id: BartenderPDA # DeltaV: different PDAs in loadouts
     ears: ClothingHeadsetService
   #storage:
     #back:

@@ -4,19 +4,20 @@
   - Amber
   - Bagel
   - Box
+  - Byoin  # starcup: ported from delta-v
   - Convex
   #- Core
   - Elkridge
   - Fland
   - Glacier # starcup: ported from Delta-V. enabled.
   #- Gate
-  - Loop
+  - Loopstarcup
   - Marathon
   - Meta
   - Oasis
-  - Omega
-  - Packed
+  - Omegastarcup
+  - Packedstarcup
   - Plasma
-  - Reach
-  - Saltern # starcup: wasn't on the list for some reason? enabled.
+  - Reachstarcup
+  - Salternstarcup # starcup: wasn't on the list for some reason? enabled.
   #- Train

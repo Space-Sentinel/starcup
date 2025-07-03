@@ -41,3 +41,16 @@
     sprite: _DeltaV/Clothing/Uniforms/Jumpskirt/admin_assistant.rsi
   - type: Clothing
     sprite: _DeltaV/Clothing/Uniforms/Jumpskirt/admin_assistant.rsi
+
+# Robo-neuroticist uniform
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtRoboNeuroticist
+  name: neuroroboticist jumpskirt # starcup: neuroroboticist, was robo-neuroticist's
+  description: A jumpskirt fit with dozens of cybernetic gadgets.
+  components:
+  - type: Sprite
+    sprite: _DeltaV/Clothing/Uniforms/Jumpskirt/roboneuroticistpurple.rsi
+  - type: Clothing
+    sprite: _DeltaV/Clothing/Uniforms/Jumpskirt/roboneuroticistpurple.rsi

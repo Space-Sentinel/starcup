@@ -17,8 +17,8 @@
 - type: startingGear
   id: ChaplainGear
   equipment:
-    shoes: ClothingShoesColorBlack
-    id: ChaplainPDA
+#    shoes: ClothingShoesColorBlack # starcup: moved to loadout
+#    id: ChaplainPDA # starcup - Choose a PDA from the loadouts
     ears: ClothingHeadsetService
   storage:
     back:

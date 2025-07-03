@@ -30,12 +30,12 @@
 - type: startingGear
   id: SecurityCadetGear
   equipment:
-    shoes: ClothingShoesBootsJackFilled
-    outerClothing: ClothingOuterArmorBasic
+#    shoes: ClothingShoesBootsJackFilled # starcup, moved to loadout
+#    outerClothing: ClothingOuterArmorBasic # starcup, moved to loadout
     id: SecurityCadetPDA
     ears: ClothingHeadsetSecurity
     belt: ClothingBeltSecurityFilled
-    pocket1: WeaponPistolMk58
+    pocket1: WeaponDisabler # DeltaV - loadouts, Security Cadet doesn't spawn with a gun
     pocket2: BookSecurity
   storage:
     back:

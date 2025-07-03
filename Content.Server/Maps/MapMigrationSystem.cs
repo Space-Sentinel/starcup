@@ -1,7 +1,6 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
-using Robust.Server.GameObjects;
 using Robust.Shared.ContentPack;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.Map.Events;
@@ -18,10 +17,12 @@ namespace Content.Server.Maps;
 /// </summary>
 public sealed class MapMigrationSystem : EntitySystem
 {
+#pragma warning disable CS0414
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
+#pragma warning restore CS0414
     [Dependency] private readonly IResourceManager _resMan = default!;
 
-    private const string MigrationFile = "/migration.yml";
+    private const string MigrationDir = "/Migrations/"; // DeltaV - dir instead of a single file
 
     public override void Initialize()
     {
@@ -33,30 +34,72 @@ public sealed class MapMigrationSystem : EntitySystem
             return;
 
         // Verify that all of the entries map to valid entity prototypes.
-        foreach (var node in mappings.Values)
+        // begin starcup (Delta-v): split migrations
+//        foreach (var node in mappings.Values)
+//        {
+//            var newId = ((ValueDataNode) node).Value;
+//            if (!string.IsNullOrEmpty(newId) && newId != "null")
+//                DebugTools.Assert(_protoMan.HasIndex<EntityPrototype>(newId), $"{newId} is not an entity prototype.");
+//        }
+
+        foreach (var mapping in mappings)
         {
-            var newId = ((ValueDataNode) node).Value;
-            if (!string.IsNullOrEmpty(newId) && newId != "null")
-                DebugTools.Assert(_protoMan.HasIndex<EntityPrototype>(newId), $"{newId} is not an entity prototype.");
+            foreach (var node in mapping.Children.Values)
+            {
+                var newId = ((ValueDataNode) node).Value;
+                if (!string.IsNullOrEmpty(newId) && newId != "null")
+                    DebugTools.Assert(_protoMan.HasIndex<EntityPrototype>(newId),
+                        $"{newId} is not an entity prototype.");
+            }
         }
+        // end starcup
 #endif
     }
 
-    private bool TryReadFile([NotNullWhen(true)] out MappingDataNode? mappings)
+    private bool TryReadFile([NotNullWhen(true)] out List<MappingDataNode>? mappings) // DeltaV - changed to a list
     {
         mappings = null;
-        var path = new ResPath(MigrationFile);
-        if (!_resMan.TryContentFileRead(path, out var stream))
+
+        // begin starcup (Delta-v): split migrations
+//        var path = new ResPath(MigrationFile);
+//        if (!_resMan.TryContentFileRead(path, out var stream))
+//            return false;
+//
+//        using var reader = new StreamReader(stream, EncodingHelpers.UTF8);
+//        var documents = DataNodeParser.ParseYamlStream(reader).FirstOrDefault();
+//
+//        if (documents == null)
+//            return false;
+//
+//        mappings = (MappingDataNode) documents.Root;
+//        return true;
+        // end starcup
+
+        // Begin DeltaV Changes - rewrote single path to finding files in a directory
+        var files = _resMan.ContentFindFiles(MigrationDir)
+            .Where(f => f.ToString().EndsWith(".yml"))
+            .ToList();
+
+        if (files.Count == 0)
             return false;
 
-        using var reader = new StreamReader(stream, EncodingHelpers.UTF8);
-        var documents = DataNodeParser.ParseYamlStream(reader).FirstOrDefault();
+        foreach (var file in files)
+        {
+            if (!_resMan.TryContentFileRead(file, out var stream))
+                continue;
 
-        if (documents == null)
-            return false;
+            using var reader = new StreamReader(stream, EncodingHelpers.UTF8);
+            var documents = DataNodeParser.ParseYamlStream(reader).FirstOrDefault();
 
-        mappings = (MappingDataNode) documents.Root;
-        return true;
+            if (documents == null)
+                continue;
+
+            mappings = mappings ?? new List<MappingDataNode>();
+            mappings.Add((MappingDataNode)documents.Root);
+        }
+
+        return mappings != null && mappings.Count > 0;
+        // End DeltaV Changes
     }
 
     private void OnBeforeReadEvent(BeforeEntityReadEvent ev)
@@ -64,15 +107,18 @@ public sealed class MapMigrationSystem : EntitySystem
         if (!TryReadFile(out var mappings))
             return;
 
-        foreach (var (key, value) in mappings)
+        foreach (var mapping in mappings) // DeltaV - iterate a list of mappings
         {
-            if (key is not ValueDataNode keyNode || value is not ValueDataNode valueNode)
-                continue;
+            foreach (var (key, value) in mapping)
+            {
+                if (value is not ValueDataNode valueNode)
+                    continue;
 
-            if (string.IsNullOrWhiteSpace(valueNode.Value) || valueNode.Value == "null")
-                ev.DeletedPrototypes.Add(keyNode.Value);
-            else
-                ev.RenamedPrototypes.Add(keyNode.Value, valueNode.Value);
+                if (string.IsNullOrWhiteSpace(valueNode.Value) || valueNode.Value == "null")
+                    ev.DeletedPrototypes.Add(key);
+                else
+                    ev.RenamedPrototypes.Add(key, valueNode.Value);
+            }
         }
     }
 }

@@ -19,8 +19,8 @@
 - type: startingGear
   id: MedicalInternGear
   equipment:
-    shoes: ClothingShoesColorWhite
-    id: MedicalInternPDA
+#    shoes: ClothingShoesColorWhite # starcup: replaced with loadout
+#    id: MedicalInternPDA # DeltaV: different PDAs in loadouts
     ears: ClothingHeadsetMedical
     belt: ClothingBeltMedicalFilled
     pocket2: BookMedicalReferenceBook

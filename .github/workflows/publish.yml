@@ -2,14 +2,16 @@ name: Publish
 
 concurrency:
   group: publish
+  cancel-in-progress: true
 
 on:
   workflow_dispatch:
-  # schedule:
-   # - cron: '0 10 * * *'
+  schedule:
+   - cron: '0 10 * * *'
 
 jobs:
   build:
+    if: github.repository == 'teamstarcup/starcup'
     runs-on: ubuntu-latest
 
     steps:
@@ -48,6 +50,7 @@ jobs:
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
 
     - name: Publish changelog (Discord)
+      continue-on-error: true
       run: Tools/actions_changelogs_since_last_run.py
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -55,6 +58,7 @@ jobs:
 
     # <begin starcup changes: disable rss changelog publishing>
     # - name: Publish changelog (RSS)
+    #   continue-on-error: true
     #   run: Tools/actions_changelog_rss.py
     #   env:
     #     CHANGELOG_RSS_KEY: ${{ secrets.CHANGELOG_RSS_KEY }}

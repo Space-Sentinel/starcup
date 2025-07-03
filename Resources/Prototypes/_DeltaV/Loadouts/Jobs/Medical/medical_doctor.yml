@@ -1,0 +1,11 @@
+# Neck
+- type: loadout
+  id: Stethoscope
+  equipment:
+    neck: ClothingNeckStethoscope
+
+# ID
+- type: loadout
+  id: ClinicianPDA
+  equipment:
+    id: ClinicianPDA

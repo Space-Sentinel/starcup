@@ -131,8 +131,11 @@ tips-dataset-129 = Welding without proper eye protection can cause eye damage, w
 tips-dataset-130 = Zombies are very vulnerable to heat damage, making welding tools and laser guns extremely effective against them.
 tips-dataset-131 = You can weld glass shards into glass sheets.
 tips-dataset-132 = By right clicking on a player, and then clicking the heart icon, you can quickly examine them to check for injuries or how badly they're bleeding. You can also do this to yourself.
-tips-dataset-133 = Monkeys and kobolds have a rare chance to be sentient. Ook!
+# starcup: remove non-sapient kobolds
+tips-dataset-133 = Monkeys have a rare chance to be sentient. Ook!
 tips-dataset-134 = You can tell if an area with firelocks up is spaced by looking to see if the firelocks have lights beside them.
 tips-dataset-135 = Instead of picking it up, you can alt-click food to eat it. This also works for mice and other creatures without hands.
 tips-dataset-136 = If you're trapped behind an electrified door, disable the APC or throw your ID at the door to avoid getting shocked!
 tips-dataset-137 = If the AI electrifies a door and you have insulated gloves, snip and mend the power wire to reset their electrification!
+tips-dataset-138 = If you want to stop your prisoner from escaping from the cell right after being uncuffed, turn on combat mode while uncuffing - this will shove the prisoner down.
+tips-dataset-139 = Make sure to clean your illegal implanters with a soap or a damp rag after you use them! Detectives can scan used implanters for incriminating DNA evidence, but not if they've been wiped clean.

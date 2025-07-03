@@ -1,0 +1,11 @@
+# Shoes
+- type: loadout
+  id: ChefWinterBoots
+  equipment:
+    shoes: ClothingShoesBootsWinterChef
+
+# ID
+- type: loadout
+  id: FlavoristPDA
+  equipment:
+    id: FlavoristPDA

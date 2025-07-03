@@ -35,13 +35,16 @@ namespace Content.IntegrationTests.Tests
         private static readonly string[] NoSpawnMaps =
         {
             "CentComm",
-            "Dart"
+            "Dart",
+            "EventFrigidPeril",  // starcup
         };
 
         private static readonly string[] Grids =
         {
             "/Maps/centcomm.yml",
-            AdminTestArenaSystem.ArenaMapPath
+            AdminTestArenaSystem.ArenaMapPath,
+			"/Maps/_starcup/syndicomm.yml",  // starcup
+            "/Maps/_starcup/Events/frigid-peril-surface.yml",  // starcup
         };
 
         private static readonly string[] DoNotMapWhitelist =
@@ -51,10 +54,14 @@ namespace Content.IntegrationTests.Tests
             "/Maps/gate.yml", // Contains positronic brain and LSE-1200c "Perforator"
             "/Maps/meta.yml", // Contains warden's rubber stamp
             "/Maps/reach.yml", // Contains handheld crew monitor
+            "/Maps/_starcup/reach.yml", // starcup: Contains handheld crew monitor
             "/Maps/Shuttles/ShuttleEvent/cruiser.yml", // Contains LSE-1200c "Perforator"
             "/Maps/Shuttles/ShuttleEvent/honki.yml", // Contains golden honker, clown's rubber stamp
             "/Maps/Shuttles/ShuttleEvent/instigator.yml", // Contains EXP-320g "Friendship"
             "/Maps/Shuttles/ShuttleEvent/syndie_evacpod.yml", // Contains syndicate rubber stamp
+			"/Maps/_starcup/syndicomm.yml",  // starcup: contains centcomm rubber stamp, centcomm folder, handheld crew monitor
+			"/Maps/_starcup/Events/frigid-peril-station.yml",  // starcup: this is an event and events do not play by the rules
+			"/Maps/_starcup/Events/frigid-peril-surface.yml",  // starcup: contains lots of key round-start gear; it's not feasible to place lockers
         };
 
         private static readonly string[] GameMaps =
@@ -82,7 +89,15 @@ namespace Content.IntegrationTests.Tests
             "Elkridge",
             "Convex",
             "Relic",
+            "dm01-entryway",
             "Glacier",  // starcup
+            "Loopstarcup", // starcup
+            "Omegastarcup", // starcup
+            "Packedstarcup", // starcup
+            "Reachstarcup", // starcup
+            "Salternstarcup", // starcup
+            "Byoin",  // starcup
+            "EventFrigidPeril" // starcup
         };
 
         /// <summary>
@@ -389,7 +404,8 @@ namespace Content.IntegrationTests.Tests
 
                 mapSystem.DeleteMap(shuttleMap);
 
-                if (entManager.HasComponent<StationJobsComponent>(station))
+                if (entManager.HasComponent<StationJobsComponent>(station)
+                    && !NoSpawnMaps.Contains(mapProto))  // starcup: no spawn point tests for NoSpawnMaps!
                 {
                     // Test that the map has valid latejoin spawn points or container spawn points
                     if (!NoSpawnMaps.Contains(mapProto))

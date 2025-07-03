@@ -6,10 +6,11 @@
     ClothingOuterWinterChef: 2
     ClothingOuterJacketChef: 1
     ClothingUniformJumpsuitChef: 1
-    ClothingMaskItalianMoustache: 2
+    #ClothingMaskItalianMoustache: 2 # starcup: removed for tone
     ClothingUniformJumpskirtChef:  2
     ClothingHeadHatChef: 2
     ClothingShoesColorBlack: 2
+    ClothingShoesBootsWinterChef: 2 #Delta V: Add departmental winter boots
     ClothingShoesChef: 2
     ClothingBeltChef: 2
   contrabandInventory:

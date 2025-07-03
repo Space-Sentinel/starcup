@@ -110,7 +110,7 @@
   parent: ClothingHeadset
   id: ClothingHeadsetEngineering
   name: engineering headset
-  description: A headset for engineers to chat while the station burns around them.
+  description: A headset for engineers to scream into when the Tesla breaks loose. # starcup: rewritten for tone
   components:
   - type: ContainerFill
     containers:
@@ -126,7 +126,7 @@
   parent: [ClothingHeadsetEngineering, BaseCommandContraband]
   id: ClothingHeadsetCE
   name: ce headset
-  description: A headset for the chief engineer to ignore all emergency calls on.
+  description: A headset for the Chief Engineer to inform Command that the engine is perfectly under control. # starcup: rewritten for tone
   components:
   - type: ContainerFill
     containers:
@@ -206,6 +206,7 @@
     containers:
       key_slots:
       - EncryptionKeyRobo
+      - EncryptionKeyEngineering # starcup: make roboticist a hybrid role
       - EncryptionKeyCommon
   - type: Sprite
     sprite: Clothing/Ears/Headsets/robotics.rsi
@@ -283,8 +284,23 @@
     - type: ContainerFill
       containers:
         key_slots:
-          - EncryptionKeyFreelance
+        - EncryptionKeyFreelance
     - type: Sprite
       sprite: Clothing/Ears/Headsets/freelance.rsi
     - type: Clothing
       sprite: Clothing/Ears/Headsets/freelance.rsi
+
+- type: entity
+  parent: [ClothingHeadset, BaseMagicalContraband]
+  id: ClothingHeadsetWizard
+  name: wizard headset
+  description: A headset used by the dreaded space wizards.
+  components:
+    - type: ContainerFill
+      containers:
+        key_slots:
+        - EncryptionKeyStationMaster
+    - type: Sprite
+      sprite: Clothing/Ears/Headsets/wizard.rsi
+    - type: Clothing
+      sprite: Clothing/Ears/Headsets/wizard.rsi

@@ -22,7 +22,6 @@ namespace Content.Shared.VendingMachines;
 public abstract partial class SharedVendingMachineSystem : EntitySystem
 {
     [Dependency] protected readonly IGameTiming Timing = default!;
-    [Dependency] private   readonly INetManager _net = default!;
     [Dependency] protected readonly IPrototypeManager PrototypeManager = default!;
     [Dependency] private   readonly AccessReaderSystem _accessReader = default!;
     [Dependency] private   readonly SharedAppearanceSystem _appearanceSystem = default!;
@@ -204,7 +203,7 @@ public abstract partial class SharedVendingMachineSystem : EntitySystem
 
         var entry = GetEntry(uid, itemId, type, vendComponent);
 
-        if (string.IsNullOrEmpty(entry?.ID))
+        if (string.IsNullOrEmpty(entry?.Id))
         {
             Popup.PopupClient(Loc.GetString("vending-machine-component-try-eject-invalid-item"), uid);
             Deny((uid, vendComponent));
@@ -220,7 +219,7 @@ public abstract partial class SharedVendingMachineSystem : EntitySystem
 
         // Start Ejecting, and prevent users from ordering while anim playing
         vendComponent.EjectEnd = Timing.CurTime + vendComponent.EjectDelay;
-        vendComponent.NextItemToEject = entry.ID;
+        vendComponent.NextItemToEject = entry.Id;
         vendComponent.ThrowNextItem = throwItem;
 
         if (TryComp(uid, out SpeakOnUIClosedComponent? speakComponent))

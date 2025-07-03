@@ -247,7 +247,7 @@
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtColorOrange
   name: orange jumpskirt
-  description: Don't wear this near paranoid security officers.
+  description: A jumpskirt so nice, it should be a crime! # starcup: rewritten for tone
   components:
   - type: Sprite
     sprite: Clothing/Uniforms/Jumpskirt/color.rsi
@@ -489,3 +489,15 @@
       - state: equipped-INNERCLOTHING
         color: "#cc295f"
       - state: trinkets-equipped-INNERCLOTHING
+
+# Rainbow Jumpskirt
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtColorRainbow
+  name: rainbow jumpskirt
+  description: A multi-colored jumpskirt!
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpskirt/rainbow.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpskirt/rainbow.rsi

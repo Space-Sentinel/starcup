@@ -1,0 +1,10 @@
+# ID
+- type: loadout
+  id: LabTechPDA
+  equipment:
+    id: LabTechPDA
+
+- type: loadout
+  id: XenoarchPDA
+  equipment:
+    id: XenoarchPDA

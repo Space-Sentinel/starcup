@@ -18,8 +18,8 @@
 - type: startingGear
   id: JanitorGear
   equipment:
-    shoes: ClothingShoesGaloshes
-    id: JanitorPDA
+#    shoes: ClothingShoesGaloshes # starcup: moved to loadout
+    #id: JanitorPDA # DeltaV - Choose a PDA from the loadouts
     ears: ClothingHeadsetService
     belt: ClothingBeltJanitorFilled
   #storage:

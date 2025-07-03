@@ -36,6 +36,8 @@
     HeadSide: MobHumanoidAnyMarking
     Tail: MobHumanoidAnyMarking
     Hair: MobHumanoidMarkingMatchSkin
+    UndergarmentTop: MobHumanoidAnyMarking # starcup
+    UndergarmentBottom: MobHumanoidAnyMarking # starcup
     Chest: MobIPCTorso
     LArm: MobIPCLArm
     RArm: MobIPCRArm
@@ -49,10 +51,24 @@
 - type: markingPoints
   id: MobIPCMarkingLimits
   points:
+    Hair:
+      points: 1 # starcup: changed from 0
+      required: false
+    FacialHair:
+      points: 1 # starcup: changed from 0
+      required: false
     Head:
       points: 1
       required: true
       defaultMarkings: [ MobIPCHeadDefault ]
+    # begin starcup
+    UndergarmentTop:
+      points: 1
+      required: false
+    UndergarmentBottom:
+      points: 1
+      required: false
+      # end starcup
     Chest:
       points: 1
       required: true

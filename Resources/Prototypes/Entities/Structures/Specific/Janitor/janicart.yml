@@ -3,7 +3,7 @@
   name: mop bucket
   id: MopBucket
   parent: [BaseStructureDynamic, StructureWheeled]
-  description: Holds water and the tears of the janitor.
+  description: Holds water and whatever fluids are foolish enough to stand in the Janitor's path. # starcup: rewritten for tone
   components:
   - type: Clickable
   - type: Sprite
@@ -124,6 +124,18 @@
           reagents:
             - ReagentId: Water
               Quantity: 600
+
+- type: entity
+  parent: BaseWrappedCube
+  name: mop bucket cube
+  id: MopBucketCubeWrapped
+  description: Unwrap this to get a mop bucket cube.
+  components:
+  - type: SpawnItemsOnUse
+    items:
+    - id: MopBucketCube
+  - type: Sprite
+    state: wrapper
 
 # Janicart
 - type: entity

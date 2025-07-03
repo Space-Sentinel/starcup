@@ -471,7 +471,7 @@
   parent: BaseSign
   id: SignCryo
   name: cryosleep sign
-  description: Just like that? You're gonna chicken out?
+  description: A sign indicating the Cryosleep chamber, for those wishing to clock out early. # starcup: rewritten for tone
   components:
   - type: Sprite
     state: cryo
@@ -692,6 +692,15 @@
   components:
   - type: Sprite
     state: nosmoking
+
+- type: entity
+  parent: BaseSign
+  id: SignGenpop
+  name: genpop sign
+  description: A sign indicating the genpop prison.
+  components:
+  - type: Sprite
+    state: genpop
 
 - type: entity
   parent: BaseSign

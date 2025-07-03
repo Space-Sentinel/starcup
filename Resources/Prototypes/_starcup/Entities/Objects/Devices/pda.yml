@@ -1,0 +1,222 @@
+# Bartender
+- type: entity
+  parent: BartenderPDA
+  id: BaristaPDA
+  name: barista PDA
+  description: Smells of cheap coffee grounds and tattoo ink.
+  components:
+  - type: Pda
+    id: BaristaIDCard
+
+- type: entity
+  parent: BartenderPDA
+  id: SpeakeasyerPDA
+  name: speakeasyer PDA
+  description: It almost feels wrong accessing the Maints booze vendors legally.
+  components:
+  - type: Pda
+    id: SpeakeasyerIDCard
+
+- type: entity
+  parent: BartenderPDA
+  id: SeniorBartenderPDA
+  name: senior bartender PDA
+  description: Much like what they serve, bartenders also get better with age.
+  components:
+  - type: Pda
+    id: SeniorBartenderIDCard
+
+# Chaplain
+- type: entity
+  parent: ChaplainPDA
+  id: AtheistShepherdPDA
+  name: atheist shepherd PDA
+  description: The gods may not be real, but people are.
+  components:
+  - type: Pda
+    id: AtheistShepherdIDCard
+
+- type: entity
+  parent: ChaplainPDA
+  id: DeusDerelictionPDA
+  name: Deus dereliction PDA
+  description: Perhaps one day, even this tiny plastic box may be blessed by the Singular.
+  components:
+  - type: Pda
+    id: DeusDerelictionIDCard
+
+- type: entity
+  parent: ChaplainPDA
+  id: DruidPDA
+  name: druid PDA
+  description: Allegedly hewn from an actual menhir, this moss-eaten PDA speaks to the eternity of the Broken Stones.
+  components:
+  - type: Pda
+    id: DruidIDCard
+
+- type: entity
+  parent: ChaplainPDA
+  id: EpistemicSibylPDA
+  name: Epistemic sibyl PDA
+  description: They say one of the Oracle's own glimmering anomalies watches over you behind this plastic screen.
+  components:
+  - type: Pda
+    id: EpistemicSibylIDCard
+
+- type: entity
+  parent: ChaplainPDA
+  id: GoshanPreacherPDA
+  name: Goshan preacher PDA
+  description: You can't read a word of the illuminated manuscripts uploaded within, but Gosh, the pictures are pretty.
+  components:
+  - type: Pda
+    id: GoshanPreacherIDCard
+
+- type: entity
+  parent: ChaplainPDA
+  id: GothicCardinalPDA
+  name: Gothic cardinal PDA
+  description: You can't understand a word of the dark gospel of Visigoth, but ravens are cool, and the makeup tutorials are sound.
+  components:
+  - type: Pda
+    id: GothicCardinalIDCard
+
+- type: entity
+  parent: ChaplainPDA
+  id: N0taryArtistPDA
+  name: N0tary artist PDA
+  description: The Art of N0t preaches constant flux, be it in lifestyle, form, name, gender, or today's hair color.
+  components:
+  - type: Pda
+    id: N0taryArtistIDCard
+
+# Chef
+
+- type: entity
+  parent: ChefPDA
+  id: FlavoristPDA
+  name: flavorist PDA
+  description: DONK Co didn't get where they are by settling for familiar flavors.
+  components:
+  - type: Pda
+    id: FlavoristIDCard
+
+# Chemist
+
+- type: entity
+  parent: ChemistryPDA
+  id: PharmacistPDA
+  name: pharmacist PDA
+  description: You can still see where they sanded off the Interdyne Pharmaceuticals logo.
+  components:
+  - type: Pda
+    id: PharmacistIDCard
+
+# Clown
+
+- type: entity
+  parent: ClownPDA
+  id: StoogePDA
+  name: stooge PDA
+  description: It's just like any other Service Worker PDA, only weirdly slippery and smelling of movie theater butter.
+  components:
+  - type: Pda
+    id: StoogeIDCard
+  - type: Appearance
+    appearanceDataInit:
+     enum.PdaVisuals.PdaType:
+       !type:String
+       pda-internservice
+
+# Janitor
+
+- type: entity
+  parent: JanitorPDA
+  id: StationMaidPDA
+  name: station maid PDA
+  description: Kept spotless, naturally. Woe betide any dust that settles in your path.
+  components:
+  - type: Pda
+    id: StationMaidIDCard
+
+# Medical Doctor
+- type: entity
+  parent: MedicalPDA
+  id: NursePractitionerPDA
+  name: nurse practitioner PDA
+  description: It's like being a doctor, but more debt, tougher unions, and no one will ever listen to you.
+  components:
+  - type: Pda
+    id: NursePractitionerIDCard
+
+# Passenger
+- type: entity
+  parent: PassengerPDA
+  id: VolunteerPDA
+  name: volunteer PDA
+  description: Make yourself useful. Try and save them. Do SOMETHING.
+  components:
+  - type: Pda
+    id: VolunteerIDCard
+
+# Roboticist
+
+- type: entity
+  parent: RoboticistPDA
+  id: ToymakerPDA
+  name: toymaker PDA
+  description: DONK Co has an interestingly expansive definition of "toy".
+  components:
+  - type: Pda
+    id: ToymakerIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-toymaker
+  - type: PdaBorderColor
+    borderColor: "#d33725"
+    accentVColor: "#ffdf4d"
+
+- type: entity
+  parent: RoboticistPDA
+  id: NeuroroboticistPDA
+  name: neuroroboticist PDA
+  description: The PDA of someone who knows how to best dissect you.
+  components:
+  - type: Pda
+    id: NeuroroboticistIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-neuroroboticist
+  - type: PdaBorderColor
+    borderColor: "#262626"
+    accentVColor: "#447987"
+    accentHColor: "#a92323"
+
+- type: entity
+  parent: RoboticistPDA
+  id: MechatronicsPDA
+  name: mechatronics PDA
+  description: Somehow, it's analog.
+  components:
+  - type: Pda
+    id: MechatronicsIDCard
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType: !type:String
+        pda-mechatronics
+  - type: PdaBorderColor
+    borderColor: "#c38f2b"
+    accentVColor: "#a92323"
+
+# Scientist
+
+- type: entity
+  parent: SciencePDA
+  id: NecrocosmicistPDA
+  name: necrocosmicist PDA
+  description: They say the good people at Electra Dynamics programmed these to gather kinds of anomaly data you can't physically survive knowing.
+  components:
+  - type: Pda
+    id: NecrocosmicistIDCard
