@@ -18,7 +18,7 @@
   - type: Carriable # Carrying system from nyanotrasen
   - type: Speech
     speechVerb: Skittermouse
-    speechSounds: Squeak
+    speechSounds: Skittermouse
     allowedEmotes: [ 'Squeak', 'Hiss', 'Purr', 'Growl' ]
   - type: Stamina
     critThreshold: 110
@@ -26,14 +26,13 @@
     proto: skittermouse
   - type: PseudoItem
     size: "Large"
-    storedOffset: -10,0
     shape:
     - 0, 0, 3, 1
-#  - type: Vocal
-#    sounds:
-#      Male: SoundsSkittermouse
-#      Female: SoundsSkittermouse
-#      Unsexed: SoundsSkittermouse
+  - type: Vocal
+    sounds:
+      Male: SoundsSkittermouse
+      Female: SoundsSkittermouse
+      Unsexed: SoundsSkittermouse
   - type: Damageable
     damageModifierSet: Skittermouse
   - type: Butcherable
@@ -72,8 +71,8 @@
     baseSprintSpeed: 3.5
     weightlessAcceleration: 2.5
   - type: FootPrints #DeltaV port from EE, blood splatter
-    leftBarePrint: "footprint-left-bare-slime"
-    rightBarePrint: "footprint-right-bare-slime"
+    leftBarePrint: "footprint-left-bare-spider"
+    rightBarePrint: "footprint-right-bare-spider"
   - type: Inventory
     speciesId: skittermouse
 #    displacements:

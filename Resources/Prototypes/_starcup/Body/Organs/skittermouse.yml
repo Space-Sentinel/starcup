@@ -31,7 +31,7 @@
 - type: entity
   id: OrganSkittermouseEyes
   parent: BaseSkittermouseOrgan
-  name: "Skittermouse Eyes"
+  name: "eyes"
   description: "Brimming with violence and very good night vision."
   components:
   - type: Sprite

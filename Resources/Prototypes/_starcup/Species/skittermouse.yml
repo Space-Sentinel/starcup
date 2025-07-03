@@ -7,6 +7,7 @@
   markingLimits: MobSkittermouseMarkingLimits
   dollPrototype: MobSkittermouseDummy
   skinColoration: Hues
+  defaultSkinTone: "#34a223"
   maleFirstNames: NamesSkittermouseFirst
   femaleFirstNames: NamesSkittermouseFirst
   lastNames: NamesSkittermouseLast
@@ -27,8 +28,7 @@
     UndergarmentTop: MobHumanoidAnyMarking
     UndergarmentBottom: MobHumanoidAnyMarking
     Chest: MobSkittermouseTorso
-#    Eyes: MobSkittermouseEyes
-    Eyes: MobHumanoidEyes
+    Eyes: MobSkittermouseEyes
     LArm: MobSkittermouseLArm
     RArm: MobSkittermouseRArm
     LHand: MobSkittermouseLHand
@@ -64,10 +64,10 @@
       points: 1
       required: false
     Legs:
-      points: 2
+      points: 4
       required: false
     Arms:
-      points: 2
+      points: 4
       required: false
     UndergarmentTop:
       points: 1
@@ -93,6 +93,12 @@
   baseSprite:
     sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
     state: head
+
+- type: humanoidBaseSprite
+  id: MobSkittermouseEyes
+  baseSprite:
+    sprite: _starcup/Mobs/Customization/Skittermouse/eyes.rsi
+    state: eyes
 
 - type: humanoidBaseSprite
   id: MobSkittermouseTorso
