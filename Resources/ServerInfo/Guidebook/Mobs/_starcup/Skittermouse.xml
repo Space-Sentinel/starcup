@@ -5,15 +5,28 @@
     <GuideEntityEmbed Entity="MobSkittermouse" Caption="Skittermouse"/>
   </Box>
 
-  - (~) They are very small and light (half the size and a third the density of a human).
-  - (~) They are carnivorous and can't process Theobromine and Allicin.
-  - (~) Their light size allows them to be carried in bags as if they were Large Items.
-  - (~) Their unarmed attack deals Piercing damage.
+  Tiny, flexible hunter-killer neogenetic lifeforms. They have the qualities of slugs, cats, and ferrets in equal measure.
 
-  - (+) When they grab onto another creature in Combat Mode, they latch onto them, being carried by the target and slowing them down. While latched onto a creature, their melee attacks deal 20% more damage.
-  - (+) Their Walk Speed is increased, but they can't Sprint. Instead, they gain the ability to Scurry, which drops everything in their hands but gives them a massive speed boost.
-  - (+) They can see in the dark.
+  ## Diet
 
-  - (-) They take 15% more Physical (Blunt/Pierce/Slash) damage.
-  - (-) Their small hands are unable to use items that require wielding in two hands, and they have to wield certain one-handed items in two hands to use them.
+  - Can eat raw meat.
+  - Will get poisoned by Theobromine (Chocolate, Tea, Coffee) and Allicin (Onion, Garlic).
+
+  ## Special
+
+  - Very small and light (half the size and a third the density of an average human).
+  - Can be carried in bags as a Large item (2x8 squares).
+  - Unable to sprint, but walk speed is increased.
+  - Unarmed attack deals 4 Piercing and 1 Blunt damage.
+
+  ## Benefits
+
+  - When grabbing a creature in Combat Mode, they latch onto the target, slowing them down and dealing 20% more melee damage.
+  - Gain the ability to Skitter, which drops everything they're holding but increases their speed.
+  - See in the dark.
+
+  ## Drawbacks
+
+  - Take 15% more Physical (Blunt/Pierce/Slash) damage.
+  - Their small hands are unable to use items that must be wielded in both hands, and some one-handed items must be wielded in both hands to be used.
 </Document>

@@ -7,7 +7,6 @@
   markingLimits: MobSkittermouseMarkingLimits
   dollPrototype: MobSkittermouseDummy
   skinColoration: Hues
-  defaultSkinTone: "#34a223"
   maleFirstNames: NamesSkittermouseFirst
   femaleFirstNames: NamesSkittermouseFirst
   lastNames: NamesSkittermouseLast

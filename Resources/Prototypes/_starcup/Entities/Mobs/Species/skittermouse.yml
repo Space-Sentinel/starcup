@@ -30,9 +30,9 @@
     - 0, 0, 3, 1
   - type: Vocal
     sounds:
-      Male: SoundsSkittermouse
-      Female: SoundsSkittermouse
-      Unsexed: SoundsSkittermouse
+      Male: Skittermouse
+      Female: Skittermouse
+      Unsexed: Skittermouse
   - type: Damageable
     damageModifierSet: Skittermouse
   - type: Butcherable
@@ -44,6 +44,9 @@
 #  - type: Darkvision
 #  - type: Latch
 #  - type: TinyGrabbers
+  - type: GuideHelp
+    guides:
+    - Skittermouse
   - type: Fixtures
     fixtures: # TODO: This needs a second fixture just for mob collisions.
       fix1:
