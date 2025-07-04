@@ -47,6 +47,9 @@ namespace Content.Shared.Humanoid
                 case SpeciesNaming.FirstDashLast: // Goobstation
                     return Loc.GetString("namepreset-firstdashlast",
                         ("first", GetFirstName(speciesProto, gender)), ("last", GetLastName(speciesProto)));
+                case SpeciesNaming.FirstCodeLast: // starcup: Skittermouse name scheme
+                    return Loc.GetString("namepreset-firstcodelast",
+                        ("first", GetFirstName(speciesProto, gender)), ("code", GetNameCode(speciesProto)), ("last", GetLastName(speciesProto)));
                 case SpeciesNaming.FirstLast:
                 default:
                     return Loc.GetString("namepreset-firstlast",
@@ -73,6 +76,12 @@ namespace Content.Shared.Humanoid
         public string GetLastName(SpeciesPrototype speciesProto)
         {
             return _random.Pick(_prototypeManager.Index(speciesProto.LastNames));
+        }
+
+        // starcup: skittermouse ID codes
+        public string GetNameCode(SpeciesPrototype speciesProto)
+        {
+            return _random.Pick(_prototypeManager.Index(speciesProto.NameCodes));
         }
     }
 }

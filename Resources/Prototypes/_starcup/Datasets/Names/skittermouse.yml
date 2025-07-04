@@ -1,0 +1,17 @@
+- type: localizedDataset
+  id: NamesSkittermouseFirst
+  values:
+    prefix: names-skittermouse-first-dataset-
+    count: 1
+
+- type: localizedDataset
+  id: NamesSkittermouseLast
+  values:
+    prefix: names-skittermouse-last-dataset-
+    count: 1
+
+- type: localizedDataset
+  id: NamesSkittermouseCode
+  values:
+    prefix: names-skittermouse-code-dataset-
+    count: 1

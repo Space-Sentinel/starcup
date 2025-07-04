@@ -92,6 +92,9 @@ public sealed partial class SpeciesPrototype : IPrototype
     [DataField]
     public ProtoId<LocalizedDatasetPrototype> LastNames { get; private set; } = "NamesLast";
 
+    [DataField] // starcup: Skittermouse ID codes
+    public ProtoId<LocalizedDatasetPrototype> NameCodes { get; private set; } = "NameCodes";
+
     [DataField]
     public SpeciesNaming Naming { get; private set; } = SpeciesNaming.FirstLast;
 
@@ -183,4 +186,5 @@ public enum SpeciesNaming : byte
     TheFirstofLast,
     LastFirst, // DeltaV
     FirstDashLast, // Goobstation: IPC (MKC) naming
+    FirstCodeLast, // starcup: Skittermouse naming
 }

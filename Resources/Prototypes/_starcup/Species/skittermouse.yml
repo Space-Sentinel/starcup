@@ -7,11 +7,15 @@
   markingLimits: MobSkittermouseMarkingLimits
   dollPrototype: MobSkittermouseDummy
   skinColoration: Hues
+  minAge: 7
+  youngAge: 9
+  oldAge: 11
+  maxAge: 16
   maleFirstNames: NamesSkittermouseFirst
   femaleFirstNames: NamesSkittermouseFirst
   lastNames: NamesSkittermouseLast
-#  naming: FirstCodeLast
-  naming: FirstLast
+  nameCodes: NamesSkittermouseCode
+  naming: FirstCodeLast
   sexes:
   - Unsexed
   baseScale: "0.5, 0.5"
