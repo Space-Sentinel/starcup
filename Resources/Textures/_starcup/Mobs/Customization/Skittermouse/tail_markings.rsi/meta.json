@@ -10,6 +10,10 @@
         {
             "name": "slug",
             "directions": 4
+        },
+        {
+            "name": "shortie",
+            "directions": 4
         }
     ]
 }
