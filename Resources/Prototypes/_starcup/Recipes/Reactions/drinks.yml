@@ -8,3 +8,17 @@
       amount: 1
   products:
     HotCocoaImitation: 2
+
+# Cocktails
+
+- type: reaction
+  id: template
+  reactants:
+    X:
+      amount: 1
+    Y:
+      amount: 1
+    Z:
+      amount: 1
+  products:
+    cocktail: 3

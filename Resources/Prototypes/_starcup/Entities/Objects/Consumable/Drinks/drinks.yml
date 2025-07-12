@@ -82,3 +82,21 @@
     solutions:
       drink:
         maxVol: 30
+
+# Alcohol
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkTemplate
+  suffix: xxx
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ?
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/xxxglass.rsi
+    state: icon

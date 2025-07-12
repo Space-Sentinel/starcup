@@ -1,0 +1,22 @@
+- type: reagent
+  id: template
+  name: reagent-name-xxx
+  parent: BaseAlcohol
+  desc: reagent-desc-xxx
+  physicalDesc: reagent-physical-desc-xxx
+  flavor: xxx
+  color: "#XXXXXX"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/xxxglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: ?
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: ?
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: ?
