@@ -135,22 +135,6 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkBlackMagic
-  suffix: black magic
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: BlackMagic
-          Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/blackmagicglass.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
   id: DrinkBlueLagoon
   suffix: Blue Lagoon
   components:
@@ -167,18 +151,18 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkBrainBlender
-  suffix: brain blender
+  id: DrinkBrainScrambler
+  suffix: brain scrambler
   components:
   - type: SolutionContainerManager
     solutions:
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: BrainBlender
+        - ReagentId: BrainScrambler
           Quantity: 30
   - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/brainblenderglass.rsi
+    sprite: _starcup/Objects/Consumable/Drinks/brainscramblerglass.rsi
     state: icon
 
 - type: entity
@@ -195,6 +179,22 @@
           Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/brambleglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkBuzzedBunny
+  suffix: buzzed bunny
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: BuzzedBunny
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/buzzedbunnyglass.rsi
     state: icon
 
 - type: entity
@@ -359,22 +359,6 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkMysticDawn
-  suffix: mystic dawn
-  components:
-  - type: SolutionContainerManager
-    solutions:
-      drink:
-        maxVol: 30
-        reagents:
-        - ReagentId: MysticDawn
-          Quantity: 30
-  - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/mysticdawnglass.rsi
-    state: icon
-
-- type: entity
-  parent: DrinkGlass
   id: DrinkNecropolitan
   suffix: necropolitan
   components:
@@ -407,7 +391,7 @@
 
 - type: entity
   parent: DrinkGlass
-  id: DrinkRainbowShot
+  id: DrinkRainbowShooter
   suffix: rainbow shot
   components:
   - type: SolutionContainerManager
@@ -415,10 +399,10 @@
       drink:
         maxVol: 30
         reagents:
-        - ReagentId: RainbowShot
+        - ReagentId: RainbowShooter
           Quantity: 30
   - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/rainbowshotglass.rsi
+    sprite: _starcup/Objects/Consumable/Drinks/rainbowshooterglass.rsi
     state: icon
 
 - type: entity

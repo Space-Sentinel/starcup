@@ -45,29 +45,6 @@
         amount: ?
 
 - type: reagent
-  id: BlackMagic
-  name: reagent-name-black-magic
-  parent: BaseAlcohol
-  desc: reagent-desc-black-magic
-  physicalDesc: reagent-physical-desc-xxx
-  flavor: xxx
-  color: "#XXXXXX"
-  metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/blackmagicglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: ?
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: ?
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: ?
-
-- type: reagent
   id: BlueLagoon
   name: reagent-name-blue-lagoon
   parent: BaseAlcohol
@@ -91,15 +68,15 @@
         amount: ?
 
 - type: reagent
-  id: BrainBlender
-  name: reagent-name-brain-blender
+  id: BrainScrambler
+  name: reagent-name-brain-scrambler
   parent: BaseAlcohol
-  desc: reagent-desc-brain-blender
+  desc: reagent-desc-brain-scrambler
   physicalDesc: reagent-physical-desc-xxx
   flavor: xxx
   color: "#XXXXXX"
   metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/brainblenderglass.rsi
+    sprite: _starcup/Objects/Consumable/Drinks/brainscramblerglass.rsi
     state: icon_empty
   metamorphicMaxFillLevels: ?
   metamorphicFillBaseName: fill-
@@ -123,6 +100,29 @@
   color: "#XXXXXX"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/brambleglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: ?
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: ?
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: ?
+
+- type: reagent
+  id: BuzzedBunny
+  name: reagent-name-buzzed-bunny
+  parent: BaseAlcohol
+  desc: reagent-desc-buzzed-bunny
+  physicalDesc: reagent-physical-desc-xxx
+  flavor: xxx
+  color: "#XXXXXX"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/buzzedbunnyglass.rsi
     state: icon_empty
   metamorphicMaxFillLevels: ?
   metamorphicFillBaseName: fill-
@@ -344,29 +344,6 @@
         amount: ?
 
 - type: reagent
-  id: MysticDawn
-  name: reagent-name-mystic-dawn
-  parent: BaseAlcohol
-  desc: reagent-desc-mystic-dawn
-  physicalDesc: reagent-physical-desc-xxx
-  flavor: xxx
-  color: "#XXXXXX"
-  metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/mysticdawnglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: ?
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: ?
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-      - !type:AdjustReagent
-        reagent: Ethanol
-        amount: ?
-
-- type: reagent
   id: Necropolitan
   name: reagent-name-necropolitan
   parent: BaseAlcohol
@@ -413,15 +390,15 @@
         amount: ?
 
 - type: reagent
-  id: RainbowShot
-  name: reagent-name-rainbow-shot
+  id: RainbowShooter
+  name: reagent-name-rainbow-shooter
   parent: BaseAlcohol
-  desc: reagent-desc-rainbow-shot
+  desc: reagent-desc-rainbow-shooter
   physicalDesc: reagent-physical-desc-xxx
   flavor: xxx
   color: "#XXXXXX"
   metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/rainbowshotglass.rsi
+    sprite: _starcup/Objects/Consumable/Drinks/rainbowshooterglass.rsi
     state: icon_empty
   metamorphicMaxFillLevels: ?
   metamorphicFillBaseName: fill-

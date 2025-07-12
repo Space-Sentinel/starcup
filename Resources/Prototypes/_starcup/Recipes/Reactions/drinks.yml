@@ -52,26 +52,6 @@
     Appletini: 3
 
 - type: reaction
-  id: BlackMagic
-  requiredMixerCategories:
-  - Stir
-  reactants:
-    Rum:
-      amount: 1
-    CoffeeLiqueur:
-      amount: 1
-    JuicePineapple:
-      amount: 1
-    MelonLiquor:
-      amount: 1
-    JuiceLemon:
-      amount: 1
-    JuiceOrange:
-      amount: 1
-  products:
-    BlackMagic: 6
-
-- type: reaction
   id: BlueLagoon
   requiredMixerCategories:
   - Shake
@@ -86,7 +66,7 @@
     BlueLagoon: 6
 
 - type: reaction
-  id: BrainBlender
+  id: BrainScrambler
   requiredMixerCategories:
   - Shake
   reactants:
@@ -103,7 +83,7 @@
     JuiceBerry:
       amount: 1
   products:
-    BrainBlender: 8
+    BrainScrambler: 8
 
 - type: reaction
   id: Bramble
@@ -120,6 +100,20 @@
       amount: 1
   products:
     Bramble: 7
+
+- type: reaction
+  id: BuzzedBunny
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    Tequila:
+      amount: 2
+    JuiceLemon:
+      amount: 1
+    JuiceCarrot:
+      amount: 1
+  products:
+    BuzzedBunny: 4
 
 - type: reaction
   id: Cactus
@@ -209,14 +203,16 @@
 
 - type: reaction
   id: Feywild
+  requiredMixerCategories:
+  - Stir
   reactants:
-    Cream:
+    Vodka:
       amount: 2
     MelonLiquor:
       amount: 1
-    CoconutRum:
+    JuiceLemon:
       amount: 1
-    JuicePineapple:
+    SodaWater:
       amount: 1
   products:
     Feywild: 5
@@ -266,22 +262,6 @@
     Mushburger: 5
 
 - type: reaction
-  id: MysticDawn
-  requiredMixerCategories:
-  - Shake
-  reactants:
-    Vodka:
-      amount: 2
-    JuiceLemon:
-      amount: 1
-    JuiceCarrot:
-      amount: 1
-    THC:
-      amount: 1
-  products:
-    MysticDawn: 5
-
-- type: reaction
   id: Necropolitan
   reactants:
     Vodka:
@@ -304,7 +284,7 @@
     ParadiseLost: 2
 
 - type: reaction
-  id: RainbowShot
+  id: RainbowShooter
   reactants:
     JuiceWatermelon:
       amount: 1
@@ -319,7 +299,7 @@
     JuiceBerry:
       amount: 1
   products:
-    RainbowShot: 6
+    RainbowShooter: 6
 
 - type: reaction
   id: RedDog
@@ -338,8 +318,10 @@
       amount: 1
     JuiceTomato:
       amount: 1
+    Egg:
+      amount: 1
   products:
-    RedEye: 2
+    RedEye: 3
 
 - type: reaction
   id: SnakeBite
