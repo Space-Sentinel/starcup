@@ -29,3 +29,24 @@
       effects:
       - !type:SatiateThirst
         factor: 2
+
+- type: reagent
+  id: EvilPrincess
+  name: reagent-name-evil-princess
+  parent: BaseDrink
+  desc: reagent-desc-evil-princess
+  physicalDesc: reagent-physical-desc-xxx
+  flavor: xxx
+  color: "#XXXXXX"
+  recognizable: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+  metamorphicSprite:
+    sprite: Objects/Consumable/Drinks/xxxglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: ?
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: ?

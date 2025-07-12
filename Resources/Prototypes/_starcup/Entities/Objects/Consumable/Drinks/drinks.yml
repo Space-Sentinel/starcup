@@ -98,5 +98,5 @@
         - ReagentId: ?
           Quantity: 30
   - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/xxxglass.rsi
+    sprite: _starcup/Objects/Consumable/Drinks/evilprincessglass.rsi
     state: icon
