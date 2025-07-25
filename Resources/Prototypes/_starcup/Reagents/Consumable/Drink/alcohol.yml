@@ -137,6 +137,29 @@
         amount: ?
 
 - type: reagent
+  id: Cactus
+  name: reagent-name-cactus
+  parent: BaseAlcohol
+  desc: reagent-desc-cactus
+  physicalDesc: reagent-physical-desc-xxx
+  flavor: xxx
+  color: "#XXXXXX"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/cactusglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: ?
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: ?
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: ?
+
+- type: reagent
   id: CherryBomb
   name: reagent-name-cherry-bomb
   parent: BaseAlcohol

@@ -35,7 +35,7 @@
   name: reagent-name-evil-princess
   parent: BaseDrink
   desc: reagent-desc-evil-princess
-  physicalDesc: reagent-physical-desc-xxx
+  physicalDesc: reagent-physical-desc-dark-red
   flavor: xxx
   color: "#XXXXXX"
   recognizable: true
