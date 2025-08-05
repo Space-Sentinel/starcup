@@ -1,4 +1,5 @@
 <Document>
+<<<<<<< HEAD
   # Skittermice
 
   <Box>
@@ -29,4 +30,15 @@
 
   - Take 15% more Physical (Blunt/Pierce/Slash) damage.
   - Their small hands are unable to use items that must be wielded in both hands, and some one-handed items must be wielded in both hands to be used.
+=======
+    # Skittermice
+
+    <Box>
+        <GuideEntityEmbed Entity="SkittermouseSilhouette" Caption="???"/>
+    </Box>
+
+    Tiny, flexible hunter-killer neogenetic lifeforms. They are said to have the qualities of slugs, cats, and ferrets in equal measure.
+
+    Skittermice are not currently cleared to work alongside other species on Syndicate stations. The required vaccinations, psychediting, and selective debriefings required to welcome to them to the Syndicate in full are currently ongoing.
+>>>>>>> main
 </Document>

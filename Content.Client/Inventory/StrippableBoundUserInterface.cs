@@ -25,6 +25,7 @@ using Robust.Shared.Input;
 using Robust.Shared.Map;
 using static Content.Client.Inventory.ClientInventorySystem;
 using static Robust.Client.UserInterface.Control;
+using Content.Shared._EE.Strip.Components; // EE
 
 namespace Content.Client.Inventory
 {
@@ -194,7 +195,16 @@ namespace Content.Client.Inventory
                     button.BlockedRect.MouseFilter = MouseFilterMode.Ignore;
             }
 
+            // Goobstation: use virtual entity if hidden
+            // starcup: don't hide entity from admin ghosts
+            if (_strippable.IsStripHidden(heldEntity, _player.LocalEntity))
+            {
+                heldEntity = _virtualHiddenEntity;
+            }
+            // End Goobstation/starcup
+
             UpdateEntityIcon(button, heldEntity);
+
             _strippingMenu!.HandsContainer.AddChild(button);
             LayoutContainer.SetPosition(button, new Vector2i(_handCount, 0) * (SlotControl.DefaultButtonSize + ButtonSeparation));
             _handCount++;
@@ -235,7 +245,7 @@ namespace Content.Client.Inventory
 
             // If this is a full pocket, obscure the real entity
             // this does not work for modified clients because they are still sent the real entity
-            if (entity != null && _strippable.IsStripHidden(slotDef, _player.LocalEntity))
+            if (entity != null && (_strippable.IsStripHidden(slotDef, _player.LocalEntity) || _strippable.IsStripHidden(entity, _player.LocalEntity)))  // starcup: hide StripMenuHiddenComponent entities outside of pockets
                 entity = _virtualHiddenEntity;
 
             var button = new SlotButton(new SlotData(slotDef, container));
