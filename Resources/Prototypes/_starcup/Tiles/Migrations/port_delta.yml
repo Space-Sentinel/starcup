@@ -1,0 +1,72 @@
+- type: tileAlias
+  id: FloorMS13BrickConcrete
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMS13CarpetBlue
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMS13CarpetGreen
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMS13CarpetViolet
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMS13Concrete
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMS13ConcreteIndustrial
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMS13TileCafe
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMS13TileConcreteSmall
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMS13WoodCommon
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMS13WoodCommonDamaged
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMS13WoodMosaic
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMetalGreen
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMetalPurple
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorMetalTunnelRust
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorWoodMaple
+  target: FloorTileItemWoodLight
+
+- type: tileAlias
+  id: FloorWoodOak
+  target: FloorTileItemWoodDark
+
+- type: tileAlias
+  id: FloorMetalTunnelRusty
+  target: FloorStarcupCarpetMemphis
+
+- type: tileAlias
+  id: FloorWoodHouse
+  target: FloorTileItemWoodBlack
+
