@@ -109,7 +109,7 @@
 #Empty black
 - type: entity
   id: JetpackBlack
-  parent: [BaseJetpack, BaseTraitorContraband] # starcup: shared contraband level with nt gear
+  parent: [BaseJetpack, BaseTraitorContraband, BaseExaminableClothing] # starcup: shared contraband level with nt gear, examinable clothing
   name: jetpack
   suffix: Empty
   components:
@@ -123,6 +123,10 @@
     #slots:
     #  - Back
     # End DeltaV modifications
+  # begin starcup: examinable clothing
+  - type: ExaminableClothing
+    examineText: clothing-black-jetpack
+  # end starcup
   - type: StaticPrice
     price: 1000
 
@@ -227,7 +231,7 @@
 #Empty security
 - type: entity
   id: JetpackSecurity
-  parent: [BaseJetpack, BaseSecurityContraband]
+  parent: [BaseJetpack, BaseSecurityContraband, BaseExaminableClothing] # starcup: examinable clothing
   name: security jetpack
   suffix: Empty
   components:
@@ -241,6 +245,10 @@
     #slots:
     #  - Back
     # End DeltaV modifications
+  # begin starcup: examinable clothing
+  - type: ExaminableClothing
+    examineText: clothing-security-jetpack
+  # end starcup
 
 #Filled security
 - type: entity

@@ -152,3 +152,389 @@
   id: 8084
   time: '2025-07-26T13:13:59.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/261
+- author: princesspengy
+  changes:
+  - message: train has been re-implemented from upstream. all aboard!
+    type: Add
+  id: 8085
+  time: '2025-08-03T16:20:20.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/274
+- author: princesspengy
+  changes:
+  - message: MKCs will now properly be unconscious when at low-power mode
+    type: Fix
+  - message: plastic and oilpacks can be applied to MKCs again. be warned, the empty
+      application bug will still occur if the MKC has caustic damage present when
+      using these items; a more comprehensive fix is hopefully coming soon
+    type: Fix
+  id: 8086
+  time: '2025-07-29T00:11:10.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/266
+- author: foxcurl
+  changes:
+  - message: Prisoner comms should now be available on all maps.
+    type: Fix
+  id: 8087
+  time: '2025-08-05T03:21:46.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/280
+- author: foxcurl
+  changes:
+  - message: Pen holders have been added, able to hold up to 8 pens.
+    type: Add
+  - message: Paper trays may be crafted.
+    type: Tweak
+  id: 8088
+  time: '2025-08-05T03:27:10.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/281
+- author: KoboldCatgirl
+  changes:
+  - message: Added SyndComm chapel, menagerie & cryo area
+    type: Add
+  - message: Removed most lethal ammo from SC bar.
+    type: Tweak
+  - message: Added various useful items to SyndComm.
+    type: Tweak
+  id: 8089
+  time: '2025-08-05T17:13:00.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/282
+- author: princesspengy
+  changes:
+  - message: departmental glasses loadouts for security and command, plus options
+      for bartender, roboticist, and musician
+    type: Add
+  - message: standard eyepatches are now in the generic glasses loadout group
+    type: Add
+  id: 8090
+  time: '2025-08-06T18:21:02.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/284
+- author: princesspengy
+  changes:
+  - message: a large number of features missing from loop have been added! it should
+      now include spawns, slots, and resources for all of starcup's available jobs,
+      as well as a few missing vendors
+    type: Fix
+  - message: additional holopads and intercoms have been added to loop
+    type: Add
+  - message: loop now features a kitchen shelf and a bar shelf
+    type: Add
+  id: 8091
+  time: '2025-08-10T09:30:37.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/289
+- author: skcb64
+  changes:
+  - message: New eikse plushie. Horrible!
+    type: Add
+  id: 8092
+  time: '2025-08-10T18:36:21.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/288
+- author: princesspengy
+  changes:
+  - message: research assistants, medical interns, and technical assistants are now
+      eligible for antagonist selection
+    type: Tweak
+  id: 8093
+  time: '2025-08-11T02:07:16.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/294
+- author: princesspengy
+  changes:
+  - message: added missing job slots/spawns to omega! all of starcup's typical jobs
+      should be available now
+    type: Fix
+  - message: added the administrative assistant's locker to the bridge
+    type: Add
+  - message: added a psychologist job slot to omega, and added their locker to medbay
+      (a proper office will be coming later!)
+    type: Add
+  - message: the pride-o-mat and mnk drobe can now be found at omega
+    type: Add
+  - message: omega now has more departmental intercoms
+    type: Add
+  id: 8094
+  time: '2025-08-11T02:08:03.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/292
+- author: princesspengy
+  changes:
+  - message: the new access levels for the psychologist, librarian, and boxer have
+      been implemented into byoin
+    type: Tweak
+  - message: mnk drobe added to byoin
+    type: Add
+  - message: salvage job board added to byoin
+    type: Fix
+  id: 8095
+  time: '2025-08-11T02:09:32.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/291
+- author: princesspengy
+  changes:
+  - message: removed the playtime requirement for service workers
+    type: Tweak
+  - message: prisoner now requires a few hours played in security
+    type: Tweak
+  id: 8096
+  time: '2025-08-11T02:10:02.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/295
+- author: Oxdeception
+  changes:
+  - message: When editing your character's records there's now a preview window!
+    type: Add
+  id: 8097
+  time: '2025-08-11T02:10:18.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/287
+- author: princesspengy
+  changes:
+  - message: the MNK drobe, and shelves for the bar/kitchen have been added to glacier
+    type: Add
+  - message: glacier salvagers now have a job board mapped to their department
+    type: Fix
+  - message: after consultation with advocates for unethical treatment of animals,
+      the caged cow in glacier's kitchen has been replaced with a cow crate
+    type: Tweak
+  id: 8098
+  time: '2025-08-11T02:09:14.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/290
+- author: princesspengy
+  changes:
+  - message: guidebook entries for starcup's species have been updated and rewritten
+      to include more information and better fit our server's narrative standards
+    type: Tweak
+  id: 8099
+  time: '2025-08-13T06:58:32.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/286
+- author: foxcurl
+  changes:
+  - message: Reinforced tables can now be constructed.
+    type: Add
+  id: 8100
+  time: '2025-08-13T18:37:29.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/297
+- author: princesspengy
+  changes:
+  - message: we've merged upstream changes through august 5th! check out the upstream
+      merge thread on our forum for a list of notable changes
+    type: Add
+  - message: whitelists for many, many impstation markings are now expanded to include
+      additional starcup species
+    type: Add
+  id: 8101
+  time: '2025-08-13T18:32:36.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/285
+- author: princesspengy
+  changes:
+  - message: 'added a new type of character records: admin records, only available
+      to you and server admins! give us your secret character lore!'
+    type: Add
+  id: 8102
+  time: '2025-08-15T09:22:57.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/300
+- author: princesspengy
+  changes:
+  - message: changed the flavor text on many, many existing drinks
+    type: Tweak
+  - message: rebranded the manly dorf to the rock 'n stone
+    type: Tweak
+  id: 8103
+  time: '2025-08-15T09:23:55.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/299
+- author: little-meow-meow
+  changes:
+  - message: Many casual references to NanoTrasen (*spit*) have been cut and replaced
+      with Syndicate equivalents. Death to NanoTrasen!
+    type: Add
+  id: 8104
+  time: '2025-08-14T22:57:28.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/267
+- author: Oxdeception
+  changes:
+  - message: Characters without admin records should import now
+    type: Fix
+  id: 8105
+  time: '2025-08-16T01:52:51.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/304
+- author: foxcurl
+  changes:
+  - message: Train got a big update; enjoy a portion of the kitchen in the bar, a
+      redone singularity containment, expanded salvage dock, and more.
+    type: Tweak
+  id: 8106
+  time: '2025-08-17T04:25:01.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/306
+- author: skcb64
+  changes:
+  - message: Human limbs can now accept more markings.
+    type: Fix
+  id: 8107
+  time: '2025-08-17T08:30:33.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/311
+- author: 12rabbits
+  changes:
+  - message: Added the Hemophilia trait to character customization.
+    type: Add
+  id: 8108
+  time: '2025-08-17T08:52:12.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/310
+- author: princesspengy
+  changes:
+  - message: loop, omega, and train should now have the correct captain's hardsuit
+      mapped
+    type: Fix
+  id: 8109
+  time: '2025-08-17T09:04:40.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/313
+- author: sususuyo suyo
+  changes:
+  - message: shaved 1.5 seconds off of the goliath's tentacle grapple stun to accommodate
+      for crawling's extremely interruptible doafter (1 second)
+    type: Tweak
+  id: 8110
+  time: '2025-08-17T09:11:23.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/307
+- author: deltanedas
+  changes:
+  - message: Changed goliath sprites to be accurate to SS13's regular goliath and
+      not ancient goliath.
+    type: Tweak
+  - message: Goliaths attack range was slightly reduced to make combat more fair.
+    type: Tweak
+  id: 8111
+  time: '2025-08-17T09:12:14.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/308
+- author: princesspengy
+  changes:
+  - message: insulated gloves are now labeled as engineering contraband. doorhackers
+      take caution
+    type: Tweak
+  id: 8112
+  time: '2025-08-17T09:21:51.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/312
+- author: little-meow-meow
+  changes:
+  - message: Ported Shoko from Delta-V.
+    type: Add
+  id: 8113
+  time: '2025-08-17T10:19:05.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/301
+- author: Samuka, foxcurl
+  changes:
+  - message: Robotics consoles can no longer remotely detonate or eject borgs.
+    type: Tweak
+  id: 8114
+  time: '2025-08-19T07:29:46.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/316
+- author: little-meow-meow
+  changes:
+  - message: New potty mouth trait for people who don't swear.
+    type: Add
+  - message: Potty mouth implanter for forcing people to never say bad things.
+    type: Add
+  id: 8115
+  time: '2025-08-21T04:28:31.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/317
+- author: little-meow-meow
+  changes:
+  - message: Improved map lighting on parallax backgrounds.
+    type: Add
+  id: 8116
+  time: '2025-08-21T04:29:25.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/318
+- author: little-meow-meow
+  changes:
+  - message: 'Glacier: day length changed from 1 to 4 hours, improved parallax lighting,
+      fixed weird tiles in med courtyard, restored broken signs.'
+    type: Tweak
+  id: 8117
+  time: '2025-08-21T04:30:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/319
+- author: little-meow-meow
+  changes:
+  - message: Ported Banana station from Imp
+    type: Add
+  id: 8118
+  time: '2025-08-21T09:20:35.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/325
+- author: little-meow-meow
+  changes:
+  - message: Glacier's rock walls now display correctly on the station map.
+    type: Fix
+  id: 8119
+  time: '2025-08-21T09:31:51.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/322
+- author: princesspengy
+  changes:
+  - message: the head of personnel's job description has been changed to more strongly
+      emphasize their position as the station's second in command
+    type: Tweak
+  - message: the admin assistant has had their duties expanded, and has been granted
+      a proper command headset and entry-level access to all other departments except
+      security
+    type: Tweak
+  - message: removed the existing admin assistant headset
+    type: Remove
+  - message: prisoner and psychologist are no longer listed as station-dependent jobs,
+      and will be included in all maps from now on!
+    type: Tweak
+  - message: the boxer and reporter's job descriptions now have an accurate list of
+      current stations they can work at
+    type: Fix
+  - message: the head of personnel now has access to the robotics lab and mailroom
+    type: Fix
+  - message: the logistics officer's job icon now matches the icon on their id card
+    type: Fix
+  - message: the zookeeper has been taken down from the job loadout list pending future
+      reworks
+    type: Remove
+  id: 8120
+  time: '2025-08-21T23:40:49.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/314
+- author: AvianMaiden AvianMaiden, Cutinup99
+  changes:
+  - message: Televisions and computers give off cozier lights!
+    type: Add
+  - message: New variant of the desk lamp with a warmer glow!
+    type: Add
+  - message: New mini wallmounted television!
+    type: Add
+  - message: Protolathes now give off a dim glow.
+    type: Add
+  - message: Tech disk terminals now (properly) give off light.
+    type: Tweak
+  id: 8121
+  time: '2025-08-22T00:25:36.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/321
+- author: princesspengy
+  changes:
+  - message: adds support for tails (and such) to have more control over their layering,
+      so they'll look good even if you're wearing a skirt
+    type: Add
+  - message: adds support for markings to have sprites inherit color from other sprites
+      in the marking, so you can change multiple sprite colors with one slider
+    type: Add
+  - message: unathi, vulpekin, and rodentia tails have been edited using this system
+      to fix their previous layering errors; no more awkward stripe of pixels over
+      jumpskirts!
+    type: Fix
+  id: 8122
+  time: '2025-08-22T00:32:37.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/276
+- author: little-meow-meow
+  changes:
+  - message: Added flipped eyepatches to loadouts alongside regular eyepatches.
+    type: Add
+  id: 8123
+  time: '2025-08-22T00:32:37.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/327
+- author: princesspengy
+  changes:
+  - message: certain wearable items are now visible on examination! these include
+      medals, lawyer badges, pride pins/scarves, and most functional items with contraband
+      labels (security gear, hardsuits, insulated gloves, weapons, etc)
+    type: Add
+  id: 8124
+  time: '2025-08-22T00:41:11.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/323
+- author: little-meow-meow
+  changes:
+  - message: Banana now has a cargo shuttle.
+    type: Fix
+  id: 8125
+  time: '2025-08-22T04:32:15.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/330

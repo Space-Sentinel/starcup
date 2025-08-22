@@ -21,7 +21,7 @@
     hideOnToggle: true
 
 - type: entity
-  parent: [ClothingMaskGas, BaseSecurityContraband]
+  parent: [ClothingMaskGas, BaseSecurityContraband, BaseExaminableClothing] # starcup: examinable clothing
   id: ClothingMaskGasSecurity
   name: security gas mask
   description: A standard issue Security gas mask.
@@ -39,6 +39,10 @@
         Slash: 0.95
         Piercing: 0.95
         Heat: 0.95
+  # begin starcup: examinable clothing
+  - type: ExaminableClothing
+    examineText: clothing-security-gas-mask
+  # end starcup
 
 - type: entity
   parent: [ClothingMaskGas, BaseSyndicateContraband]
@@ -102,7 +106,7 @@
   - type: IngestionBlocker
 
 - type: entity
-  parent: [ClothingMaskGas, BaseCargoContraband]
+  parent: [ClothingMaskGas, BaseCargoContraband, BaseExaminableClothing] # starcup: examinable clothing
   id: ClothingMaskGasExplorer
   name: explorer gas mask
   description: A military-grade gas mask that can be connected to an air supply.
@@ -118,6 +122,10 @@
         Slash: 0.90
         Piercing: 0.95
         Heat: 0.95
+  # begin starcup: examinable clothing
+  - type: ExaminableClothing
+    examineText: clothing-explorer-gas-mask
+  # end starcup
 
 - type: entity
   parent: ClothingMaskPullableBase
@@ -311,6 +319,8 @@
   - type: PhysicalComposition
     materialComposition:
       Plastic: 25
+  - type: StaticPrice
+    price: 5
 
 - type: entity
   parent: ClothingMaskBase
@@ -329,6 +339,9 @@
   - type: IngestionBlocker
   - type: AddAccentClothing
     accent: MumbleAccent
+  - type: EmoteBlocker
+    blocksCategories:
+    - Vocal
   - type: Construction
     graph: Muzzle
     node: muzzle
@@ -367,7 +380,7 @@
     accent: StutteringAccent
 
 - type: entity
-  parent: [ ClothingMaskGas, BaseSecurityContraband ]
+  parent: [ ClothingMaskGas, BaseSecurityContraband, BaseExaminableClothing ] # starcup: examinable clothing
   id: ClothingMaskGasSwat
   name: swat gas mask
   description: A elite issue Security gas mask.
@@ -393,6 +406,10 @@
         Slash: 0.90
         Piercing: 0.95
         Heat: 0.95
+  # begin starcup: examinable clothing
+  - type: ExaminableClothing
+    examineText: clothing-swat-gas-mask
+  # end starcup
 
 - type: entity
   parent: [ ClothingMaskGas, BaseSecurityCargoContraband ]

@@ -216,6 +216,13 @@
     - SecurityExplosives
     - SecurityEquipment
     - SecurityWeapons
+  # begin starcup: improve visuals
+  - type: PointLight
+    color: "#1b591b"
+    radius: 1.5
+    energy: 1.2
+  - type: LitOnPowered
+  # end starcup
 
 - type: entity
   id: ProtolatheHyperConvection

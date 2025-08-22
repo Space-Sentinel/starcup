@@ -61,8 +61,8 @@
     radius: 256
   - type: DockingConsole
   - type: PointLight
-    radius: 1.5
-    energy: 1.6
+#    radius: 1.5  # starcup
+#    energy: 1.6  # starcup
     color: "#43ccb5"
 
 - type: entity
@@ -82,6 +82,8 @@
   - type: AccessReader
     access:
     - [ Salvage ]
+  - type: PointLight # starcup
+    color: "#36bed9"
 
 - type: entity
   parent: ComputerShuttleMining
@@ -95,3 +97,5 @@
     access:
     - [ Cargo ]
   # lets hope nobody deconstructs it to reset the name + access...
+  - type: PointLight # starcup
+    color: "#36bed9"
