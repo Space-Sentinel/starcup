@@ -9,6 +9,17 @@
       board: [ DoorElectronicsBoxer ]
 
 - type: entity
+  parent: AirlockSecurityLocked
+  id: AirlockBrigmedicLocked
+  suffix: Combat Medic, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBrigmedic ]
+  - type: Sprite
+    sprite: _starcup/Structures/Doors/Airlocks/Standard/medsec.rsi
+
+- type: entity
   parent: AirlockServiceLocked
   id: AirlockClownLocked
   suffix: Clown, Locked
@@ -155,13 +166,13 @@
 - type: entity
   parent: AirlockCentralCommandLocked
   id: AirlockSyndCommLocked
-  suffix: Syndicate Command, Locked
+  suffix: Syndicate Communications, Locked
   components:
   - type: Sprite
     sprite: _starcup/Structures/Doors/Airlocks/Standard/syndcomm.rsi
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsSyndicateCommand ]
+      board: [ DoorElectronicsSyndicateCommunications ]
 
 # Glass Airlocks
 - type: entity
@@ -172,6 +183,17 @@
   - type: ContainerFill
     containers:
       board: [ DoorElectronicsBoxer ]
+
+- type: entity
+  parent: AirlockSecurityGlassLocked
+  id: AirlockBrigmedicGlassLocked
+  suffix: Combat Medic, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsBrigmedic ]
+  - type: Sprite
+    sprite: _starcup/Structures/Doors/Airlocks/Glass/medsec.rsi
 
 - type: entity
   parent: AirlockServiceGlassLocked
@@ -320,18 +342,26 @@
 - type: entity
   parent: AirlockCentralCommandGlassLocked
   id: AirlockSyndCommGlassLocked
-  suffix: Syndicate Command, Locked
+  suffix: Syndicate Communications, Locked
   components:
   - type: Sprite
     sprite: _starcup/Structures/Doors/Airlocks/Glass/syndcomm.rsi
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsSyndicateCommand ]
+      board: [ DoorElectronicsSyndicateCommunications ]
 
 # Maintenance Hatches
 - type: entity
   parent: AirlockBoxerLocked
   id: AirlockMaintBoxerLocked
+  components:
+  - type: Sprite
+    sprite: Structures/Doors/Airlocks/Standard/maint.rsi
+
+- type: entity
+  parent: AirlockBrigmedicLocked
+  id: AirlockMaintBrigmedicLocked
+  suffix: Combat Medic, Locked
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/maint.rsi
@@ -397,8 +427,8 @@
 - type: entity
   parent: HighSecCentralCommandLocked
   id: HighSecSyndCommLocked
-  suffix: Central Command, Locked
+  suffix: Syndicate Communications, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsCentralCommand ]
+      board: [ DoorElectronicsSyndicateCommunications ]

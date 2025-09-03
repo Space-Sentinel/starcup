@@ -30,6 +30,7 @@
     sortedHands:
     - hand_right
     - hand_left
+  - type: ItemOffer # starcup: item offering
   - type: ComplexInteraction
   - type: Puller
     needsHands: false

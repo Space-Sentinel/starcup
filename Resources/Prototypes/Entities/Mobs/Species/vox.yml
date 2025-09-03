@@ -175,6 +175,7 @@
         32:
           sprite: Mobs/Species/Vox/displacement.rsi
           state: hand_r
+  - type: ItemOffer # starcup: item offering
 
 - type: entity
   parent: BaseSpeciesDummy
@@ -242,3 +243,4 @@
         32:
           sprite: Mobs/Species/Vox/displacement.rsi
           state: hand_r
+  - type: ItemOffer # starcup: item offering

@@ -60,7 +60,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-      name: Central Command
+      name: Syndicate Communications
     - type: Transform
       parent: invalid
     - type: MapGrid
@@ -25053,7 +25053,7 @@ entities:
       pos: -0.5,3.5
       parent: 1
     - type: NavMapBeacon
-      text: CentComm
+      text: SyndComm
   - uid: 3746
     components:
     - type: Transform
@@ -27735,7 +27735,7 @@ entities:
       pos: -2.5,-2.5
       parent: 1
     - type: FaxMachine
-      name: Centcomm
+      name: SyndComm
 - proto: FenceWoodHighGate
   entities:
   - uid: 4191
@@ -44679,9 +44679,9 @@ entities:
       - stampLargeIcon: large_stamp-syndicate
         stampedColor: '#850000FF'
         stampedName: stamp-component-stamped-name-syndicate
-      - stampLargeIcon: large_stamp-centcom
-        stampedColor: '#006600FF'
-        stampedName: stamp-component-stamped-name-centcom
+      - stampLargeIcon: large_stamp-syndcomm
+        stampedColor: '#664400FF'
+        stampedName: stamp-component-stamped-name-syndcomm
       content: >-
         [color=DarkRed]Hello, [bold][subject_name_here][/bold]!
 
@@ -52586,7 +52586,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: CentComm Waiting Area
+      id: SyndComm Waiting Area
 - proto: SurveillanceCameraMedical
   entities:
   - uid: 7741

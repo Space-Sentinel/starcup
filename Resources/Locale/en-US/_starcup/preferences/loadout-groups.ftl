@@ -18,6 +18,12 @@ loadout-group-roboticist-id-starcup = Roboticist PDA
 # Security
 loadout-group-security-glasses = Security glasses
 
+loadout-group-brigmedic-head = Combat Medic head
+loadout-group-brigmedic-jumpsuit = Combat Medic jumpsuit
+loadout-group-brigmedic-outerclothing = Combat Medic outer clothing
+loadout-group-brigmedic-shoes = Combat Medic shoes
+loadout-group-brigmedic-backpack = Combat Medic backpack
+
 loadout-group-security-cadet-outerclothing = Security cadet outer clothing
 
 loadout-group-warden-shoes = Warden shoes
@@ -59,3 +65,4 @@ loadout-group-prisoner-jumpsuit = Prisoner jumpsuit
 
 # Misc
 loadout-group-plushies = Plushies
+loadout-group-survival-brigmedic = Combat Medic Survival Box

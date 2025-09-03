@@ -1,5 +1,7 @@
 id-card-access-level-psychologist = Psychologist
 
+id-card-access-brigmedic = Combat Medic
+
 id-card-access-level-boxer = Boxer
 id-card-access-level-clown = Clown
 id-card-access-level-librarian = Library
@@ -10,4 +12,4 @@ id-card-access-level-zookeeper = Zookeeper
 
 id-card-access-level-syndicate-agent-starcup = NanoTrasen Agent
 
-id-card-access-level-syndicate-command = Syndicate Command
+id-card-access-level-syndicate-communications = Syndicate Communications

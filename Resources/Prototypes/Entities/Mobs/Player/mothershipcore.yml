@@ -153,6 +153,7 @@
   - type: Body
     prototype: MothershipCoreBody
   - type: Hands
+  - type: ItemOffer # starcup: item offering
   # - type: Puller # use the conveyor
   - type: Eye
     drawFov: false

@@ -1389,6 +1389,7 @@
       state: "creampie_human"
       visible: false
   - type: Hands
+  - type: ItemOffer # starcup: item offering
   - type: ComplexInteraction
   - type: GenericVisualizer
     visuals:
@@ -3848,6 +3849,7 @@
             sprite: Mobs/Pets/displacements.rsi
             state: corgi_head_displacement
   - type: Hands # HANDS!
+  - type: ItemOffer # starcup: item offering
   - type: Puller
   - type: Cuffable # bad dog!
   - type: BlockWriting # dogs can't write, paws unwieldy; mouth-writing is a myth

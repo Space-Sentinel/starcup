@@ -20,6 +20,7 @@
   id: ResearchAssistantGear
   equipment:
 #    shoes: ClothingShoesColorWhite # starcup: replaced by loadout
+    neck: ClothingNeckNoviceMark # imp
     id: ResearchAssistantPDA
     ears: ClothingHeadsetScience
     pocket2: BookScientistsGuidebook

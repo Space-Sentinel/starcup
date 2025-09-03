@@ -374,9 +374,19 @@
   description: flavor-complex-sapo-picante-starcup
 
 - type: flavor
+  id: sbiten-starcup
+  flavorType: Complex
+  description: flavor-complex-sbiten-starcup
+
+- type: flavor
   id: screwdriver-starcup
   flavorType: Complex
   description: flavor-complex-screwdriver-starcup
+
+- type: flavor
+  id: silencer-starcup
+  flavorType: Complex
+  description: flavor-complex-silencer-starcup
 
 - type: flavor
   id: silverjack-starcup

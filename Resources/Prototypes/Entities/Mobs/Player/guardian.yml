@@ -232,6 +232,7 @@
     - type: Inventory
       templateId: holoclown
     - type: Hands
+    - type: ItemOffer # starcup: item offering
     - type: ComplexInteraction
     - type: Clumsy
       gunShootFailDamage:

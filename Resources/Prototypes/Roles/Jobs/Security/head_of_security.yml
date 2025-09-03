@@ -34,6 +34,7 @@
   - External
   - Detective
   - Cryogenics
+  - Brigmedic # starcup
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

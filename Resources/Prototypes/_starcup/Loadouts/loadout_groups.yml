@@ -44,6 +44,57 @@
   - MechatronicsPDA
 
 # Security
+## Combat Medic
+- type: loadoutGroup
+  id: BrigmedicHead
+  name: loadout-group-brigmedic-head
+  minLimit: 0
+  loadouts:
+  - BrigmedicBeret
+
+- type: loadoutGroup
+  id: BrigmedicJumpsuit
+  name: loadout-group-brigmedic-jumpsuit
+  loadouts:
+  - BrigmedicJumpsuit
+  - BrigmedicJumpskirt
+
+- type: loadoutGroup
+  id: BrigmedicOuterClothing
+  name: loadout-group-brigmedic-outerclothing
+  minLimit: 0
+  loadouts:
+  - BrigmedicArmoredGown
+  - SecurityOfficerWintercoat
+
+- type: loadoutGroup
+  id: BrigmedicShoes
+  name: loadout-group-brigmedic-shoes
+  loadouts:
+  - JackBoots
+  - RedShoes
+  - WhiteShoes
+  - SecurityWinterBoots
+
+- type: loadoutGroup
+  id: BrigmedicBackpack
+  name: loadout-group-brigmedic-backpack
+  loadouts:
+  - BrigmedicBackpack
+  - BrigmedicSatchel
+  - BrigmedicDuffel
+
+- type: loadoutGroup
+  id: SurvivalBrigmedic
+  name: loadout-group-survival-brigmedic
+  minLimit: 2
+  hidden: true
+  loadouts:
+  - EmergencyNitrogenBrigmedic
+  - EmergencyOxygenBrigmedic
+  - LoadoutSpeciesVoxNitrogen
+  - EmergencyIPCBox # DeltaV
+
 ## Security Cadet
 - type: loadoutGroup
   id: SecurityCadetOuterClothing
@@ -321,3 +372,12 @@
   - EyepatchFlipped
   - GlassesJamjar
   - GlassesJensen
+
+- type: loadoutGroup
+  id: GroupSpeciesBreathToolBrigmedic
+  name: loadout-group-breath-tool
+  minLimit: 1
+  maxLimit: 1
+  hidden: true
+  loadouts:
+  - LoadoutSpeciesBreathToolBrigmedic
