@@ -1,0 +1,10 @@
+- type: entity
+  id: ActionSkitter
+  name: action-name-skitter
+  description: action-description-skitter
+  components:
+  - type: InstantAction
+    itemIconStyle: BigAction
+    priority: -10
+    icon: _starcup/Interface/Actions/skitter.png
+#    event: !type:ToggleRunningLikeAFreakStateEvent

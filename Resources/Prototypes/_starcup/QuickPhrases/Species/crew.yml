@@ -1,0 +1,4 @@
+- type: quickPhrase
+  id: SpeciesSkittermousePhrase
+  parent: BaseCrewSpeciesPhrase
+  text: species-name-skittermouse

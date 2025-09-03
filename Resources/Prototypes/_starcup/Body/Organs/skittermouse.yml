@@ -1,0 +1,43 @@
+- type: entity
+  id: BaseSkittermouseOrgan
+  parent: BaseItem
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _starcup/Mobs/Species/Skittermouse/organs.rsi
+  - type: Organ
+  - type: Food
+  - type: Extractable
+    grindableSolutionName: organ
+  - type: SolutionContainerManager
+    solutions:
+      organ:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 5
+  - type: FlavorProfile
+    flavors:
+    - people
+  - type: Tag
+    tags:
+    - Meat
+  - type: Gibbable
+
+- type: entity
+  id: OrganSkittermouseEyes
+  parent: BaseSkittermouseOrgan
+  name: "eyes"
+  description: "Brimming with violence and very good night vision."
+  components:
+  - type: Sprite
+    layers:
+    - state: eyeball-l
+    - state: eyeball-r
+  - type: Item
+    size: Small
+    heldPrefix: eyeballs

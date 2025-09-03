@@ -1,0 +1,49 @@
+- type: body
+  id: Skittermouse
+  name: species-name-skittermouse
+  root: torso
+  slots:
+    head:
+      part: HeadSkittermouse
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganSkittermouseEyes
+    torso:
+      part: TorsoSkittermouse
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+      organs:
+        heart: OrganAnimalHeart
+        lungs: OrganHumanLungs
+        stomach: OrganAnimalStomach
+        liver:  OrganAnimalLiver
+        kidneys: OrganHumanKidneys
+    right arm:
+      part: RightArmSkittermouse
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmSkittermouse
+      connections:
+      - left hand
+    right hand:
+      part: RightHandSkittermouse
+    left hand:
+      part: LeftHandSkittermouse
+    right leg:
+      part: RightLegSkittermouse
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegSkittermouse
+      connections:
+      - left foot
+    right foot:
+      part: RightFootSkittermouse
+    left foot:
+      part: LeftFootSkittermouse

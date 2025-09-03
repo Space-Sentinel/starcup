@@ -1,4 +1,36 @@
 <Document>
+<<<<<<< HEAD
+  # Skittermice
+
+  <Box>
+    <GuideEntityEmbed Entity="MobSkittermouse" Caption="Skittermouse"/>
+  </Box>
+
+  Tiny, flexible hunter-killer neogenetic lifeforms. They have the qualities of slugs, cats, and ferrets in equal measure.
+
+  ## Diet
+
+  - Can eat raw meat.
+  - Will get poisoned by Theobromine (Chocolate, Tea, Coffee) and Allicin (Onion, Garlic).
+
+  ## Special
+
+  - Very small and light (half the size and a third the density of an average human).
+  - Can be carried in bags as a Large item (2x8 squares).
+  - Unable to sprint, but walk speed is increased.
+  - Unarmed attack deals 4 Piercing and 1 Blunt damage.
+
+  ## Benefits
+
+  - When grabbing a creature in Combat Mode, they latch onto the target, slowing them down and dealing 20% more melee damage.
+  - Gain the ability to Skitter, which drops everything they're holding but increases their speed.
+  - See in the dark.
+
+  ## Drawbacks
+
+  - Take 15% more Physical (Blunt/Pierce/Slash) damage.
+  - Their small hands are unable to use items that must be wielded in both hands, and some one-handed items must be wielded in both hands to be used.
+=======
     # Skittermice
 
     <Box>
@@ -8,4 +40,5 @@
     Tiny, flexible hunter-killer neogenetic lifeforms. They are said to have the qualities of slugs, cats, and ferrets in equal measure.
 
     Skittermice are not currently cleared to work alongside other species on Syndicate stations. The required vaccinations, psychediting, and selective debriefings required to welcome to them to the Syndicate in full are currently ongoing.
+>>>>>>> main
 </Document>

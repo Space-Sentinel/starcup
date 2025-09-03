@@ -1,0 +1,8 @@
+- type: speechVerb
+  id: Skittermouse
+  name: chat-speech-verb-name-skittermouse
+  speechVerbStrings:
+  - chat-speech-verb-skittermouse-1
+  - chat-speech-verb-skittermouse-2
+  - chat-speech-verb-skittermouse-3
+  - chat-speech-verb-skittermouse-4

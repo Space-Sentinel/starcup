@@ -1,0 +1,124 @@
+## DEFAULTS
+
+- type: marking
+  id: SkittermouseEarsCat
+  markingCategory: HeadTop
+  bodyPart: HeadTop
+  speciesRestriction: []
+  sprites:
+  - sprite: _starcup/Mobs/Customization/Skittermouse/ear_markings.rsi
+    state: cat
+
+- type: marking
+  id: SkittermouseTailSlug
+  markingCategory: Tail
+  bodyPart: Tail
+  speciesRestriction: []
+  sprites:
+  - sprite: _starcup/Mobs/Customization/Skittermouse/tail_markings.rsi
+    state: slug
+
+# HEAD
+## EARS
+
+## SNOUTS
+
+## PATTERNS
+
+# BODY
+## TAIL
+
+## PATTERNS
+
+# BASE BODY PARTS
+
+## HEAD
+
+- type: marking
+  id: SkittermouseHeadBasic
+  markingCategory: Head
+  bodyPart: Head
+  speciesRestriction: [Skittermouse]
+  sprites:
+  - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
+    state: head
+
+## ARMS
+
+- type: marking
+  id: SkittermouseArmLeftBasic
+  markingCategory: Arms
+  bodyPart: LArm
+  speciesRestriction: [Skittermouse]
+  sprites:
+  - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
+    state: l_arm
+
+- type: marking
+  id: SkittermouseArmRightBasic
+  markingCategory: Arms
+  bodyPart: RArm
+  speciesRestriction: [Skittermouse]
+  sprites:
+  - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
+    state: r_arm
+
+## LEGS
+
+- type: marking
+  id: SkittermouseLegLeftBasic
+  markingCategory: Legs
+  bodyPart: LLeg
+  speciesRestriction: [Skittermouse]
+  sprites:
+  - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
+    state: l_leg
+
+- type: marking
+  id: SkittermouseLegRightBasic
+  markingCategory: Legs
+  bodyPart: RLeg
+  speciesRestriction: [Skittermouse]
+  sprites:
+  - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
+    state: r_leg
+
+## HANDS
+
+- type: marking
+  id: SkittermouseHandLeftBasic
+  markingCategory: Arms
+  bodyPart: LHand
+  speciesRestriction: [Skittermouse]
+  sprites:
+  - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
+    state: l_hand
+
+- type: marking
+  id: SkittermouseHandRightBasic
+  markingCategory: Arms
+  bodyPart: RHand
+  speciesRestriction: [Skittermouse]
+  sprites:
+  - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
+    state: r_hand
+
+## FEET
+
+- type: marking
+  id: SkittermouseFootLeftBasic
+  markingCategory: Legs
+  bodyPart: LFoot
+  speciesRestriction: [Skittermouse]
+  sprites:
+  - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
+    state: l_foot
+
+- type: marking
+  id: SkittermouseFootRightBasic
+  markingCategory: Legs
+  bodyPart: RFoot
+  speciesRestriction: [Skittermouse]
+  sprites:
+  - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
+    state: r_foot

@@ -1,0 +1,4 @@
+- type: typingIndicator
+  id: skittermouse
+  spritePath: /Textures/_starcup/Effects/speech.rsi
+  typingState: skittermouse0
