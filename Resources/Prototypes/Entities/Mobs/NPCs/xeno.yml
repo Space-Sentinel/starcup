@@ -1,9 +1,10 @@
 # Hacky for the stress test so don't even consider adding to this
 - type: entity
-  name: burrower
+  name: base exomorph # starcup - splitting burrower off
   id: MobXeno
+  abstract: true # starcup
   parent: SimpleSpaceMobBase
-  description: They mostly come at night. Mostly.
+#  description: They mostly come at night. Mostly. # starcup
   components:
   - type: Insulated
   - type: CombatMode
@@ -35,14 +36,14 @@
     factions:
     - Xeno
   - type: Hands
-  - type: ItemOffer # starcup: item offering
+  - type: ItemOffer # starcup - item offering
   - type: ComplexInteraction
-  - type: Sprite
-    drawdepth: Mobs
-    sprite: Mobs/Aliens/Xenos/burrower.rsi
-    layers:
-    - map: ["enum.DamageStateVisualLayers.Base"]
-      state: running
+#  - type: Sprite # starcup - splitting burrower off
+#    drawdepth: Mobs
+#    sprite: Mobs/Aliens/Xenos/burrower.rsi
+#    layers:
+#    - map: ["enum.DamageStateVisualLayers.Base"]
+#      state: running
   - type: Fixtures
     fixtures:
       fix1:
@@ -61,7 +62,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      50: Dead
+      70: Dead # starcup - exomorph buff
   - type: SlowOnDamage
     speedModifierThresholds:
       25: 0.5
@@ -74,7 +75,7 @@
     altDisarm: false
     angle: 0
     soundHit:
-     collection: AlienClaw
+      collection: AlienClaw
     animation: WeaponArcBite
     damage:
       groups:
@@ -88,8 +89,7 @@
       Dead:
         Base: dead
   - type: Puller
-    needsHands: false # starcup - allows for creepy ghostrole "dragging away the body" behavior
-# ideally we would only give dragging to select xenos, like burrowers/runners/praetorians, but currently burrowers are the parent, so.
+    needsHands: true
   - type: Butcherable
     butcheringType: Spike
     spawned:
@@ -126,6 +126,7 @@
   name: praetorian
   parent: MobXeno
   id: MobXenoPraetorian
+  description: Brutish exomorph. Swift and powerful guardian of the lair. # starcup
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -137,9 +138,11 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      150: Dead # starcup
   - type: Stamina
     critThreshold: 300
+  - type: MovementSpeedModifier # starcup
+    baseSprintSpeed: 5 # starcup - big fast scary dude
   - type: SlowOnDamage
     speedModifierThresholds:
       50: 0.7
@@ -159,6 +162,7 @@
   name: drone
   parent: MobXeno
   id: MobXenoDrone
+  description: Exomorph laborer. Stocky and resistant. # starcup
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -170,7 +174,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      80: Dead
+      100: Dead # starcup
   - type: SlowOnDamage
     speedModifierThresholds:
       40: 0.7
@@ -196,6 +200,7 @@
   name: queen
   parent: MobXeno
   id: MobXenoQueen
+  description: The deadly ruler of the exomorph colony. Long may she reign. # starcup
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -207,7 +212,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      300: Dead
+      450: Dead # the queen is a boss monster
   - type: SlowOnDamage
     speedModifierThresholds:
       150: 0.7
@@ -216,6 +221,8 @@
     damage:
      groups:
        Brute: 12
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 5 # starcup - Queen should be hard to outrun
   - type: Fixtures
     fixtures:
       fix1:
@@ -235,6 +242,7 @@
   name: ravager
   parent: MobXeno
   id: MobXenoRavager
+  description: Striker exomorph. Hacks their enemies apart. # starcup
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -246,13 +254,13 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      100: Dead
+      130: Dead # starcup
   - type: MovementSpeedModifier
     baseSprintSpeed: 4
   - type: MeleeWeapon
     damage:
-     groups:
-       Brute: 10
+     types:
+       Slash: 8
   - type: SlowOnDamage
     speedModifierThresholds:
       50: 0.7
@@ -272,6 +280,7 @@
   name: runner
   parent: MobXeno
   id: MobXenoRunner
+  description: Skirmisher exomorph. Fast, albeit less imposing. # starcup
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -302,6 +311,7 @@
   name: rouny
   parent: MobXenoRunner
   id: MobXenoRouny
+  description: Skirmisher exomorph. Fast, albiet less imposng. # starcup
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -317,6 +327,7 @@
   name: spitter
   parent: MobXeno
   id: MobXenoSpitter
+  description: Ranged exomorph. Spits acid from a distance. # starcup
   components:
   - type: Sprite
     drawdepth: Mobs

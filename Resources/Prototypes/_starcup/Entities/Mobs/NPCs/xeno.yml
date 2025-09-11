@@ -1,0 +1,62 @@
+- type: entity # Burrower. Copied from the original. Has Puller component.
+  name: burrower
+  parent: MobXeno
+  id: MobXenoBurrower
+  description: Breacher exomorph. Walls won't stop it. # Changed from the default.
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: Mobs/Aliens/Xenos/burrower.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: MeleeWeapon # Left as is, in case we want to change it later.
+    altDisarm: false
+    angle: 0
+    soundHit:
+      collection: AlienClaw
+    animation: WeaponArcBite
+    damage:
+      types:
+        Blunt: 4
+        Structural: 7
+  - type: Puller
+    needsHands: false # starcup - allows for creepy ghostrole "dragging away the body" behavior
+
+- type: entity
+  name: skulker # let's give them felinid's silent footsteps when felinid's footsteps are fixed
+  parent: MobXeno
+  id: MobXenoSkulker
+  description: Common exomorph. Its kind mostly comes at night. Mostly. # starcup
+  components:
+  - type: Sprite
+    sprite: _starcup/Mobs/Aliens/Xenos/skulker.rsi
+    layers:
+    - map: ["enum.DamageStateVisualLayers.Base"]
+      state: running
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      80: Dead # a bit frailer than drones as an ambusher
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      40: 0.7
+  - type: MeleeWeapon
+    damage:
+      groups:
+        Brute: 6
+  - type: MovementSpeedModifier
+    baseSprintSpeed: 4.5 # starcup - ambushers need a bit more nyoom
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.45
+        density: 450
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: Puller
+    needsHands: false
