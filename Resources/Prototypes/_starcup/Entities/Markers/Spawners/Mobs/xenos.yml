@@ -1,0 +1,15 @@
+- type: entity
+  parent: MarkerBase
+  id: SpawnMobXenoSkulker
+  name: Xeno Spawner
+  suffix: Skulker
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _starcup/Mobs/Aliens/Xenos/skulker.rsi
+      state: running
+    - state: ai
+  - type: ConditionalSpawner
+    prototypes:
+    - MobXenoSkulker

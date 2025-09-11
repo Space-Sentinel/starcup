@@ -2,7 +2,8 @@
   id: Xenos
   desc: salvage-faction-xenos
   entries:
-    - proto: MobXeno
+    - proto: MobXenoBurrower # starcup
+    - proto: MobXenoSkulker # starcup
     - proto: MobXenoDrone
       cost: 2
     - proto: MobXenoPraetorian

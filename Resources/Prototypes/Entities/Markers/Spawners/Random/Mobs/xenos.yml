@@ -12,9 +12,10 @@
     - state: ai
   - type: ConditionalSpawner
     prototypes:
-    - MobXeno
+    - MobXenoBurrower # starcup
     - MobXenoDrone
     - MobXenoRunner
+    - MobXenoSkulker # starcup
 
 - type: entity
   parent: MarkerBase

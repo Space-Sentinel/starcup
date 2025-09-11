@@ -112,5 +112,5 @@
     - type: TriggerOnCollide
       fixtureID: floortrap
     - type: SpawnOnTrigger
-      proto: MobXeno
+      proto: MobXenoBurrower # starcup
     - type: DeleteOnTrigger
