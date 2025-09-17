@@ -186,5 +186,9 @@ public enum SpeciesNaming : byte
     TheFirstofLast,
     LastFirst, // DeltaV
     FirstDashLast, // Goobstation: IPC (MKC) naming
+<<<<<<< HEAD
     FirstCodeLast, // starcup: Skittermouse naming
+=======
+    FirstOTheLast, // starcup: new oni names
+>>>>>>> main
 }

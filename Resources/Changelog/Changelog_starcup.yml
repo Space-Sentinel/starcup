@@ -782,3 +782,381 @@
   id: 8154
   time: '2025-09-02T03:12:09.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/367
+- author: asterism-etc
+  changes:
+  - message: marking limits have been increased for many species
+    type: Tweak
+  id: 8155
+  time: '2025-09-05T08:08:05.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/370
+- author: princesspengy
+  changes:
+  - message: new gamemode! greenshift has been renamed to "calm", and will have very
+      occasional non-hazardous events
+    type: Add
+  - message: new gamemode! "trouble" features all non-antagonist events, but with
+      much wider gaps between them
+    type: Add
+  - message: renamed extended to "danger" and clarified that it is not usually a peaceful
+      time
+    type: Tweak
+  - message: vent critter spawns will no longer spawn cancer mice or instant death
+      snails.
+    type: Remove
+  - message: the clerical error event has been disabled
+    type: Remove
+  - message: vent clogs no longer have a random chance of producing any chemical in
+      the game
+    type: Tweak
+  - message: visitor shuttle events are now much more infrequent
+    type: Tweak
+  id: 8156
+  time: '2025-09-05T23:58:31.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/371
+- author: princesspengy
+  changes:
+  - message: felinid tails are now visible again
+    type: Fix
+  id: 8157
+  time: '2025-09-06T09:15:04.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/372
+- author: sev7ves
+  changes:
+  - message: You may now teleport to artifacts and anomalies as a ghost.
+    type: Tweak
+  id: 8158
+  time: '2025-09-07T10:35:26.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/374
+- author: princesspengy
+  changes:
+  - message: the access configurator has had missing access levels added
+    type: Fix
+  - message: the combat medic's access level now displays its name properly
+    type: Fix
+  id: 8159
+  time: '2025-09-09T06:21:36.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/378
+- author: TheGrimbeeper
+  changes:
+  - message: Artifacts requiring radiation now activate from ambient radiation.
+    type: Fix
+  - message: Artifact death triggers are removed.
+    type: Remove
+  - message: Timing for activating artifacts is slightly more permissive.
+    type: Tweak
+  id: 8160
+  time: '2025-09-09T08:41:27.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/375
+- author: foxcurl
+  changes:
+  - message: Engivends now contain floodlights.
+    type: Tweak
+  id: 8161
+  time: '2025-09-09T21:12:45.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/379
+- author: princesspengy
+  changes:
+  - message: replaced the traitor's standard kill objective with delta's "teach a
+      lesson" variant, which only requires them to die once. heads may still be subject
+      to the original objective
+    type: Tweak
+  - message: traitors will no longer be asked to butcher the corgi
+    type: Remove
+  id: 8162
+  time: '2025-09-10T09:45:11.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/383
+- author: foxcurl
+  changes:
+  - message: Banana has received many small improvements!
+    type: Tweak
+  - message: Banana now has a cargo shuttle that is able to dock with it.
+    type: Fix
+  id: 8163
+  time: '2025-09-10T11:37:45.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/380
+- author: princesspengy
+  changes:
+  - message: water (and water vapor) now deals caustic damage to slime people instead
+      of heat
+    type: Tweak
+  id: 8164
+  time: '2025-09-10T11:44:24.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/381
+- author: princesspengy
+  changes:
+  - message: a new variant of the shotgun cabinet, meant to hold the bartender's double-barreled
+      shotgun
+    type: Add
+  - message: double-barreled shotguns can now be placed in standard shotgun cabinets
+    type: Add
+  id: 8165
+  time: '2025-09-11T02:52:37.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/384
+- author: kipdotnet, little-meow-meow
+  changes:
+  - message: Added the Star Trek DS9 mug. Please sail responsibly, friends.
+    type: Add
+  id: 8166
+  time: '2025-09-11T09:18:22.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/324
+- author: princesspengy
+  changes:
+  - message: the default oni name selection has been altered to better fit starcup's
+      setting; they now consist of a short first name and a last name derived from
+      their wartime division
+    type: Tweak
+  id: 8167
+  time: '2025-09-11T16:28:17.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/396
+- author: teamstarcup-bot
+  changes:
+  - message: Fixed MKCs standing when dead or crit.
+    type: Fix
+  id: 8168
+  time: '2025-09-13T01:30:22.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/403
+- author: princesspengy
+  changes:
+  - message: the interact range on wallmounts has been extended, and can now cross
+      single-tile gaps (tables, machines, etc)
+    type: Fix
+  id: 8169
+  time: '2025-09-13T02:38:49.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/404
+- author: Stonylogray, mousesweater, LucasTheDrgn
+  changes:
+  - message: ported asterade, a sports drink for health-conscious crew members, from
+      impstation! you can find them in arctic seltzer vending machines, or make them
+      yourself out of saline and various fruit juices
+    type: Add
+  id: 8170
+  time: '2025-09-13T03:48:15.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/389
+- author: teamstarcup-bot
+  changes:
+  - message: Diagnostic HUDs now have the option to display the AI vision range.
+    type: Add
+  id: 8171
+  time: '2025-09-13T04:24:07.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/394
+- author: teamstarcup-bot
+  changes:
+  - message: the rare and powerful magic crayon (from frontier)
+    type: Add
+  - message: borgs can unleash their creativity with the new artistic borg module
+      (from impstation)
+    type: Add
+  id: 8172
+  time: '2025-09-13T04:24:07.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/387
+- author: Lank, lunarcomets
+  changes:
+  - message: AIs can now control any cyborg shells with B.O.R.I.S. modules inside
+      them! Look at the guidebook entry for more details.
+    type: Add
+  id: 8173
+  time: '2025-09-13T19:38:43.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/395
+- author: teamstarcup-bot
+  changes:
+  - message: Chemists, bartenders, and chefs now have access to skimmers that can
+      remove 5u of the smallest reagent from a solution
+    type: Add
+  - message: Dropper can be printed from medical techfabs now
+    type: Add
+  id: 8174
+  time: '2025-09-13T19:45:39.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/392
+- author: Jellvisk
+  changes:
+  - message: New gradient and text decals from impstation
+    type: Add
+  id: 8175
+  time: '2025-09-13T19:52:35.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/385
+- author: teamstarcup-bot
+  changes:
+  - message: anomalies can now transform walls
+    type: Add
+  id: 8176
+  time: '2025-09-14T03:44:51.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/390
+- author: princesspengy
+  changes:
+  - message: delta-v's mining points system has been added, letting salvagers gather
+      points by processing ores
+    type: Add
+  - message: ported bluespace shelter capsules from delta-v, to help salvagers protect
+      themselves and each other against harsh environmental conditions!
+    type: Add
+  - message: the salvage vendor now utilizes mining points to offer a variety of salvage
+      gear
+    type: Tweak
+  - message: the salvage job board has been rendered obsolete with these changes and
+      has been removed
+    type: Remove
+  id: 8177
+  time: '2025-09-15T06:49:00.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/409
+- author: teamstarcup-bot
+  changes:
+  - message: You can unanchor unwhitelisted smart fridges now.
+    type: Fix
+  id: 8178
+  time: '2025-09-15T09:24:10.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/412
+- author: teamstarcup-bot
+  changes:
+  - message: Moved Atmospherics Recipes to their own category!
+    type: Tweak
+  id: 8179
+  time: '2025-09-15T22:48:06.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/416
+- author: teamstarcup-bot
+  changes:
+  - message: You can now engrave rings.
+    type: Add
+  id: 8180
+  time: '2025-09-15T22:56:48.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/423
+- author: teamstarcup-bot
+  changes:
+  - message: removed the T3 Lockout on research techs
+    type: Remove
+  - message: all techs in a tier must now be researched before the next tier is unlocked
+    type: Tweak
+  id: 8181
+  time: '2025-09-15T23:24:26.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/415
+- author: princesspengy
+  changes:
+  - message: Made moths less susceptible to flames and heat. (4x Fire Damage -> 2x
+      Fire damage) (1.3x heat -> 1.2x heat).
+    type: Tweak
+  - message: Reptilians now have Mask/Helmet displacements. Snoots are no longer smushed.
+    type: Add
+  - message: Added unique tail sprites to Hard/Softsuits for reptilians! (Wagging
+      animation not supported)
+    type: Add
+  - message: The anomaly scanner has received an upgrade, showing some information
+      without opening the UI.
+    type: Add
+  - message: Made baseball bats 1x4 instead of 2x2
+    type: Tweak
+  - message: New baseball bat inventory icon sprites
+    type: Add
+  - message: Added the Impaired Mobility disability trait which reduces movement speed
+      unless using a mobility aid such as a cane and increases stand-up time.
+    type: Add
+  id: 8182
+  time: '2025-09-16T07:26:45.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/434
+- author: teamstarcup-bot
+  changes:
+  - message: Re-added the Turtlenecks to the Winterdrobe - Stay fashionable and warm
+      on Glacier!
+    type: Fix
+  id: 8183
+  time: '2025-09-16T17:18:19.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/420
+- author: little-meow-meow
+  changes:
+  - message: Bar signs now emit light.
+    type: Add
+  id: 8184
+  time: '2025-09-16T17:49:19.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/414
+- author: little-meow-meow
+  changes:
+  - message: 'Handheld radios have new functionality: separate microphone and speaker
+      controls, three broadcast channels'
+    type: Tweak
+  id: 8185
+  time: '2025-09-17T02:12:37.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/366
+- author: whatston3, FireNameFN, sowelipililimute
+  changes:
+  - message: Ported the ability to respawn mid-round from Frontier Station
+    type: Add
+  id: 8186
+  time: '2025-09-17T02:19:37.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/417
+- author: teamstarcup-bot
+  changes:
+  - message: Defibrillator Cabinets now recharge the battery within!
+    type: Tweak
+  id: 8187
+  time: '2025-09-17T03:40:54.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/419
+- author: teamstarcup-bot
+  changes:
+  - message: 'Plant analyzer: it analyzes your plants! Ported from Den.'
+    type: Add
+  id: 8188
+  time: '2025-09-17T03:48:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/431
+- author: teamstarcup-bot
+  changes:
+  - message: Added a lot more clothes to assistant loadouts!
+    type: Add
+  id: 8189
+  time: '2025-09-17T03:48:38.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/425
+- author: portfiend
+  changes:
+  - message: More floor tiles have been added to the cutter machine, namely Service
+      department tiles such as bar, kitchen, clown, mime, laundry, and arcade tiles.
+    type: Add
+  id: 8190
+  time: '2025-09-17T03:55:28.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/440
+- author: princesspengy
+  changes:
+  - message: re-added the bioluminescent mutation for plants
+    type: Add
+  id: 8191
+  time: '2025-09-17T04:04:43.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/450
+- author: teamstarcup-bot
+  changes:
+  - message: Resprited EE sprites for corpse dragging.
+    type: Tweak
+  id: 8192
+  time: '2025-09-17T04:11:46.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/437
+- author: chamomileteatime
+  changes:
+  - message: Added supermassive IPC plushie!
+    type: Add
+  id: 8193
+  time: '2025-09-17T04:18:50.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/441
+- author: Velcroboy
+  changes:
+  - message: Hospital curtains now take up less space when open and have interaction
+      outlines. This should make treating patients under them a little better.
+    type: Tweak
+  id: 8194
+  time: '2025-09-17T04:37:08.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/444
+- author: teamstarcup-bot
+  changes:
+  - message: Station Holograph
+    type: Add
+  id: 8195
+  time: '2025-09-17T05:00:24.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/446
+- author: teamstarcup-bot
+  changes:
+  - message: Added 15 new moth plushes.
+    type: Add
+  id: 8196
+  time: '2025-09-17T05:17:52.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/442
+- author: psytc
+  changes:
+  - message: counselor alt title for the psychologist role
+    type: Add
+  id: 8197
+  time: '2025-09-17T09:09:49.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/449
