@@ -10,6 +10,20 @@
     HotCocoaImitation: 2
 
 - type: reaction
+  id: CherryLimeade
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    JuiceCherry:
+      amount: 2
+    JuiceLime:
+      amount: 1
+    Sugar:
+      amount: 1
+  products:
+    CherryLimeade: 4
+
+- type: reaction
   id: EvilPrincess
   requiredMixerCategories:
   - Stir
@@ -28,6 +42,18 @@
     EvilPrincess: 6
 
 # Cocktails
+
+- type: reaction
+  id: Afterburner
+  reactants:
+    Hotsauce:
+      amount: 1
+    Vodka:
+      amount: 1
+    WeldingFuel:
+      amount: 1
+  products:
+    Afterburner: 3
 
 - type: reaction
   id: Ambrosia
@@ -50,6 +76,30 @@
       amount: 1
   products:
     Appletini: 3
+
+- type: reaction
+  id: Aviation
+  requiredMixerCategories:
+  - Shake
+  reactants:
+    Gin:
+      amount: 3
+    JuiceCherry:
+      amount: 1
+    JuiceLemon:
+      amount: 1
+  products:
+    Aviation: 5
+
+- type: reaction
+  id: BlackVelvet
+  reactants:
+    Ale:
+      amount: 1
+    Champagne:
+      amount: 1
+  products:
+    BlackVelvet: 2
 
 - type: reaction
   id: BlueLagoon
@@ -176,6 +226,20 @@
       amount: 1
   products:
     Cryptid: 6
+
+- type: reaction
+  id: Earthquake
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    Absinthe:
+      amount: 1
+    Gin:
+      amount: 1
+    Whiskey:
+      amount: 1
+  products:
+    Earthquake: 3
 
 - type: reaction
   id: Eclipse
@@ -324,13 +388,25 @@
     RedEye: 3
 
 - type: reaction
-  id: SnakeBite
+  id: SakuraMartini
+  requiredMixerCategories:
+  - Stir
+  reactants:
+    JuiceCherry:
+      amount: 1
+    Gin:
+      amount: 2
+    Sake:
+      amount: 4
+  products:
+    SakuraMartini: 7
+
+- type: reaction
+  id: Snakebite
   reactants:
     Beer:
       amount: 1
     JuiceApple:
       amount: 1
-    Z:
-      amount: 1
   products:
-    SnakeBite: 3
+    Snakebite: 2

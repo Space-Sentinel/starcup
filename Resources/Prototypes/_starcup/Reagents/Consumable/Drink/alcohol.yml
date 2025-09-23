@@ -1,4 +1,27 @@
 - type: reagent
+  id: Afterburner
+  name: reagent-name-afterburner
+  parent: BaseAlcohol
+  desc: reagent-desc-afterburner
+  physicalDesc: reagent-physical-desc-xxx
+  flavor: xxx
+  color: "#XXXXXX"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/afterburnerglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: ?
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: ?
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: ?
+
+- type: reagent
   id: Ambrosia
   name: reagent-name-ambrosia
   parent: BaseAlcohol
@@ -31,6 +54,52 @@
   color: "#XXXXXX"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/appletiniglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: ?
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: ?
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: ?
+
+- type: reagent
+  id: Aviation
+  name: reagent-name-aviation
+  parent: BaseAlcohol
+  desc: reagent-desc-aviation
+  physicalDesc: reagent-physical-desc-xxx
+  flavor: xxx
+  color: "#XXXXXX"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/aviationglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: ?
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: ?
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: ?
+
+- type: reagent
+  id: BlackVelvet
+  name: reagent-name-black-velvet
+  parent: BaseAlcohol
+  desc: reagent-desc-black-velvet
+  physicalDesc: reagent-physical-desc-xxx
+  flavor: xxx
+  color: "#XXXXXX"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/blackvelvetglass.rsi
     state: icon_empty
   metamorphicMaxFillLevels: ?
   metamorphicFillBaseName: fill-
@@ -215,6 +284,29 @@
   color: "#XXXXXX"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/cryptidglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: ?
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: ?
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: ?
+
+- type: reagent
+  id: Earthquake
+  name: reagent-name-earthquake
+  parent: BaseAlcohol
+  desc: reagent-desc-earthquake
+  physicalDesc: reagent-physical-desc-xxx
+  flavor: xxx
+  color: "#XXXXXX"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/earthquakeglass.rsi
     state: icon_empty
   metamorphicMaxFillLevels: ?
   metamorphicFillBaseName: fill-
@@ -482,7 +574,30 @@
         amount: ?
 
 - type: reagent
-  id: template
+  id: SakuraMartini
+  name: reagent-name-sakura-martini
+  parent: BaseAlcohol
+  desc: reagent-desc-sakura-martini
+  physicalDesc: reagent-physical-desc-xxx
+  flavor: xxx
+  color: "#XXXXXX"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/sakuramartiniglass.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: ?
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: ?
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: ?
+
+- type: reagent
+  id: Snakebite
   name: reagent-name-snakebite
   parent: BaseAlcohol
   desc: reagent-desc-snakebite

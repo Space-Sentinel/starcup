@@ -8,11 +8,20 @@ reagent-desc-three-mile-island-starcup = Named for the minimum safe distance fro
 reagent-desc-kvass-starcup = A sweet-and-sour grain alcohol, mellow enough to replace cola in some cultures.
 
 # New Drinks
+reagent-name-afterburner = afterburner
+reagent-desc-afterburner =
+
 reagent-name-ambrosia = ambrosia
 reagent-desc-ambrosia = Dragons may not be gods, but their taste can only be described as divine.
 
 reagent-name-appletini = appletini
 reagent-desc-appletini = Not technically a kind of martini. Not typically made with real apples, either.
+
+reagent-name-aviation = aviation
+reagent-desc-aviation =
+
+reagent-name-black-velvet = black velvet
+reagent-desc-black-velvet =
 
 reagent-name-blue-lagoon = Blue Lagoon
 reagent-desc-blue-lagoon = Best known from Electra's attempts at trademarking the recipe during their resort world developments.
@@ -37,6 +46,9 @@ reagent-desc-corpse-reviver = Not a medically approved resusicant, but you'd be 
 
 reagent-name-cryptid = cryptid
 reagent-desc-cryptid = Named for being an uncommon enough blend that you'll never see it twice.
+
+reagent-name-earthquake = earthquake
+reagent-desc-earthquake = It'll leave you stumbling!
 
 reagent-name-eclipse = eclipse
 reagent-desc-eclipse = Hot as a corona, cool as the dark side of a moon.
@@ -70,6 +82,9 @@ reagent-desc-red-dog = Traditionally served in very big tankards. What a red dog
 
 reagent-name-red-eye = red eye
 reagent-desc-red-eye = It might look unappetizing, but as the "inventor" of this "cocktail" was known to say: Anything else is always something better.
+
+reagent-name-sakura-martini = sakura martini
+reagent-desc-sakura-martini =
 
 reagent-name-snakebite = snakebite
 reagent-desc-snakebite =

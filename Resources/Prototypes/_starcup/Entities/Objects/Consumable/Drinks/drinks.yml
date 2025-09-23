@@ -85,6 +85,22 @@
 
 - type: entity
   parent: DrinkGlass
+  id: DrinkCherryLimeade
+  suffix: cherry limeade
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: CherryLimeade
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/cherrylimeadeglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
   id: DrinkEvilPrincess
   suffix: evil princess
   components:
@@ -100,6 +116,22 @@
     state: icon
 
 # Alcohol
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkAfterburner
+  suffix: afterburner
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Afterburner
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/afterburnerglass.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass
@@ -131,6 +163,38 @@
           Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/appletiniglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkAviation
+  suffix: aviation
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Aviation
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/aviationglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkBlackVelvet
+  suffix: black velvet
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: BlackVelvet
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/blackvelvetglass.rsi
     state: icon
 
 - type: entity
@@ -259,6 +323,22 @@
           Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/cryptidglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkEarthquake
+  suffix: earthquake
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Earthquake
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/earthquakeglass.rsi
     state: icon
 
 - type: entity
@@ -435,6 +515,22 @@
           Quantity: 30
   - type: Icon
     sprite: _starcup/Objects/Consumable/Drinks/redeyeglass.rsi
+    state: icon
+
+- type: entity
+  parent: DrinkGlass
+  id: DrinkSakuraMartini
+  suffix: sakura martini
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Aviation
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/sakuramartiniglass.rsi
     state: icon
 
 - type: entity
