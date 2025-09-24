@@ -42,7 +42,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.06
 
 - type: reagent
   id: Appletini
@@ -65,7 +65,7 @@
         factor: 2
       - !type:AdjustReagent
         reagent: Ethanol
-        amount: ?
+        amount: 0.13
 
 # - type: reagent
 #   id: Aviation
@@ -104,14 +104,6 @@
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
 
 # - type: reagent
 #   id: BlueLagoon
@@ -134,7 +126,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.08
 
 # - type: reagent
 #   id: BrainScrambler
@@ -157,7 +149,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.09
 
 # - type: reagent
 #   id: Bramble
@@ -180,7 +172,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.09
 
 # - type: reagent
 #   id: BuzzedBunny
@@ -203,7 +195,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.1
 
 # - type: reagent
 #   id: Cactus
@@ -219,14 +211,6 @@
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
 
 # - type: reagent
 #   id: CherryBomb
@@ -249,7 +233,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.13
 
 # - type: reagent
 #   id: CorpseReviver
@@ -295,7 +279,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.08
 
 # - type: reagent
 #   id: Earthquake
@@ -341,7 +325,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.1
 
 # - type: reagent
 #   id: EmeraldBreeze
@@ -364,7 +348,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.12
 
 # - type: reagent
 #   id: Feywild
@@ -387,7 +371,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.1
 
 # - type: reagent
 #   id: GoblinsBrew
@@ -410,7 +394,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.08
 
 # - type: reagent
 #   id: MoonMist
@@ -433,7 +417,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.1
 
 # - type: reagent
 #   id: Mushburger
@@ -449,14 +433,6 @@
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
 
 # - type: reagent
 #   id: Necropolitan
@@ -479,7 +455,7 @@
 #         factor: 2
 #       - !type:AdjustReagent
 #         reagent: Ethanol
-#         amount: ?
+#         amount: 0.1
 
 # - type: reagent
 #   id: ParadiseLost
@@ -495,14 +471,6 @@
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
 
 # - type: reagent
 #   id: RainbowShooter
@@ -518,14 +486,6 @@
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
 
 # - type: reagent
 #   id: RedDog
@@ -541,14 +501,6 @@
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
 
 # - type: reagent
 #   id: RedEye
@@ -564,14 +516,6 @@
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
 
 # - type: reagent
 #   id: SakuraMartini
@@ -610,11 +554,3 @@
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
