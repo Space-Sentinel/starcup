@@ -7,7 +7,7 @@
 #   flavor: afterburner
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/afterburnerglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/afterburner.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -30,7 +30,7 @@
 #   flavor: ambrosia
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/ambrosiaglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/ambrosia.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -53,7 +53,7 @@
   flavor: appletini
   color: "#92DC25"
   metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/appletiniglass.rsi
+    sprite: _starcup/Objects/Consumable/Drinks/appletini.rsi
     state: icon_empty
   metamorphicMaxFillLevels: 3
   metamorphicFillBaseName: fill-
@@ -76,7 +76,7 @@
 #   flavor: aviation
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/aviationglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/aviation.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -99,7 +99,7 @@
 #   flavor: blackvelvet
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/blackvelvetglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/blackvelvet.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -114,7 +114,7 @@
 #   flavor: bluelagoon
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/bluelagoonglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/bluelagoon.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -137,7 +137,7 @@
 #   flavor: brainscrambler
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/brainscramblerglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/brainscrambler.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -160,7 +160,7 @@
 #   flavor: bramble
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/brambleglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/bramble.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -183,7 +183,7 @@
 #   flavor: buzzedbunny
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/buzzedbunnyglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/buzzedbunny.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -206,7 +206,7 @@
 #   flavor: cactus
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/cactusglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/cactus.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -221,7 +221,7 @@
 #   flavor: cherrybomb
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/cherrybombglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/cherrybomb.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -244,7 +244,7 @@
 #   flavor: corpsereviver
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/corpsereviverglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/corpsereviver.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -267,7 +267,7 @@
 #   flavor: cryptid
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/cryptidglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/cryptid.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -290,7 +290,7 @@
 #   flavor: earthquake
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/earthquakeglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/earthquake.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -313,7 +313,7 @@
 #   flavor: eclipse
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/eclipseglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/eclipse.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -336,7 +336,7 @@
 #   flavor: emeraldbreeze
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/emeraldbreezeglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/emeraldbreeze.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -359,7 +359,7 @@
 #   flavor: feywild
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/feywildglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/feywild.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -382,7 +382,7 @@
 #   flavor: goblinsbrew
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/goblinsbrewglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/goblinsbrew.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -405,7 +405,7 @@
 #   flavor: moonmist
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/moonmistglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/moonmist.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -428,7 +428,7 @@
 #   flavor: mushburger
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/mushburgerglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/mushburger.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -443,7 +443,7 @@
 #   flavor: necropolitan
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/necropolitanglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/necropolitan.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -466,7 +466,7 @@
 #   flavor: paradiselost
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/paradiselostglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/paradiselost.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -481,7 +481,7 @@
 #   flavor: rainbowshooter
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/rainbowshooterglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/rainbowshooter.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -496,7 +496,7 @@
 #   flavor: reddog
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/reddogglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/reddog.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -511,7 +511,7 @@
 #   flavor: redeye
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/redeyeglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/redeye.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -526,7 +526,7 @@
 #   flavor: sakuramartini
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/sakuramartiniglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/sakuramartini.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -549,7 +549,7 @@
 #   flavor: snakebite
 #   color: "#XXXXXX"
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/snakebiteglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/snakebite.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
