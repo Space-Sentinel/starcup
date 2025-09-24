@@ -35,8 +35,8 @@
   name: reagent-name-cherry-limeade
   parent: BaseDrink
   desc: reagent-desc-cherry-limeade
-  physicalDesc: reagent-physical-desc-xxx
-  flavor: xxx
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: cherrylimeade
   color: "#XXXXXX"
   metabolisms:
     Drink:
@@ -56,7 +56,7 @@
   parent: BaseDrink
   desc: reagent-desc-evil-princess
   physicalDesc: reagent-physical-desc-dark-red
-  flavor: xxx
+  flavor: evilprincess
   color: "#XXXXXX"
   metabolisms:
     Drink:
