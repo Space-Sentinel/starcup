@@ -96,7 +96,7 @@
 #         - ReagentId: CherryLimeade
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/cherrylimeadeglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/cherrylimeade.rsi
 #     state: icon
 
 # - type: entity
@@ -112,7 +112,7 @@
 #         - ReagentId: EvilPrincess
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/evilprincessglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/evilprincess.rsi
 #     state: icon
 
 # Alcohol
@@ -130,7 +130,7 @@
 #         - ReagentId: Afterburner
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/afterburnerglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/afterburner.rsi
 #     state: icon
 
 # - type: entity
@@ -146,7 +146,7 @@
 #         - ReagentId: Ambrosia
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/ambrosiaglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/ambrosia.rsi
 #     state: icon
 
 - type: entity
@@ -162,7 +162,7 @@
         - ReagentId: Appletini
           Quantity: 30
   - type: Icon
-    sprite: _starcup/Objects/Consumable/Drinks/appletiniglass.rsi
+    sprite: _starcup/Objects/Consumable/Drinks/appletini.rsi
     state: icon
 
 # - type: entity
@@ -178,7 +178,7 @@
 #         - ReagentId: Aviation
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/aviationglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/aviation.rsi
 #     state: icon
 
 # - type: entity
@@ -194,7 +194,7 @@
 #         - ReagentId: BlackVelvet
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/blackvelvetglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/blackvelvet.rsi
 #     state: icon
 
 # - type: entity
@@ -210,7 +210,7 @@
 #         - ReagentId: BlueLagoon
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/bluelagoonglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/bluelagoon.rsi
 #     state: icon
 
 # - type: entity
@@ -226,7 +226,7 @@
 #         - ReagentId: BrainScrambler
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/brainscramblerglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/brainscrambler.rsi
 #     state: icon
 
 # - type: entity
@@ -242,7 +242,7 @@
 #         - ReagentId: Bramble
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/brambleglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/bramble.rsi
 #     state: icon
 
 # - type: entity
@@ -258,7 +258,7 @@
 #         - ReagentId: BuzzedBunny
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/buzzedbunnyglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/buzzedbunny.rsi
 #     state: icon
 
 # - type: entity
@@ -274,7 +274,7 @@
 #         - ReagentId: Cactus
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/cactusglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/cactus.rsi
 #     state: icon
 
 # - type: entity
@@ -290,7 +290,7 @@
 #         - ReagentId: CherryBomb
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/cherrybombglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/cherrybomb.rsi
 #     state: icon
 
 # - type: entity
@@ -306,7 +306,7 @@
 #         - ReagentId: CorpseReviver
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/corpsereviverglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/corpsereviver.rsi
 #     state: icon
 
 # - type: entity
@@ -322,7 +322,7 @@
 #         - ReagentId: Cryptid
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/cryptidglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/cryptid.rsi
 #     state: icon
 
 # - type: entity
@@ -338,7 +338,7 @@
 #         - ReagentId: Earthquake
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/earthquakeglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/earthquake.rsi
 #     state: icon
 
 # - type: entity
@@ -354,7 +354,7 @@
 #         - ReagentId: Eclipse
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/eclipseglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/eclipse.rsi
 #     state: icon
 
 # - type: entity
@@ -370,7 +370,7 @@
 #         - ReagentId: EmeraldBreeze
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/emeraldbreezeglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/emeraldbreeze.rsi
 #     state: icon
 
 # - type: entity
@@ -386,7 +386,7 @@
 #         - ReagentId: Feywild
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/feywildglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/feywild.rsi
 #     state: icon
 
 # - type: entity
@@ -402,7 +402,7 @@
 #         - ReagentId: GoblinsBrew
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/goblinsbrewglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/goblinsbrew.rsi
 #     state: icon
 
 # - type: entity
@@ -418,7 +418,7 @@
 #         - ReagentId: MoonMist
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/moonmistglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/moonmist.rsi
 #     state: icon
 
 # - type: entity
@@ -434,7 +434,7 @@
 #         - ReagentId: Mushburger
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/mushburgerglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/mushburger.rsi
 #     state: icon
 
 # - type: entity
@@ -450,7 +450,7 @@
 #         - ReagentId: Necropolitan
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/necropolitanglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/necropolitan.rsi
 #     state: icon
 
 # - type: entity
@@ -466,7 +466,7 @@
 #         - ReagentId: ParadiseLost
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/paradiselostglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/paradiselost.rsi
 #     state: icon
 
 # - type: entity
@@ -482,7 +482,7 @@
 #         - ReagentId: RainbowShooter
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/rainbowshooterglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/rainbowshooter.rsi
 #     state: icon
 
 # - type: entity
@@ -498,7 +498,7 @@
 #         - ReagentId: RedDog
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/reddogglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/reddog.rsi
 #     state: icon
 
 # - type: entity
@@ -514,7 +514,7 @@
 #         - ReagentId: RedEye
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/redeyeglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/redeye.rsi
 #     state: icon
 
 # - type: entity
@@ -530,7 +530,7 @@
 #         - ReagentId: Aviation
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/sakuramartiniglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/sakuramartini.rsi
 #     state: icon
 
 # - type: entity
@@ -546,5 +546,5 @@
 #         - ReagentId: Snakebite
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/snakebiteglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/snakebite.rsi
 #     state: icon

@@ -44,7 +44,7 @@
 #       - !type:SatiateThirst
 #         factor: 3
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/cherrylimeadeglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/cherrylimeade.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
@@ -64,7 +64,7 @@
 #       - !type:SatiateThirst
 #         factor: 2
 #   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/evilprincessglass.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/evilprincess.rsi
 #     state: icon_empty
 #   metamorphicMaxFillLevels: ?
 #   metamorphicFillBaseName: fill-
