@@ -99,21 +99,21 @@
 #     sprite: _starcup/Objects/Consumable/Drinks/cherrylimeade.rsi
 #     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkEvilPrincess
-#   suffix: evil princess
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: EvilPrincess
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/evilprincess.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkEvilPrincess
+  suffix: evil princess
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: EvilPrincess
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/evilprincess.rsi
+    state: icon
 
 # Alcohol
 
@@ -165,21 +165,21 @@
     sprite: _starcup/Objects/Consumable/Drinks/appletini.rsi
     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkAviation
-#   suffix: aviation
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: Aviation
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/aviation.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkAviation
+  suffix: aviation
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Aviation
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/aviation.rsi
+    state: icon
 
 # - type: entity
 #   parent: DrinkGlass

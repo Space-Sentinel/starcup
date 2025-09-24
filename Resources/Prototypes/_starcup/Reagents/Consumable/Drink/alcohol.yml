@@ -67,28 +67,28 @@
         reagent: Ethanol
         amount: 0.13
 
-# - type: reagent
-#   id: Aviation
-#   name: reagent-name-aviation
-#   parent: BaseAlcohol
-#   desc: reagent-desc-aviation
-#   physicalDesc: reagent-physical-desc-strong-smelling
-#   flavor: aviation
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/aviation.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
+- type: reagent
+  id: Aviation
+  name: reagent-name-aviation
+  parent: BaseAlcohol
+  desc: reagent-desc-aviation
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: aviation
+  color: "#d0b8d9"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/aviation.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.12
 
 # - type: reagent
 #   id: BlackVelvet
