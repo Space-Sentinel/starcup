@@ -51,7 +51,7 @@
   desc: reagent-desc-appletini
   physicalDesc: reagent-physical-desc-citric
   flavor: appletini
-  color: "#92DC25"
+  color: "#a6f037"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/appletini.rsi
     state: icon_empty
