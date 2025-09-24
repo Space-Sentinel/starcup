@@ -30,42 +30,42 @@
       - !type:SatiateThirst
         factor: 2
 
-- type: reagent
-  id: CherryLimeade
-  name: reagent-name-cherry-limeade
-  parent: BaseDrink
-  desc: reagent-desc-cherry-limeade
-  physicalDesc: reagent-physical-desc-fizzy
-  flavor: cherrylimeade
-  color: "#XXXXXX"
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 3
-  metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/cherrylimeadeglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: ?
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: ?
+# - type: reagent
+#   id: CherryLimeade
+#   name: reagent-name-cherry-limeade
+#   parent: BaseDrink
+#   desc: reagent-desc-cherry-limeade
+#   physicalDesc: reagent-physical-desc-fizzy
+#   flavor: cherrylimeade
+#   color: "#XXXXXX"
+#   metabolisms:
+#     Drink:
+#       effects:
+#       - !type:SatiateThirst
+#         factor: 3
+#   metamorphicSprite:
+#     sprite: _starcup/Objects/Consumable/Drinks/cherrylimeadeglass.rsi
+#     state: icon_empty
+#   metamorphicMaxFillLevels: ?
+#   metamorphicFillBaseName: fill-
+#   metamorphicChangeColor: ?
 
-- type: reagent
-  id: EvilPrincess
-  name: reagent-name-evil-princess
-  parent: BaseDrink
-  desc: reagent-desc-evil-princess
-  physicalDesc: reagent-physical-desc-dark-red
-  flavor: evilprincess
-  color: "#XXXXXX"
-  metabolisms:
-    Drink:
-      effects:
-      - !type:SatiateThirst
-        factor: 2
-  metamorphicSprite:
-    sprite: _starcup/Objects/Consumable/Drinks/evilprincessglass.rsi
-    state: icon_empty
-  metamorphicMaxFillLevels: ?
-  metamorphicFillBaseName: fill-
-  metamorphicChangeColor: ?
+# - type: reagent
+#   id: EvilPrincess
+#   name: reagent-name-evil-princess
+#   parent: BaseDrink
+#   desc: reagent-desc-evil-princess
+#   physicalDesc: reagent-physical-desc-dark-red
+#   flavor: evilprincess
+#   color: "#XXXXXX"
+#   metabolisms:
+#     Drink:
+#       effects:
+#       - !type:SatiateThirst
+#         factor: 2
+#   metamorphicSprite:
+#     sprite: _starcup/Objects/Consumable/Drinks/evilprincessglass.rsi
+#     state: icon_empty
+#   metamorphicMaxFillLevels: ?
+#   metamorphicFillBaseName: fill-
+#   metamorphicChangeColor: ?

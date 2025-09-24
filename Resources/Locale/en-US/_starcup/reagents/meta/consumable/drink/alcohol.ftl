@@ -9,7 +9,7 @@ reagent-desc-kvass-starcup = A sweet-and-sour grain alcohol, mellow enough to re
 
 # New Drinks
 reagent-name-afterburner = afterburner
-reagent-desc-afterburner =
+reagent-desc-afterburner = This is placeholder text!
 
 reagent-name-ambrosia = ambrosia
 reagent-desc-ambrosia = Dragons may not be gods, but their taste can only be described as divine.
@@ -18,10 +18,10 @@ reagent-name-appletini = appletini
 reagent-desc-appletini = Not technically a kind of martini. Not typically made with real apples, either.
 
 reagent-name-aviation = aviation
-reagent-desc-aviation =
+reagent-desc-aviation = This is placeholder text!
 
 reagent-name-black-velvet = black velvet
-reagent-desc-black-velvet =
+reagent-desc-black-velvet = This is placeholder text!
 
 reagent-name-blue-lagoon = Blue Lagoon
 reagent-desc-blue-lagoon = Best known from Electra's attempts at trademarking the recipe during their resort world developments.
@@ -54,10 +54,10 @@ reagent-name-eclipse = eclipse
 reagent-desc-eclipse = Hot as a corona, cool as the dark side of a moon.
 
 reagent-name-emerald-breeze = emerald breeze
-reagent-desc-emerald-breeze =
+reagent-desc-emerald-breeze = This is placeholder text!
 
 reagent-name-feywild = feywild
-reagent-desc-feywild =
+reagent-desc-feywild = This is placeholder text!
 
 reagent-name-goblins-brew = goblin's brew
 reagent-desc-goblins-brew = A concoction of a strange and terribly powerful nature.
@@ -69,7 +69,7 @@ reagent-name-mushburger = mushburger
 reagent-desc-mushburger = Even looking at this thing is enough to make you feel sick.
 
 reagent-name-necropolitan = necropolitan
-reagent-desc-necropolitan =
+reagent-desc-necropolitan = This is placeholder text!
 
 reagent-name-paradise-lost = paradise lost
 reagent-desc-paradise-lost = Hail, horrors, hail.
@@ -84,7 +84,7 @@ reagent-name-red-eye = red eye
 reagent-desc-red-eye = It might look unappetizing, but as the "inventor" of this "cocktail" was known to say: Anything else is always something better.
 
 reagent-name-sakura-martini = sakura martini
-reagent-desc-sakura-martini =
+reagent-desc-sakura-martini = This is placeholder text!
 
 reagent-name-snakebite = snakebite
-reagent-desc-snakebite =
+reagent-desc-snakebite = This is placeholder text!
