@@ -90,43 +90,43 @@
         reagent: Ethanol
         amount: 0.12
 
-# - type: reagent
-#   id: BlackVelvet
-#   name: reagent-name-black-velvet
-#   parent: BaseAlcohol
-#   desc: reagent-desc-black-velvet
-#   physicalDesc: reagent-physical-desc-fizzy
-#   flavor: blackvelvet
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/blackvelvet.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
+- type: reagent
+  id: BlackVelvet
+  name: reagent-name-black-velvet
+  parent: BaseAlcohol
+  desc: reagent-desc-black-velvet
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: blackvelvet
+  color: "#5c4439"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/blackvelvet.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
 
-# - type: reagent
-#   id: BlueLagoon
-#   name: reagent-name-blue-lagoon
-#   parent: BaseAlcohol
-#   desc: reagent-desc-blue-lagoon
-#   physicalDesc: reagent-physical-desc-citric
-#   flavor: bluelagoon
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/bluelagoon.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: 0.08
+- type: reagent
+  id: BlueLagoon
+  name: reagent-name-blue-lagoon
+  parent: BaseAlcohol
+  desc: reagent-desc-blue-lagoon
+  physicalDesc: reagent-physical-desc-citric
+  flavor: bluelagoon
+  color: "#32A8F2"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/bluelagoon.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.08
 
 # - type: reagent
 #   id: BrainScrambler

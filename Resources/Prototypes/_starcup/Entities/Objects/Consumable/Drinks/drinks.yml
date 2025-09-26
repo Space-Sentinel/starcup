@@ -181,37 +181,37 @@
     sprite: _starcup/Objects/Consumable/Drinks/aviation.rsi
     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkBlackVelvet
-#   suffix: black velvet
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: BlackVelvet
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/blackvelvet.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkBlackVelvet
+  suffix: black velvet
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: BlackVelvet
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/blackvelvet.rsi
+    state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkBlueLagoon
-#   suffix: Blue Lagoon
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: BlueLagoon
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/bluelagoon.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkBlueLagoon
+  suffix: Blue Lagoon
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: BlueLagoon
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/bluelagoon.rsi
+    state: icon
 
 # - type: entity
 #   parent: DrinkGlass
