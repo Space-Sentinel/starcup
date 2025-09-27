@@ -83,21 +83,21 @@
       drink:
         maxVol: 30
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkCherryLimeade
-#   suffix: cherry limeade
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: CherryLimeade
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/cherrylimeade.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkCherryLimeade
+  suffix: cherry limeade
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: CherryLimeade
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/cherrylimeade.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass
@@ -293,21 +293,21 @@
 #     sprite: _starcup/Objects/Consumable/Drinks/cherrybomb.rsi
 #     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkCorpseReviver
-#   suffix: corpse reviver
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: CorpseReviver
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/corpsereviver.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkCorpseReviver
+  suffix: corpse reviver
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: CorpseReviver
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/corpsereviver.rsi
+    state: icon
 
 # - type: entity
 #   parent: DrinkGlass

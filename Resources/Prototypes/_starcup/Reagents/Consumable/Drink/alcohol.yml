@@ -235,28 +235,28 @@
 #         reagent: Ethanol
 #         amount: 0.13
 
-# - type: reagent
-#   id: CorpseReviver
-#   name: reagent-name-corpse-reviver
-#   parent: BaseAlcohol
-#   desc: reagent-desc-corpse-reviver
-#   physicalDesc: reagent-physical-desc-overpowering
-#   flavor: corpsereviver
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/corpsereviver.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
+- type: reagent
+  id: CorpseReviver
+  name: reagent-name-corpse-reviver
+  parent: BaseAlcohol
+  desc: reagent-desc-corpse-reviver
+  physicalDesc: reagent-physical-desc-overpowering
+  flavor: corpsereviver
+  color: "#e8e5c5"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/corpsereviver.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.14
 
 # - type: reagent
 #   id: Cryptid
