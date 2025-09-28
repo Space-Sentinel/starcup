@@ -48,7 +48,7 @@
     state: icon_empty
   metamorphicMaxFillLevels: 6
   metamorphicFillBaseName: fill-
-  metamorphicChangeColor: 6
+  metamorphicChangeColor: false
 
 - type: reagent
   id: EvilPrincess
