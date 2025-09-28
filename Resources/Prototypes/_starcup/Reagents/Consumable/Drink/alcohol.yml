@@ -396,28 +396,28 @@
 #         reagent: Ethanol
 #         amount: 0.08
 
-# - type: reagent
-#   id: MoonMist
-#   name: reagent-name-moon-mist
-#   parent: BaseAlcohol
-#   desc: reagent-desc-moon-mist
-#   physicalDesc: reagent-physical-desc-shiny
-#   flavor: moonmist
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/moonmist.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: 0.1
+- type: reagent
+  id: MoonMist
+  name: reagent-name-moon-mist
+  parent: BaseAlcohol
+  desc: reagent-desc-moon-mist
+  physicalDesc: reagent-physical-desc-shiny
+  flavor: moonmist
+  color: "#c8a5d4"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/moonmist.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
 
 # - type: reagent
 #   id: Mushburger
@@ -540,17 +540,17 @@
 #         reagent: Ethanol
 #         amount: ?
 
-# - type: reagent
-#   id: Snakebite
-#   name: reagent-name-snakebite
-#   parent: BaseAlcohol
-#   desc: reagent-desc-snakebite
-#   physicalDesc: reagent-physical-desc-fizzy
-#   flavor: snakebite
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/snakebite.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
+- type: reagent
+  id: Snakebite
+  name: reagent-name-snakebite
+  parent: BaseAlcohol
+  desc: reagent-desc-snakebite
+  physicalDesc: reagent-physical-desc-fizzy
+  flavor: snakebite
+  color: "#845830"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/snakebite.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
