@@ -197,20 +197,20 @@
 #         reagent: Ethanol
 #         amount: 0.1
 
-# - type: reagent
-#   id: Cactus
-#   name: reagent-name-cactus
-#   parent: BaseAlcohol
-#   desc: reagent-desc-cactus
-#   physicalDesc: reagent-physical-desc-vibrant
-#   flavor: cactus
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/cactus.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
+- type: reagent
+  id: Cactus
+  name: reagent-name-cactus
+  parent: BaseAlcohol
+  desc: reagent-desc-cactus
+  physicalDesc: reagent-physical-desc-vibrant
+  flavor: cactus
+  color: "#9fd13b"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/cactus.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
 
 # - type: reagent
 #   id: CherryBomb
