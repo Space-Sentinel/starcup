@@ -35,7 +35,6 @@
     LArm: MobSkittermouseLArm
     RArm: MobSkittermouseRArm
     LHand: MobSkittermouseLHand
-    RHand: MobSkittermouseRHand
     LLeg: MobSkittermouseLLeg
     RLeg: MobSkittermouseRLeg
     LFoot: MobSkittermouseLFoot
@@ -131,7 +130,7 @@
   id: MobSkittermouseLHand
   baseSprite:
     sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
-    state: l_hand
+    state: hands
 
 - type: humanoidBaseSprite
   id: MobSkittermouseLArm
@@ -150,12 +149,6 @@
   baseSprite:
     sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
     state: r_leg
-
-- type: humanoidBaseSprite
-  id: MobSkittermouseRHand
-  baseSprite:
-    sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
-    state: r_hand
 
 - type: humanoidBaseSprite
   id: MobSkittermouseRArm

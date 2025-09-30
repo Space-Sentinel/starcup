@@ -49,17 +49,15 @@ namespace Content.Shared.Humanoid
                 case SpeciesNaming.FirstDashLast: // Goobstation
                     return Loc.GetString("namepreset-firstdashlast",
                         ("first", GetFirstName(speciesProto, gender)), ("last", GetLastName(speciesProto)));
-<<<<<<< HEAD
-                case SpeciesNaming.FirstCodeLast: // starcup: Skittermouse name scheme
+                // begin starcup: skittermouse naming scheme
+                case SpeciesNaming.FirstCodeLast:
                     return Loc.GetString("namepreset-firstcodelast",
                         ("first", GetFirstName(speciesProto, gender)), ("code", GetNameCode(speciesProto)), ("last", GetLastName(speciesProto)));
-=======
-                // begin starcup: new oni naming scheme
+                // starcup: new oni naming scheme
                 case SpeciesNaming.FirstOTheLast:
                     return Loc.GetString("namepreset-firstothelast",
                         ("first", GetFirstName(speciesProto, gender)), ("last", GetLastName(speciesProto)));
                 // end starcup
->>>>>>> main
                 case SpeciesNaming.FirstLast:
                 default:
                     return Loc.GetString("namepreset-firstlast",

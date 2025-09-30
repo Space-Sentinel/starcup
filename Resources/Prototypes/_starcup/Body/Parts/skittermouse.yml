@@ -64,21 +64,12 @@
 
 - type: entity
   id: LeftHandSkittermouse
-  name: "skittermouse left hand"
+  name: "skittermouse hands"
   parent: [PartSkittermouse, BaseLeftHand]
   components:
   - type: Sprite
     sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
-    state: "l_hand"
-
-- type: entity
-  id: RightHandSkittermouse
-  name: "skittermouse right hand"
-  parent: [PartSkittermouse, BaseRightHand]
-  components:
-  - type: Sprite
-    sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
-    state: "r_hand"
+    state: "hands"
 
 - type: entity
   id: LeftLegSkittermouse

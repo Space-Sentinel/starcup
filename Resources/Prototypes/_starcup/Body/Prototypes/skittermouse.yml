@@ -25,14 +25,10 @@
         kidneys: OrganHumanKidneys
     right arm:
       part: RightArmSkittermouse
-      connections:
-      - right hand
     left arm:
       part: LeftArmSkittermouse
       connections:
       - left hand
-    right hand:
-      part: RightHandSkittermouse
     left hand:
       part: LeftHandSkittermouse
     right leg:
