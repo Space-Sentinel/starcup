@@ -151,28 +151,28 @@
 #         reagent: Ethanol
 #         amount: 0.09
 
-# - type: reagent
-#   id: Bramble
-#   name: reagent-name-bramble
-#   parent: BaseAlcohol
-#   desc: reagent-desc-bramble
-#   physicalDesc: reagent-physical-desc-aromatic
-#   flavor: bramble
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/bramble.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: 0.09
+- type: reagent
+  id: Bramble
+  name: reagent-name-bramble
+  parent: BaseAlcohol
+  desc: reagent-desc-bramble
+  physicalDesc: reagent-physical-desc-aromatic
+  flavor: bramble
+  color: "#bb2442"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/bramble.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.09
 
 # - type: reagent
 #   id: BuzzedBunny
@@ -304,51 +304,51 @@
 #         reagent: Ethanol
 #         amount: ?
 
-# - type: reagent
-#   id: Eclipse
-#   name: reagent-name-eclipse
-#   parent: BaseAlcohol
-#   desc: reagent-desc-eclipse
-#   physicalDesc: reagent-physical-desc-crisp
-#   flavor: eclipse
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/eclipse.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: 0.1
+- type: reagent
+  id: Eclipse
+  name: reagent-name-eclipse
+  parent: BaseAlcohol
+  desc: reagent-desc-eclipse
+  physicalDesc: reagent-physical-desc-crisp
+  flavor: eclipse
+  color: "#DF4600"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/eclipse.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
 
-# - type: reagent
-#   id: EmeraldBreeze
-#   name: reagent-name-emerald-breeze
-#   parent: BaseAlcohol
-#   desc: reagent-desc-emerald-breeze
-#   physicalDesc: reagent-physical-desc-crisp
-#   flavor: emeraldbreeze
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/emeraldbreeze.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: 0.12
+- type: reagent
+  id: EmeraldBreeze
+  name: reagent-name-emerald-breeze
+  parent: BaseAlcohol
+  desc: reagent-desc-emerald-breeze
+  physicalDesc: reagent-physical-desc-crisp
+  flavor: emeraldbreeze
+  color: "#9ADA4E"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/emeraldbreeze.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.12
 
 # - type: reagent
 #   id: Feywild

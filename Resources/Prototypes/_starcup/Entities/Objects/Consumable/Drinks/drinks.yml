@@ -229,21 +229,21 @@
 #     sprite: _starcup/Objects/Consumable/Drinks/brainscrambler.rsi
 #     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkBramble
-#   suffix: bramble
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: Bramble
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/bramble.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkBramble
+  suffix: bramble
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Bramble
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/bramble.rsi
+    state: icon
 
 # - type: entity
 #   parent: DrinkGlass
@@ -341,37 +341,37 @@
 #     sprite: _starcup/Objects/Consumable/Drinks/earthquake.rsi
 #     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkEclipse
-#   suffix: eclipse
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: Eclipse
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/eclipse.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkEclipse
+  suffix: eclipse
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Eclipse
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/eclipse.rsi
+    state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkEmeraldBreeze
-#   suffix: emerald breeze
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: EmeraldBreeze
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/emeraldbreeze.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkEmeraldBreeze
+  suffix: emerald breeze
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: EmeraldBreeze
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/emeraldbreeze.rsi
+    state: icon
 
 # - type: entity
 #   parent: DrinkGlass
