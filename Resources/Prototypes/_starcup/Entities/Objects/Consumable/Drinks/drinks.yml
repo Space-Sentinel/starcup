@@ -472,7 +472,7 @@
 # - type: entity
 #   parent: DrinkGlass
 #   id: DrinkRainbowShooter
-#   suffix: rainbow shot
+#   suffix: rainbow shooter
 #   components:
 #   - type: SolutionContainerManager
 #     solutions:
