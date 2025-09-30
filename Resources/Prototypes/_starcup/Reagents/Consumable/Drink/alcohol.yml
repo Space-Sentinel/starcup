@@ -174,28 +174,28 @@
         reagent: Ethanol
         amount: 0.09
 
-# - type: reagent
-#   id: BuzzedBunny
-#   name: reagent-name-buzzed-bunny
-#   parent: BaseAlcohol
-#   desc: reagent-desc-buzzed-bunny
-#   physicalDesc: reagent-physical-desc-vibrant
-#   flavor: buzzedbunny
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/buzzedbunny.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: 0.1
+- type: reagent
+  id: BuzzedBunny
+  name: reagent-name-buzzed-bunny
+  parent: BaseAlcohol
+  desc: reagent-desc-buzzed-bunny
+  physicalDesc: reagent-physical-desc-vibrant
+  flavor: buzzedbunny
+  color: "#ED6205"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/buzzedbunny.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
 
 - type: reagent
   id: Cactus
@@ -472,20 +472,20 @@
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
 
-# - type: reagent
-#   id: RainbowShooter
-#   name: reagent-name-rainbow-shooter
-#   parent: BaseAlcohol
-#   desc: reagent-desc-rainbow-shooter
-#   physicalDesc: reagent-physical-desc-colorful
-#   flavor: rainbowshooter
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/rainbowshooter.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
+- type: reagent
+  id: RainbowShooter
+  name: reagent-name-rainbow-shooter
+  parent: BaseAlcohol
+  desc: reagent-desc-rainbow-shooter
+  physicalDesc: reagent-physical-desc-colorful
+  flavor: rainbowshooter
+  color: "#916877" # yes this is what you get when you mix all the component colors
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/rainbowshooter.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 5
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
 
 # - type: reagent
 #   id: RedDog
@@ -502,20 +502,20 @@
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
 
-# - type: reagent
-#   id: RedEye
-#   name: reagent-name-red-eye
-#   parent: BaseAlcohol
-#   desc: reagent-desc-red-eye
-#   physicalDesc: reagent-physical-desc-cloudy
-#   flavor: redeye
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/redeye.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
+- type: reagent
+  id: RedEye
+  name: reagent-name-red-eye
+  parent: BaseAlcohol
+  desc: reagent-desc-red-eye
+  physicalDesc: reagent-physical-desc-cloudy
+  flavor: redeye
+  color: "#ae3235"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/redeye.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
 
 # - type: reagent
 #   id: SakuraMartini

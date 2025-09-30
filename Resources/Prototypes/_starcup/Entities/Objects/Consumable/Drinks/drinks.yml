@@ -245,21 +245,21 @@
     sprite: _starcup/Objects/Consumable/Drinks/bramble.rsi
     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkBuzzedBunny
-#   suffix: buzzed bunny
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: BuzzedBunny
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/buzzedbunny.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkBuzzedBunny
+  suffix: buzzed bunny
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: BuzzedBunny
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/buzzedbunny.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass
@@ -469,21 +469,21 @@
 #     sprite: _starcup/Objects/Consumable/Drinks/paradiselost.rsi
 #     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkRainbowShooter
-#   suffix: rainbow shooter
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: RainbowShooter
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/rainbowshooter.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkRainbowShooter
+  suffix: rainbow shooter
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: RainbowShooter
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/rainbowshooter.rsi
+    state: icon
 
 # - type: entity
 #   parent: DrinkGlass
@@ -501,21 +501,21 @@
 #     sprite: _starcup/Objects/Consumable/Drinks/reddog.rsi
 #     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkRedEye
-#   suffix: red eye
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: RedEye
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/redeye.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkRedEye
+  suffix: red eye
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: RedEye
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/redeye.rsi
+    state: icon
 
 # - type: entity
 #   parent: DrinkGlass
