@@ -1,25 +1,25 @@
-# - type: reagent
-#   id: AdiosMotherfucker
-#   name: reagent-name-adios-motherfucker
-#   parent: BaseAlcohol
-#   desc: reagent-desc-adios-motherfucker
-#   physicalDesc: reagent-physical-desc-strong-smelling
-#   flavor: adios-motherfucker
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/adiosmotherfucker.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: 0.13
+- type: reagent
+  id: AdiosMotherfucker
+  name: reagent-name-adios-motherfucker
+  parent: BaseAlcohol
+  desc: reagent-desc-adios-motherfucker
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: adios-motherfucker
+  color: "#1bdaf7"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/adiosmotherfucker.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.13
 
 # - type: reagent
 #   id: Afterburner

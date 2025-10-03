@@ -116,21 +116,21 @@
     state: icon
 
 # Alcohol
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkAdiosMotherfucker
-#   suffix: adios, motherfucker
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: AdiosMotherfucker
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/adiosmotherfucker.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkAdiosMotherfucker
+  suffix: adios, motherfucker
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: AdiosMotherfucker
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/adiosmotherfucker.rsi
+    state: icon
 
 # - type: entity
 #   parent: DrinkGlass
