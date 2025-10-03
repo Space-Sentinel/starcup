@@ -309,21 +309,21 @@
     sprite: _starcup/Objects/Consumable/Drinks/corpsereviver.rsi
     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkCryptid
-#   suffix: cryptid
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: Cryptid
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/cryptid.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkCryptid
+  suffix: cryptid
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Cryptid
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/cryptid.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass

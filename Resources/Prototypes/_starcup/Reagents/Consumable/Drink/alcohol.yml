@@ -258,28 +258,28 @@
         reagent: Ethanol
         amount: 0.14
 
-# - type: reagent
-#   id: Cryptid
-#   name: reagent-name-cryptid
-#   parent: BaseAlcohol
-#   desc: reagent-desc-cryptid
-#   physicalDesc: reagent-physical-desc-citric
-#   flavor: cryptid
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/cryptid.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: 0.08
+- type: reagent
+  id: Cryptid
+  name: reagent-name-cryptid
+  parent: BaseAlcohol
+  desc: reagent-desc-cryptid
+  physicalDesc: reagent-physical-desc-citric
+  flavor: cryptid
+  color: "#3FD367"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/cryptid.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 6
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.08
 
 - type: reagent
   id: Earthquake
