@@ -8,6 +8,9 @@ reagent-desc-three-mile-island-starcup = Named for the minimum safe distance fro
 reagent-desc-kvass-starcup = A sweet-and-sour grain alcohol, mellow enough to replace cola in some cultures.
 
 # New Drinks
+reagent-name-adios-motherfucker = adios, motherfucker
+reagent-desc-adios-motherfucker = This is placeholder text!
+
 reagent-name-afterburner = afterburner
 reagent-desc-afterburner = This is placeholder text!
 

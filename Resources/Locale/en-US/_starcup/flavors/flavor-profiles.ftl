@@ -1,3 +1,4 @@
+flavor-complex-adios-motherfucker = like placeholder text
 flavor-complex-afterburner = like a burning tire
 flavor-complex-ambrosia = like placeholder text
 flavor-complex-appletini = like placeholder text

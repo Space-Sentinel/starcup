@@ -42,6 +42,23 @@
     EvilPrincess: 6
 
 # Cocktails
+- type: reaction
+  id: AdiosMotherfucker
+  reactants:
+    BlueCuracao:
+      amount: 1
+    Gin:
+      amount: 1
+    Rum:
+      amount: 1
+    Tequila:
+      amount: 1
+    Vodka:
+      amount: 1
+    LemonLime:
+      amount: 2
+  products:
+    AdiosMotherfucker: 7
 
 - type: reaction
   id: Afterburner

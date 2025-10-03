@@ -1,4 +1,9 @@
 - type: flavor
+  id: adiosmotherfucker
+  flavorType: Complex
+  description: flavor-complex-adios-motherfucker
+
+- type: flavor
   id: afterburner
   flavorType: Complex
   description: flavor-complex-afterburner
