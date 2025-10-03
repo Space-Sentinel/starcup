@@ -485,21 +485,21 @@
     sprite: _starcup/Objects/Consumable/Drinks/rainbowshooter.rsi
     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkRedDog
-#   suffix: red dog
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: RedDog
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/reddog.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkRedDog
+  suffix: red dog
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: RedDog
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/reddog.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass

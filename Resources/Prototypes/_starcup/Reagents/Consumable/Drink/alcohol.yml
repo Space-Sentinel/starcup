@@ -487,20 +487,20 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
-# - type: reagent
-#   id: RedDog
-#   name: reagent-name-red-dog
-#   parent: BaseAlcohol
-#   desc: reagent-desc-red-dog
-#   physicalDesc: reagent-physical-desc-dark-red
-#   flavor: reddog
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/reddog.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
+- type: reagent
+  id: RedDog
+  name: reagent-name-red-dog
+  parent: BaseAlcohol
+  desc: reagent-desc-red-dog
+  physicalDesc: reagent-physical-desc-dark-red
+  flavor: reddog
+  color: "#8f1802"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/reddog.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 2
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
 
 - type: reagent
   id: RedEye
