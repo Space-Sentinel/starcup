@@ -281,28 +281,28 @@
 #         reagent: Ethanol
 #         amount: 0.08
 
-# - type: reagent
-#   id: Earthquake
-#   name: reagent-name-earthquake
-#   parent: BaseAlcohol
-#   desc: reagent-desc-earthquake
-#   physicalDesc: reagent-physical-desc-strong-smelling
-#   flavor: earthquake
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/earthquake.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
+- type: reagent
+  id: Earthquake
+  name: reagent-name-earthquake
+  parent: BaseAlcohol
+  desc: reagent-desc-earthquake
+  physicalDesc: reagent-physical-desc-strong-smelling
+  flavor: earthquake
+  color: "#bcbc00"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/earthquake.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.25
 
 - type: reagent
   id: Eclipse
@@ -457,20 +457,20 @@
 #         reagent: Ethanol
 #         amount: 0.1
 
-# - type: reagent
-#   id: ParadiseLost
-#   name: reagent-name-paradise-lost
-#   parent: BaseAlcohol
-#   desc: reagent-desc-paradise-lost
-#   physicalDesc: reagent-physical-desc-enigmatic
-#   flavor: paradiselost
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/paradiselost.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
+- type: reagent
+  id: ParadiseLost
+  name: reagent-name-paradise-lost
+  parent: BaseAlcohol
+  desc: reagent-desc-paradise-lost
+  physicalDesc: reagent-physical-desc-enigmatic
+  flavor: paradiselost
+  color: "#2c2c2c"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/paradiselost.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
 
 - type: reagent
   id: RainbowShooter
@@ -517,28 +517,28 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: false
 
-# - type: reagent
-#   id: SakuraMartini
-#   name: reagent-name-sakura-martini
-#   parent: BaseAlcohol
-#   desc: reagent-desc-sakura-martini
-#   physicalDesc: reagent-physical-desc-aromatic
-#   flavor: sakuramartini
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/sakuramartini.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
+- type: reagent
+  id: SakuraMartini
+  name: reagent-name-sakura-martini
+  parent: BaseAlcohol
+  desc: reagent-desc-sakura-martini
+  physicalDesc: reagent-physical-desc-aromatic
+  flavor: sakuramartini
+  color: "#e6d5df"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/sakuramartini.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 3
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: true
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
 
 - type: reagent
   id: Snakebite

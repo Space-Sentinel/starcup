@@ -325,21 +325,21 @@
 #     sprite: _starcup/Objects/Consumable/Drinks/cryptid.rsi
 #     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkEarthquake
-#   suffix: earthquake
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: Earthquake
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/earthquake.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkEarthquake
+  suffix: earthquake
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Earthquake
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/earthquake.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass
@@ -453,21 +453,21 @@
 #     sprite: _starcup/Objects/Consumable/Drinks/necropolitan.rsi
 #     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkParadiseLost
-#   suffix: paradise lost
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: ParadiseLost
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/paradiselost.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkParadiseLost
+  suffix: paradise lost
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: ParadiseLost
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/paradiselost.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass
@@ -517,21 +517,21 @@
     sprite: _starcup/Objects/Consumable/Drinks/redeye.rsi
     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkSakuraMartini
-#   suffix: sakura martini
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: Aviation
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/sakuramartini.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkSakuraMartini
+  suffix: sakura martini
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: SakuraMartini
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/sakuramartini.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass
