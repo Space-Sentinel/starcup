@@ -1,0 +1,12 @@
+- files:
+  - MeowNormal1.wav
+  - MeowNormal2.wav
+  - MeowNormal3.wav
+  - MeowNormal4.wav
+  - MeowWhispery1.wav
+  - MeowWhispery2.wav
+  - MeowWhispery3.wav
+  - MeowWhispery4.wav
+  license: "GPL-3.0"
+  copyright: "Taken from andreweathan's rainworld mod, push to meow. sounds by cioss"
+  source: "https://github.com/Andrew-Eathan/push-to-meow/"

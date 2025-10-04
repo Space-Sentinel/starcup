@@ -1,0 +1,35 @@
+- type: soundCollection
+  id: SkittermouseMeowSay
+  files:
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowSay/MeowNormal1.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowSay/MeowNormal2.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowSay/MeowNormal3.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowSay/MeowNormal4.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowSay/MeowWhispery1.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowSay/MeowWhispery2.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowSay/MeowWhispery3.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowSay/MeowWhispery4.wav
+
+- type: soundCollection
+  id: SkittermouseMeowAsk
+  files:
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowAsk/MeowCoarse1.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowAsk/MeowCoarse2.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowAsk/MeowCoarse3.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowAsk/MeowCoarse4.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowAsk/MeowFat1.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowAsk/MeowFat2.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowAsk/MeowFat3.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowAsk/MeowFat4.wav
+
+- type: soundCollection
+  id: SkittermouseMeowExclaim
+  files:
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowExclaim/MeowPup1.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowExclaim/MeowPup2.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowExclaim/MeowPup3.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowExclaim/MeowPup4.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowExclaim/MeowRivuletB1.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowExclaim/MeowRivuletB2.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowExclaim/MeowRivuletB3.wav
+  - /Audio/_starcup/Voice/Talk/SkittermouseMeowExclaim/MeowRivuletB4.wav

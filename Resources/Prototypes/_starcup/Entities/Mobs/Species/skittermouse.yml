@@ -35,15 +35,13 @@
       Unsexed: Skittermouse
   - type: Damageable
     damageModifierSet: Skittermouse
-  - type: Butcherable
-    butcheringType: Spike
-    spawned:
-    - id: FoodMeatRat
-      amount: 5
-#  - type: Ambiped
-#  - type: Darkvision
-#  - type: Latch
-#  - type: TinyGrabbers
+# begin starcup: people are not food
+#  - type: Butcherable
+#    butcheringType: Spike
+#    spawned:
+#    - id: FoodMeatRat
+#      amount: 5
+# end starcup
   - type: GuideHelp
     guides:
     - Skittermouse
@@ -77,54 +75,50 @@
     leftBarePrint: "footprint-left-bare-spider"
     rightBarePrint: "footprint-right-bare-spider"
   - type: Inventory
+    templateId: skittermouse
     speciesId: skittermouse
-#    displacements:
-#      jumpsuit:
-#        sizeMaps:
-#          32:
-#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-#            state: jumpsuit
-#      eyes:
-#        sizeMaps:
-#          32:
-#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-#            state: eyes
-#      gloves:
-#        sizeMaps:
-#          32:
-#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-#            state: hand
-#      head:
-#        sizeMaps:
-#          32:
-#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-#            state: head
-#      back:
-#        sizeMaps:
-#          32:
-#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-#            state: back
-#      ears:
-#        sizeMaps:
-#          32:
-#            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-#            state: ears
-#      shoes:
-#       sizeMaps:
-#         32:
-#           sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-#           state: shoes
-# - type: Hands
-#    leftHandDisplacement:
-#      sizeMaps:
-#        32:
-#          sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-#          state: hand_l
-#    rightHandDisplacement:
-#      sizeMaps:
-#        32:
-#          sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
-#          state: hand_r
+    displacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+            state: jumpsuit
+      eyes:
+        sizeMaps:
+          32:
+            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+            state: eyes
+      gloves:
+        sizeMaps:
+          32:
+            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+            state: hand
+      head:
+        sizeMaps:
+          32:
+            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+            state: head
+      back:
+        sizeMaps:
+          32:
+            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+            state: back
+      ears:
+        sizeMaps:
+          32:
+            sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+            state: ears
+      shoes:
+       sizeMaps:
+         32:
+           sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+           state: shoes
+  - type: Hands
+    leftHandDisplacement:
+      sizeMaps:
+        32:
+          sprite: _starcup/Mobs/Species/Skittermouse/displacement.rsi
+          state: hands
   - type: Sprite
     scale: 0.5, 0.5
 

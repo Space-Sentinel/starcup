@@ -1,8 +1,8 @@
 - type: speechSounds
   id: Skittermouse
   saySound:
-    path: /Audio/_DeltaV/Voice/Talk/vulp.ogg
+    collection: SkittermouseMeowSay
   askSound:
-    path: /Audio/_DeltaV/Voice/Talk/vulp_ask.ogg
+    collection: SkittermouseMeowAsk
   exclaimSound:
-    path: /Audio/_DeltaV/Voice/Talk/vulp_exclaim.ogg
+    collection: SkittermouseMeowExclaim
