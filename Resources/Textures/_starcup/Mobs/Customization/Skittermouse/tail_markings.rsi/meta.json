@@ -8,12 +8,20 @@
     },
     "states": [
         {
-            "name": "slug",
+            "name": "slug_behind",
             "directions": 4
         },
         {
-            "name": "shortie",
+            "name": "slug_front",
             "directions": 4
+        },
+        {
+            "name": "short_behind",
+            "directions": 4
+        },
+        {
+            "name": "short_front",
+            "directions": 4        
         }
     ]
 }

@@ -4,7 +4,7 @@
   id: SkittermouseEarsCat
   markingCategory: HeadTop
   bodyPart: HeadTop
-  speciesRestriction: []
+  speciesRestriction: [Skittermouse]
   sprites:
   - sprite: _starcup/Mobs/Customization/Skittermouse/ear_markings.rsi
     state: cat
@@ -13,13 +13,28 @@
   id: SkittermouseTailSlug
   markingCategory: Tail
   bodyPart: Tail
-  speciesRestriction: []
+  speciesRestriction: [Skittermouse]
+  layering:
+    slug_front: TailOversuit
+    slug_behind: TailBehind
+  colorLinks:
+    slug_behind: slug_front
   sprites:
   - sprite: _starcup/Mobs/Customization/Skittermouse/tail_markings.rsi
-    state: slug
+    state: slug_front
+  - sprite: _starcup/Mobs/Customization/Skittermouse/tail_markings.rsi
+    state: slug_behind
 
 # HEAD
 ## EARS
+- type: marking
+  id: SkittermouseEarsDoubleCat
+  markingCategory: HeadTop
+  bodyPart: HeadTop
+  speciesRestriction: [Skittermouse]
+  sprites:
+  - sprite: _starcup/Mobs/Customization/Skittermouse/ear_markings.rsi
+    state: doublecat
 
 ## SNOUTS
 
@@ -27,6 +42,21 @@
 
 # BODY
 ## TAIL
+- type: marking
+  id: SkittermouseTailShortie
+  markingCategory: Tail
+  bodyPart: Tail
+  speciesRestriction: [Skittermouse]
+  layering:
+    short_front: TailOversuit
+    short_behind: TailBehind
+  colorLinks:
+    short_behind: short_front
+  sprites:
+  - sprite: _starcup/Mobs/Customization/Skittermouse/tail_markings.rsi
+    state: short_front
+  - sprite: _starcup/Mobs/Customization/Skittermouse/tail_markings.rsi
+    state: short_behind
 
 ## PATTERNS
 
@@ -86,22 +116,13 @@
 ## HANDS
 
 - type: marking
-  id: SkittermouseHandLeftBasic
+  id: SkittermouseHandsBasic
   markingCategory: Arms
   bodyPart: LHand
   speciesRestriction: [Skittermouse]
   sprites:
   - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
-    state: l_hand
-
-- type: marking
-  id: SkittermouseHandRightBasic
-  markingCategory: Arms
-  bodyPart: RHand
-  speciesRestriction: [Skittermouse]
-  sprites:
-  - sprite: _starcup/Mobs/Species/Skittermouse/parts.rsi
-    state: r_hand
+    state: hands
 
 ## FEET
 
