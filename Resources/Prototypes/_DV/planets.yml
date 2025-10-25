@@ -47,7 +47,7 @@
 
 - type: planet
   id: GlacierSurface
-  biome: Snow
+  biome: CharonEpsilon # for debugging only
   mapName: shuttle-destination-glacier-surface
   mapLight: "#2B3153"
   addedComponents:
