@@ -1,14 +1,13 @@
 ## Static
 
 - type: latheRecipePack
-  parent:
-  - RoboticsStaticDeltaV # DeltaV
   id: RoboticsStatic
   recipes:
   - MMI
   - PositronicBrain
   - SciFlash
   - CyborgEndoskeleton
+  - AIShellBrain # CD addition
 
 - type: latheRecipePack
   id: BorgModulesStatic
@@ -16,6 +15,7 @@
   - BorgModuleTool
   - BorgModuleCable
   - BorgModuleFireExtinguisher
+  - BorgModuleInflatable
 
 - type: latheRecipePack
   id: BorgLimbsStatic
@@ -39,6 +39,7 @@
   recipes:
   - BorgModuleAdvancedCleaning
   - BorgModuleAdvancedTool
+  - BorgModuleAdvancedClowning
   - BorgModuleAdvancedChemical
   - BorgModuleAdvancedMining
 

@@ -9,7 +9,10 @@
   access:
   - Theatre
   - Maintenance
-  - Clown # starcup: added unique access level
+  # begin starcup
+  - Clown
+  - Service
+  # end starcup
   special:
   - !type:AddComponentSpecial
     components:
@@ -20,6 +23,9 @@
           Piercing: 4
         groups:
           Burn: 3
+      catchingFailDamage:
+        types:
+          Blunt: 1
     - type: SleepEmitSound
       snore: /Audio/Voice/Misc/silly_snore.ogg
       interval: 10

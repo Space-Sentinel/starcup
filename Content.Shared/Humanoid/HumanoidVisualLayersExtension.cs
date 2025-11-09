@@ -42,6 +42,11 @@ namespace Content.Shared.Humanoid
                     yield return HumanoidVisualLayers.Hair;
                     yield return HumanoidVisualLayers.FacialHair;
                     yield return HumanoidVisualLayers.Snout;
+                    yield return HumanoidVisualLayers.SnoutCover;
+                    break;
+                case HumanoidVisualLayers.Snout:
+                    yield return HumanoidVisualLayers.Snout;
+                    yield return HumanoidVisualLayers.SnoutCover;
                     break;
                 case HumanoidVisualLayers.LArm:
                     yield return HumanoidVisualLayers.LArm;
@@ -62,6 +67,8 @@ namespace Content.Shared.Humanoid
                 case HumanoidVisualLayers.Chest:
                     yield return HumanoidVisualLayers.Chest;
                     yield return HumanoidVisualLayers.Tail;
+                    yield return HumanoidVisualLayers.TailBehind; // floof
+                    yield return HumanoidVisualLayers.TailOversuit; // floof
                     break;
                 default:
                     yield break;

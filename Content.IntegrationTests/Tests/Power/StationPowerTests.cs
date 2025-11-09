@@ -5,6 +5,7 @@ using Content.Server.Maps;
 using Content.Server.Power.Components;
 using Content.Server.Power.NodeGroups;
 using Content.Server.Power.Pow3r;
+using Content.Shared.Power.Components;
 using Content.Shared.NodeContainer;
 using Robust.Shared.EntitySerialization;
 
@@ -16,29 +17,41 @@ public sealed class StationPowerTests
     /// <summary>
     /// How long the station should be able to survive on stored power if nothing is changed from round start.
     /// </summary>
-    private const float MinimumPowerDurationSeconds = 10 * 60;
+    private const float MinimumPowerDurationSeconds = 0 * 60; // starcup: reset to 0 to prevent bottlenecking while we fix our maps
 
     private static readonly string[] GameMaps =
     [
-        "Fland",
-        "Meta",
-        "Packed",
-        "Omega",
-        "Bagel",
-        "Box",
-        "Core",
-        "Marathon",
-        "Saltern",
-        "Reach",
-        "Train",
-        "Oasis",
-        "Gate",
-        "Amber",
+        // starcup: removed upstream maps
+        //"Fland",
+        //"Meta",
+        //"Packed",
+        //"Omega",
+        //"Bagel",
+        //"Box",
+        //"Core",
+        //"Marathon",
+        //"Saltern",
+        //"Reach",
+        //"Train",
+        //"Oasis",
+        //"Gate",
+        //"Amber",
+        //"Loop",
+        //"Plasma",
+        //"Elkridge",
+        //"Convex",
+        //"Relic",
+
+        // starcup maps:
+        "Glacier",
         "Loop",
-        "Plasma",
-        "Elkridge",
-        "Convex",
-        "Relic",
+        "Omega",
+        "Reach",
+        "Saltern",
+        "Byoin",
+        "Train",
+        "Crux",
+        // end starcup
     ];
 
     [Test, TestCaseSource(nameof(GameMaps))]

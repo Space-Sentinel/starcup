@@ -64,6 +64,7 @@
   - type: Pullable
   - type: Physics
     bodyType: KinematicController
+  - type: GravityAffected
   - type: Clickable
   - type: WiresPanel
   - type: Fixtures
@@ -244,7 +245,7 @@
   parent: BaseMech
   id: MechVim
   name: Vim
-  description: A miniature exosuit from Nanotrasen, developed to let the irreplaceable station pets live a little longer.
+  description: A miniature exosuit developed by Cybersun to let the irreplaceable station pets live a little longer. # starcup - NT-SC swap
   components:
   - type: Sprite
     drawdepth: Mobs

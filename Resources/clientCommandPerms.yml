@@ -78,9 +78,11 @@
 - Flags: MAPPING
   Commands:
     - mapping
+    - mappingclientsidesetup
+    - showsubfloor
+    - showsubfloorforever
     - toggleautosave
     - toggledecals
-    - mappingclientsidesetup  # starcup
     - showaccessreaders
 
 - Flags: QUERY
@@ -92,3 +94,9 @@
 - Flags: ADMINCHAT
   Commands:
     - achatwindow
+
+# begin starcup
+- Flags: ADMIN
+  Commands:
+  - warp
+# end starcup

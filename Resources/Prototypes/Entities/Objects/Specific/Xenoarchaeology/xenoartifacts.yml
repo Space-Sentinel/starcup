@@ -49,6 +49,8 @@
       Flammable: [Touch]
       Extinguish: [Touch]
       Acidic: [Touch]
+  - type: WarpPoint # imp addition
+  - type: NameIdentifier # imp addition
 
 - type: entity
   parent: BaseAction
@@ -63,3 +65,4 @@
     useDelay: 300
   - type: InstantAction
     event: !type:ArtifactSelfActivateEvent
+

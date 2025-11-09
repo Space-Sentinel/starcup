@@ -42,7 +42,15 @@
     - id: PlushieMoth
     - id: PlushieArachind
     - id: PlushiePenguin
-    - id: PlushieEskie  # starcup: add eskie plushie
+    - id: PlushieVulp
+    # begin starcup
+    - id: PlushieEskie
+    - id: PlushieEikse
+    - id: PlushieMort
+    # end starcup
+    - id: PlushieMothRandom # Nyanotrasen Random Moth Plushies
+      amount: 2
+    - id: PlushieIPC # DeltaV Toy, see Resources/Prototypes/_DV/Entities/Objects/Fun/toys.yml
 
 - type: entityTable
   id: AllPottedPlantsTable
@@ -91,7 +99,7 @@
   id: CrateFunPlushie
   parent: CrateGenericSteel
   name: plushie crate
-  description: A buncha soft plushies. Throw them around and then wonder how you're gonna explain this purchase to NT.
+  description: A buncha soft plushies. Throw them around and then wonder how you're gonna explain this purchase to your rep at SyndComm. # starcup - NT-SC swap
   components:
   - type: EntityTableContainerFill
     containers:
@@ -104,7 +112,7 @@
   id: CrateFunLizardPlushieBulk
   parent: CrateGenericSteel
   name: bulk lizard plushie crate
-  description: A buncha soft lizard plushies. Throw them around and then wonder how you're gonna explain this purchase to NT.
+  description: A buncha soft lizard plushies. Throw them around and then wonder how you're gonna explain this purchase to your rep at SyndComm. # starcup - NT-SC swap
   components:
   - type: EntityTableContainerFill
     containers:
@@ -232,7 +240,7 @@
   id: CrateFunInstrumentsSpecial
   parent: CrateGenericSteel
   name: special instrument collector's crate
-  description: Create some noise with this special collection of arguably-instruments! Centcomm is not responsible for any trauma caused by the contents.
+  description: Create some noise with this special collection of arguably-instruments! SyndComm is not responsible for any trauma caused by the contents. # starcup - NT-SC swap
   components:
   - type: StorageFill
     contents:
@@ -246,6 +254,30 @@
       - id: BirdToyInstrument
       - id: MusicalLungInstrument
       - id: ReverseCymbalsInstrument
+
+- type: entity
+  id: CrateFunInstrumentsRandom
+  parent: CrateGenericSteel
+  name: random instrument collection
+  description: A box containing several randomly curated instruments, hand picked by Centcomm's top musicians!
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - !type:NestedSelector
+          tableId: VarietyInstrumentTable # 200 speso max
+        - !type:NestedSelector
+          tableId: BrassInstrumentTable # 300 speso max
+        - !type:NestedSelector
+          tableId: StringInstrumentTable # 300 speso max
+        - !type:NestedSelector
+          tableId: WoodwindInstrumentTable # 200 speso max
+        - !type:NestedSelector
+          tableId: KeyedPercussionInstrumentTable # 300 speso max
+        - !type:NestedSelector
+          tableId: SpecialInstrumentTable # x2 200 speso max
+          rolls: 2
 
 - type: entity
   id: CrateFunArtSupplies
@@ -412,10 +444,13 @@
       - id: MrDips
         orGroup: Giftpool
       - id: RevolverCapGun
-      - id: BalloonNT
+#      - id: BalloonNT # starcup: removed for syndicate rebranding ops
+      - id: BalloonSyn # starcup: added for syndicate rebranding ops
       - id: ClothingShoesClownLarge
       - id: ClothingHeadHatMagician
       - id: BeachBall
+      - id: TennisBall
+        amount: 2
       - id: ClothingShoesSkates
       - id: RubberChicken
 
@@ -464,7 +499,7 @@
   name: hydrated scurret
   description: Wait, what?
   id: CrateFunScurret
-  parent: CratePlastic
+  parent: CrateLivestock
   components:
   - type: StorageFill
     contents:

@@ -4,6 +4,8 @@
     DiceBag: 6
     Paper: 8
     d6Dice: 8
+    CardBoxBlack: 2  # EstacaoPirata
+    CardBoxSparot: 1 # starcup
     ChessBoard: 1
     BackgammonBoard: 1
     ParchisBoard: 1
@@ -15,8 +17,10 @@
     GrassBattlemap: 1
     PaperCNCSheet: 6
     MysteryFigureBox: 2
+    BookSparotBook: 1 # starcup
     BooksBag: 3
   contrabandInventory:
     Basketball: 1
     FoodSnackBoritos: 3
     DrinkSpaceMountainWindCan: 3
+    CardBoxSyndicate: 1  # starcup

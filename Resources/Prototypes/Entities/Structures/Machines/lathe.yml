@@ -49,6 +49,13 @@
     price: 800
   - type: ResearchClient
   - type: TechnologyDatabase
+  # begin starcup: improve visuals
+  - type: PointLight
+    color: "#1b591b"
+    radius: 1.5
+    energy: 1.2
+  - type: LitOnPowered
+  # end starcup
 
 # a lathe that can be sped up with space lube / slowed down with glue
 - type: entity
@@ -123,6 +130,8 @@
     - PartsStatic
     - AtmosStatic
     - CablesStatic
+    - PaperworkStatic
+    - TowelsStatic
     - CargoStatic
     - MaterialsStatic
     - BasicChemistryStatic
@@ -132,6 +141,7 @@
     - PowerCellsStatic
     - ElectronicsStatic
     - ReportingStatic # starcup
+    - AutolatheStaticCandyBucketDen # The Den
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SecurityAmmoStatic
@@ -209,7 +219,6 @@
     - Janitor
     - Instruments
     - Equipment
-    - FauxTiles
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
@@ -257,7 +266,6 @@
     - CargoBoardsStatic
     - MedicalBoardsStatic
     - EngineeringBoardsStatic
-    - CircuitFloorsStatic
     dynamicPacks:
     - EngineeringBoards
     - CargoBoards
@@ -314,6 +322,8 @@
     - RoboticsStatic
     - BorgModulesStatic
     - BorgLimbsStatic
+    - RoboticsStarcupStatic # starcup
+    - BorgModulesStaticImp # imp
     dynamicPacks:
     - Robotics
     - BorgModules
@@ -515,6 +525,7 @@
     idleState: icon
     runningState: building
     staticPacks:
+    - TowelsStatic
     - ClothingCivilian
     - ClothingCargo
     - ClothingCommand
@@ -529,6 +540,7 @@
     - Carpets
     - Bedsheets
     - BeltsDeltaV # Delta-V
+    - ClothingStarcup # starcup
   - type: EmagLatheRecipes
     emagStaticPacks:
     - ClothingCentComm
@@ -622,6 +634,10 @@
       range: 0.30
     - type: PlaceableSurface # Allow ore bags to dump into it directly
       isPlaceable: false # but not place on it if you just click it with a random item
+    - type: MiningPoints # DeltaV - Source of mining points for miners
+      transferSound:
+        path: /Audio/Effects/Cargo/ping.ogg
+    - type: MiningPointsLathe
 # End DeltaV additions
 
 - type: entity
@@ -699,7 +715,18 @@
     idleState: icon
     runningState: building
     staticPacks:
-    - FloorTilesStatic
+    - FloorDarkTilesStatic
+    - FloorSteelTilesStatic
+    - FloorWhiteTilesStatic
+    - FloorMaintsTilesStatic
+    - FloorWoodTilesStatic
+    - FloorConcreteTilesStatic
+    - CircuitFloorsStatic
+    - FloorMarbleTilesStatic
+    - NFFloorTiles # Frontier
+    - StarcupFloorTiles # starcup
+    dynamicPacks:
+    - FauxTiles
   - type: MaterialStorage
     whitelist:
       tags:
@@ -708,4 +735,9 @@
         - Wooden
         - RawMaterial
         - Plastic
+        - Ingot # Frontier
   - type: OreSiloClient
+  # begin starcup
+  - type: PointLight
+    color: "#3d75c3"
+  # end starcup

@@ -1,4 +1,4 @@
-﻿using Content.Server.Hands.Systems;
+using Content.Server.Hands.Systems;
 using Content.Server.Preferences.Managers;
 using Content.Shared.Access.Components;
 using Content.Shared.Clothing;
@@ -12,8 +12,6 @@ using Content.Shared.Roles;
 using Content.Shared.Station;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
-using Content.Shared._DeltaV.Silicon.IPC; // DeltaV
-using Content.Shared.Radio.Components; // Goobstation
 
 namespace Content.Server.Clothing.Systems;
 
@@ -106,13 +104,6 @@ public sealed class OutfitSystem : EntitySystem
             _spawningSystem.EquipRoleLoadout(target, roleLoadout, jobProto);
         }
 
-        // Begin DeltaV/Goob Additions
-        if (EntityManager.HasComponent<EncryptionKeyHolderComponent>(target))
-        {
-            var encryption = new InternalEncryptionKeySpawner();
-            encryption.TryInsertEncryptionKey(target, startingGear);
-        }
-        // End DeltaV/Goob Additions
         return true;
     }
 }

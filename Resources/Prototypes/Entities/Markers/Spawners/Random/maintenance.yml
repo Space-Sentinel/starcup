@@ -114,7 +114,9 @@
       - id: ToySkeleton
       - id: Basketball
       - id: Football
-      - id: BalloonNT
+#      - id: BalloonNT # starcup: removed for syndicate rebranding ops
+      - id: TennisBall
+      - id: BalloonSyn # starcup: added for syndicate rebranding ops
       - id: BalloonCorgi
       - id: MysteryFigureBox
       - id: RubberChicken
@@ -159,6 +161,17 @@
         - id: ClothingNeckTransPin
         - id: ClothingNeckAutismPin
         - id: ClothingNeckGoldAutismPin
+      # begin starcup: candy buckets
+      - !type:GroupSelector
+        children:
+        - id: CandyBucketPailPlainRandom
+        - id: CandyBucketPailSmileyRandom
+        - id: CandyBucketPailCat
+        - id: CandyBucketPailClown
+        - id: CandyBucketPailGhost
+        - id: CandyBucketPailPumpkin
+        - id: CandyBucketPailSkeleton
+      # end starcup
     # Rare Group
     - !type:GroupSelector
       weight: 2
@@ -172,6 +185,8 @@
       - id: ClothingUniformJumpsuitFamilyGuy
       - id: WristwatchGold
       - id: RubberStampGreytide
+      - id: MysteryLighterBox
+      - id: GoldenPersonalAI
 
 - type: entity
   name: Maint Loot Spawner
@@ -232,6 +247,7 @@
       - id: Crowbar
       - id: Multitool
       - id: Shovel
+      - id: ChoppingAxe # starcup: add chopping axes & fireaxe resprite
       - id: Welder
       - id: GasAnalyzer
       - id: SprayPainter

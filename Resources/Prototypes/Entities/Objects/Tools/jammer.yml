@@ -1,6 +1,6 @@
 - type: entity
   name: radio jammer
-  parent: [BaseItem, BaseSyndicateContraband]
+  parent: [BaseItem, BaseTraitorContraband] # starcup: shared contraband level with nt gear
   id: RadioJammer
   description: This device will disrupt any nearby outgoing radio communication as well as suit sensors when activated.
   components:
@@ -56,6 +56,12 @@
   id: XenoborgRadioJammer
   name: xenoborg radio jammer
   components:
+  - type: RadioJammer
+    frequenciesExcluded:
+    - 2002 # xenoborg radio
+    - 2003 # mothership radio
+    - 2004 # xenoborg network
+    - 2005 # mothership network
   - type: ItemSlots
     slots:
       cell_slot:

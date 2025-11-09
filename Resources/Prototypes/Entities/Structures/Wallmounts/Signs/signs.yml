@@ -104,7 +104,15 @@
   description: A direction sign, pointing out which way evac is.
   components:
   - type: Sprite
-    state: direction_evac
+    layers:
+    - state: direction_evac
+    - state: direction_evac_glow
+      shader: unshaded
+    - state: direction_evac_glow
+      shader: shaded
+      #This is a neat trick I found to sort of "hack" an emissive map into ss14. Basically, the direction_evac_glow texture has an alpha channel.
+      #Alpha doesn't work for unshaded, but for *shaded* it does, and by putting a shaded texture infront of the unshaded, we can dim the unshaded texture, effectively allowing brightness control.
+      #I am re-using this from my high-vis vest PR, where I go further into detail, https://github.com/space-wizards/space-station-14/pull/37869
 
 - type: entity
   parent: BaseSignDirectional
@@ -589,7 +597,7 @@
   parent: BaseSign
   id: SignHead
   name: head sign
-  description: An official sign indicating the dwellings of a Nanotrasen-certified head of department.
+  description: An official sign indicating the dwellings of a SyndComm-certified department head. The head is ideally still attached to its body. # starcup - NT-SC swap and a stupid joke
   components:
   - type: Sprite
     state: commander
@@ -798,6 +806,7 @@
   description: A sign indicating the where the evac shuttle will (likely) arrive.
   components:
   - type: Sprite
+    sprite: _starcup/Structures/Wallmounts/signs.rsi # starcup: syndicate rebranding
     state: dock
 
 - type: entity
@@ -994,7 +1003,7 @@
   parent: BaseSign
   id: SignZomlab
   name: zombie lab sign
-  description: The final remains of a shut-down Nanotrasen research project that aimed to harness the powers of Romerol. I wonder how that went...
+  description: The final remains of a shut-down Interdyne research project that aimed to reverse-engineer NanoTrasen's Romerol concoction. I wonder how that went... # starcup - NT-SC swap
   components:
   - type: Sprite
     state: zomlab

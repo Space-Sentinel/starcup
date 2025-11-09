@@ -15,7 +15,7 @@
   - Security
   - Brig
   - Maintenance
-  - Service
+  # - Service # starcup: remove service access from non-service jobs
   - External
   - Cryogenics
   special:
@@ -25,7 +25,7 @@
 - type: startingGear
   id: SecurityOfficerGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity # starcup: moved to loadouts
     ears: ClothingHeadsetSecurity
   #  pocket1: WeaponPistolMk58Nonlethal # DeltaV - loadouts
   storage:

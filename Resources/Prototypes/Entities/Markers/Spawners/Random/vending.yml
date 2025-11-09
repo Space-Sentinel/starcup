@@ -12,6 +12,7 @@
   - type: RandomSpawner
     prototypes:
     #- VendingMachineChang # starcup: removed for tone
+    - VendingMachineArticSeltz # imp
     - VendingMachineCigs
     - VendingMachineCoffee
     - VendingMachineCola #Robust Sofdrinks
@@ -47,6 +48,8 @@
       weight: 10
     - id: VendingMachineTheater
       weight: 10
+    - id: VendingMachineMNKDrobe # starcup
+      weight: 20
 
 - type: entity
   id: RandomVendingClothing

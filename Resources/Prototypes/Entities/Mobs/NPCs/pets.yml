@@ -13,6 +13,20 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: ian
+  - type: Inventory
+    speciesId: dog
+    templateId: petAdvanced
+    displacements:
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: corgi_head_displacement
+      eyes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: corgi_eyes_displacement
   - type: DamageStateVisuals
     states:
       Alive:
@@ -84,6 +98,20 @@
     attributes:
       proper: true
       gender: female
+  - type: Inventory
+    speciesId: dog
+    templateId: petAdvanced
+    displacements:
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: lisa_head_displacement
+      eyes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: corgi_eyes_displacement
 
 - type: entity
   name: real mouse
@@ -107,6 +135,7 @@
     attributes:
       proper: true
       gender: female
+  - type: Godmode # starcup
 
 - type: entity
   name: Puppy Ian
@@ -267,8 +296,8 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalNamedCat
-  - type: Puller
-    needsHands: false # starcup - basically a cat
+  - type: Puller # starcup - basically a cat
+    needsHands: false
 
 - type: entity
   name: McGriff
@@ -282,6 +311,8 @@
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: mcgriff
+    - map: [ "head" ]
+    - map: [ "eyes" ]
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -296,7 +327,18 @@
         - MobLayer
   - type: Inventory
     speciesId: puppy
-    templateId: pet
+    templateId: petAdvanced
+    displacements:
+      head:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: mcgriff_head_displacement
+      eyes:
+        sizeMaps:
+          32:
+            sprite: Mobs/Pets/displacements.rsi
+            state: mcgriff_eyes_displacement
   - type: DamageStateVisuals
     states:
       Alive:
@@ -331,8 +373,9 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalMcGriff
-  - type: Puller
-    needsHands: false # starcup - go fetch!
+  - type: MessyDrinker
+  - type: Puller # starcup - go fetch!
+    needsHands: false
 
 - type: entity
   name: Paperwork
@@ -367,8 +410,8 @@
     attributes:
       proper: true
       gender: male
-  - type: Puller
-    needsHands: false # starcup - Paperwork likes helping retrieve random books and papers for his librarian caretaker
+  - type: Puller # starcup - Paperwork likes helping retrieve random books and papers for his librarian caretaker
+    needsHands: false
 
 - type: entity
   name: Walter
@@ -431,8 +474,9 @@
   - type: Speech
     speechVerb: Canine
     speechSounds: Dog
-  - type: Puller
-    needsHands: false # starcup - go fetch!
+  - type: MessyDrinker
+  - type: Puller # starcup - go fetch!
+    needsHands: false
 
 - type: entity
   name: Morty
@@ -561,8 +605,10 @@
     spawned:
     - id: FoodMeat
       amount: 3
-    - id: Telecrystal5
-      amount: 1
+    # begin starcup: remove tc
+    # - id: Telecrystal5
+    #   amount: 1
+    # end starcup
   - type: Grammar
     attributes:
       proper: true
@@ -573,6 +619,10 @@
     - VimPilot
   - type: StealTarget
     stealGroup: AnimalRenault
+  # begin starcup: add sentience target
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-organic
+  # end starcup
 
 - type: entity
   name: Hamlet
@@ -628,6 +678,22 @@
     - sadness
 
 - type: entity
+  parent: MobHamsterHamlet
+  id: MobHamsterHamletSlippery
+  suffix: Slippery
+  components:
+  - type: Slippery
+  - type: StepTrigger
+    requiredTriggeredSpeed: 1
+  - type: TriggerOnStepTrigger
+  # - type: GibOnTrigger # starcup: don't make the hamster explode
+  - type: EmitSoundOnTrigger
+    sound:
+      path: "/Audio/Animals/mouse_squeak.ogg"
+    positional: true
+    predicted: true
+
+- type: entity
   name: Shiva
   parent: MobGiantSpider
   id: MobSpiderShiva
@@ -679,6 +745,8 @@
       types:
         Piercing: 8
         Poison: 8
+  - type: Spider
+    spawnsWebsAsNonPlayer: false
   - type: Grammar
     attributes:
       proper: true
@@ -791,8 +859,6 @@
   - type: Item
     sprite: Mobs/Pets/Smile/smile.rsi
     size: Huge
-  - type: SentienceTarget
-    flavorKind: station-event-random-sentience-flavor-slime
   - type: MobPrice
     price: 3000 # it is a truly valuable creature
   - type: GhostRole
@@ -820,13 +886,15 @@
     description: ghost-role-information-punpun-description
     rules: ghost-role-information-nonantagonist-rules
   - type: GhostTakeoverAvailable
-  - type: Butcherable
-    butcheringType: Spike
-    spawned:
-    - id: FoodMeat
-      amount: 3
-    - id: DrinkTequilaBottleFull
-      amount: 1
+  # begin starcup: monkeys are not food
+  # - type: Butcherable
+  #   butcheringType: Spike
+  #   spawned:
+  #   - id: FoodMeat
+  #     amount: 3
+  #   - id: DrinkTequilaBottleFull
+  #     amount: 1
+  # end starcup
   - type: Tag
     tags:
     - CannotSuicide
@@ -866,3 +934,21 @@
 #  - type: AlwaysRevolutionaryConvertible
   - type: StealTarget
     stealGroup: AnimalTropico
+
+- type: entity
+  name: Polly the parrot
+  parent: MobParrotBase
+  id: MobPollyParrot
+  description: An expert in quantum cracker theory
+  components:
+  - type: Vocalizer
+    maxVocalizeInterval: 240 # polly is chattier
+  - type: RadioVocalizer
+    radioAttemptChance: 0.8 # polly wants to share with the world
+  - type: Grammar
+    attributes:
+      proper: true
+      gender: male
+  - type: Loadout
+    prototypes: [ MobPollyGear ]
+

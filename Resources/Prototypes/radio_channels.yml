@@ -64,7 +64,7 @@
 
 - type: radioChannel
   id: Syndicate
-  name: chat-radio-syndicate
+  name: chat-radio-syndicate-starcup # starcup: Syndicate to NT
   keycode: 't'
   frequency: 1213
   color: "#8f4a4b"
@@ -77,6 +77,7 @@
   color: "#967101"
   # long range since otherwise it'd defeat the point of a handheld radio independent of telecomms
   longRange: true
+  showFrequency: true # Frontier
 
 - type: radioChannel
   id: Binary

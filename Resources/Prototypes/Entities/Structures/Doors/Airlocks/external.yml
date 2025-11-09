@@ -15,12 +15,11 @@
     denySound:
       path: /Audio/Machines/airlock_deny.ogg
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/external.rsi
-  - type: PaintableAirlock
-    group: External
-    department: null
+    sprite: _starcup/Structures/Doors/Airlocks/Standard/external.rsi # Starcup - airlock resprite
   - type: Wires
     layoutId: AirlockExternal
+  - type: Paintable
+    group: null
 
 - type: entity
   parent: AirlockExternal
@@ -32,9 +31,7 @@
   - type: Occluder
     enabled: false
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/external.rsi
-  - type: PaintableAirlock
-    group: ExternalGlass
+    sprite: _starcup/Structures/Doors/Airlocks/Glass/external.rsi # Starcup - airlock resprite
   - type: Fixtures
     fixtures:
       fix1:

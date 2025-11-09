@@ -9,7 +9,6 @@ using Content.Server.Mind;
 using Content.Server.Roles;
 using Content.Server.RoundEnd;
 using Content.Server.Shuttles.Components;
-using Content.Server.Station.Components;
 using Content.Shared.CCVar;
 using Content.Shared.Damage;
 using Content.Shared.FixedPoint;
@@ -20,11 +19,12 @@ using Content.Shared.NPC.Prototypes;
 using Content.Shared.NPC.Systems;
 using Content.Shared.NukeOps;
 using Content.Shared.Pinpointer;
+using Content.Shared.Roles.Components;
 using Content.Shared.Station.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.GameObjects;
 using Robust.Shared.Map.Components;
-using Content.Shared._EinsteinEngines.Silicon.Components; // Goobstation
+using Content.Shared._EE.Silicon.Components; // Goobstation
 using Robust.Shared.Prototypes;
 
 namespace Content.IntegrationTests.Tests.GameRules;
@@ -236,7 +236,7 @@ public sealed class NukeOpsTest
             await pair.RunTicksSync(increment);
             if (!entMan.HasComponent<SiliconComponent>(player)) // Goobstation - IPC
             {
-                var resp = entMan.GetComponent<RespiratorComponent>(player);
+                var resp = entMan.GetComponent<RespiratorComponent>(player); // starcup: moved variable declaration
                 Assert.That(resp.SuffocationCycles, Is.LessThanOrEqualTo(resp.SuffocationCycleThreshold));
             }
             Assert.That(damage.TotalDamage, Is.EqualTo(FixedPoint2.Zero));

@@ -12,7 +12,7 @@
           amount: 1
 
 - type: entity
-  parent: [BoxVial, BaseSyndicateContraband]
+  parent: [BoxVial, BaseTraitorContraband] # starcup: shared contraband level with nt gear
   id: ChemicalSynthesisKit
   name: chemical synthesis kit
   description: A starter kit for the aspiring chemist, includes two vials of vestine for all your criminal needs!
@@ -74,6 +74,14 @@
   name: combat bakery kit
   description: A kit of clandestine baked weapons.
   components:
+  - type: Storage
+    grid:
+    - 0,0,3,3
+    maxItemSize: Normal
+  - type: Item
+    size: Huge
+    shape:
+    - 0,0,3,3
   - type: Sprite
     layers:
       - state: box_of_doom

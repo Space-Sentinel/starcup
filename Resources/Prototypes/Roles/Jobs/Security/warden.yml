@@ -17,10 +17,11 @@
   - Brig
   - Armory
   - Maintenance
-  - Service
+  # - Service # starcup: remove service access from non-service jobs
   - External
-  - Detective
   - Cryogenics
+  extendedAccess:
+  - Detective # starcup: moved to extended access
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
@@ -28,7 +29,7 @@
 - type: startingGear
   id: WardenGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity
+    #eyes: ClothingEyesGlassesSecurity # starcup: moved to loadouts
     id: WardenPDA
     ears: ClothingHeadsetSecurity
   #  pocket1: WeaponPistolMk58Nonlethal # DeltaV - loadouts

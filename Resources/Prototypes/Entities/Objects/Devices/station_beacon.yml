@@ -183,7 +183,7 @@
 - type: entity
   parent: DefaultStationBeaconSecurity
   id: DefaultStationBeaconBrigMed
-  suffix: Brig Med
+  suffix: Combat Medic # starcup: rename brigmedic to combat medic
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-brig-med
@@ -385,7 +385,7 @@
 - type: entity
   parent: DefaultStationBeacon
   id: DefaultStationBeaconSupply
-  suffix: Supply
+  suffix: Logistics # starcup: rename cargo to logistics
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-supply
@@ -394,7 +394,7 @@
 - type: entity
   parent: DefaultStationBeaconSupply
   id: DefaultStationBeaconCargoReception
-  suffix: Cargo Reception
+  suffix: Logistics Reception # starcup: rename cargo to logistics
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-cargo
@@ -410,7 +410,7 @@
 - type: entity
   parent: DefaultStationBeaconSupply
   id: DefaultStationBeaconQMRoom
-  suffix: QM's Room
+  suffix: LO's Room # starcup: rename QM to LO
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-qm
@@ -860,15 +860,15 @@
 - type: entity
   parent: DefaultStationBeaconGhost
   id: DefaultStationBeaconCentComm
-  suffix: CentComm
+  suffix: SyndComm # starcup - NT-SC swap
   components:
   - type: NavMapBeacon
-    text: CentComm
+    text: SyndComm # starcup - NT-SC swap
 
 - type: entity
   parent: DefaultStationBeaconGhost
   id: DefaultStationBeaconCentCommAfterhours
-  suffix: CentComm Afterhours
+  suffix: SyndComm Afterhours # starcup - NT-SC swap
   components:
   - type: NavMapBeacon
     text: Afterhours
@@ -876,7 +876,7 @@
 - type: entity
   parent: DefaultStationBeaconGhost
   id: DefaultStationBeaconCentCommThunderdome
-  suffix: CentComm Thunder Dome
+  suffix: SyndComm Thunder Dome # starcup - NT-SC swap
   components:
   - type: NavMapBeacon
     text: Thunderdome
@@ -884,7 +884,7 @@
 - type: entity
   parent: DefaultStationBeaconGhost
   id: DefaultStationBeaconCentCommERT
-  suffix: CentComm ERT
+  suffix: SyndComm ERT # starcup - NT-SC swap
   components:
   - type: NavMapBeacon
     text: ERT

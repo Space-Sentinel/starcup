@@ -6,6 +6,7 @@
         "x": 32,
         "y": 32
     },
+    "rsic": false,
     "states": [
         {
             "name": "carpet26"
@@ -13,8 +14,8 @@
         {
             "name": "carpet28"
         },
-		{
-			"name": "wood01"
-		}
+        {
+            "name": "wood01"
+        }
     ]
 }

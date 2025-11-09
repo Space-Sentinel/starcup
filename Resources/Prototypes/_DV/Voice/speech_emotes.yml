@@ -1,0 +1,253 @@
+- type: emote
+  id: Hiss
+  name: nyan-chat-emote-name-hiss
+  category: Vocal
+  icon: _DV/Interface/Emotes/hiss.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChasis
+  chatMessages: [hisses.]
+  chatTriggers:
+    - hiss
+    - hisses
+    - hissing
+    - hissed
+
+- type: emote
+  id: Meow
+  name: nyan-chat-emote-name-meow
+  category: Vocal
+  icon: _DV/Interface/Emotes/meow.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChasis
+  chatMessages: [meows.]
+  chatTriggers:
+    - meow
+    - meows
+    - meowing
+    - meowed
+    - miau
+    - miaus
+    - nya
+    - nyas
+    - mraow
+    - mraows
+
+- type: emote
+  id: Mew
+  name: nyan-chat-emote-name-mew
+  category: Vocal
+  icon: _DV/Interface/Emotes/mew.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChasis
+  chatMessages: [mews.]
+  chatTriggers:
+    - mew
+    - mews
+    - mewing
+    - mewed
+
+- type: emote
+  id: Purr
+  name: chat-emote-name-purr
+  category: Vocal
+  icon: _DV/Interface/Emotes/purr.png
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChasis
+  chatMessages: [purrs.]
+  chatTriggers:
+    - purr
+    - purrs
+    - purring
+    - purred
+
+# Harpy
+- type: emote
+  id: HarpyHonk
+  name: delta-chat-emote-name-honk
+  icon: Interface/Emotes/honk.png
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [honks.]
+  chatTriggers:
+    - honk
+    - honks
+    - honking
+    - honked
+
+- type: emote
+  id: HarpyRing
+  name: delta-chat-emote-name-ring
+  icon: _DV/Interface/Emotes/ring.png
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [rings.]
+  chatTriggers:
+    - ring
+    - rings
+    - ringing
+    - ringed
+    - rang
+
+- type: emote
+  id: HarpyPew
+  name: delta-chat-emote-name-pew
+  icon: { sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi, state: base }
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [pews.]
+  chatTriggers:
+    - pew
+    - pews
+    - pewpew
+
+- type: emote
+  id: HarpyBang
+  name: delta-chat-emote-name-bang
+  icon: { sprite: Objects/Weapons/Grenades/grenade.rsi, state: icon }
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [bangs.]
+  chatTriggers:
+    - bang
+    - bangs
+    - banging
+    - banged
+
+- type: emote
+  id: HarpyBeep
+  name: delta-chat-emote-name-beep
+  icon: Interface/Emotes/beep.png
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [beeps.]
+  chatTriggers:
+    - beep
+    - beeps
+    - beeping
+    - beeped
+
+- type: emote
+  id: HarpyRev
+  name: delta-chat-emote-name-rev
+  icon: { sprite: Structures/Machines/grinder.rsi, state: grinder_beaker_attached }
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [revs.]
+  chatTriggers:
+    - rev
+    - revs
+    - revving
+    - revved
+
+- type: emote
+  id: HarpyCaw
+  name: delta-chat-emote-name-caw
+  icon: _DV/Interface/Emotes/caw.png
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [caws.]
+  chatTriggers:
+    - caw
+    - caws
+    - cawing
+    - cawed
+
+- type: emote
+  id: HarpySquish
+  name: delta-chat-emote-name-harpysquish
+  icon: Interface/Emotes/squish.png
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [squishes.]
+  chatTriggers:
+    - squish
+    - squishing
+    - squishes
+
+#Vulpkanin
+- type: emote
+  id: Awoo
+  name: delta-chat-emote-name-awoo
+  icon: _DV/Interface/Emotes/awoo.png
+  category: Vocal
+  available: false
+  whitelist:
+    components:
+    - Vocal
+  blacklist:
+    components:
+    - BorgChassis
+  chatMessages: [awoos.]
+  chatTriggers:
+    - awoo
+    - awoos
+    - awooing
+    - awooed

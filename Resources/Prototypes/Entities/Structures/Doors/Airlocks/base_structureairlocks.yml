@@ -4,6 +4,10 @@
   name: airlock
   description: It opens, it closes, and maybe crushes you.
   components:
+  - type: Anchorable
+    flags:
+    - Anchorable
+  - type: Rotatable
   - type: StationAiWhitelist
   - type: MeleeSound
     soundGroups:
@@ -12,7 +16,7 @@
           "/Audio/Weapons/smash.ogg"
   - type: InteractionOutline
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Standard/basic.rsi
+    sprite: _starcup/Structures/Doors/Airlocks/Standard/basic.rsi # Starcup - airlock resprite
     snapCardinals: true
     layers:
     - state: closed
@@ -158,9 +162,8 @@
     - board
   - type: PlacementReplacement
     key: walls
-  - type: PaintableAirlock
-    group: Standard
-    department: Civilian
+  - type: Paintable
+    group: AirlockStandard
   - type: StaticPrice
     price: 150
   - type: LightningTarget
@@ -201,7 +204,7 @@
   - type: Occluder
     enabled: false
   - type: Sprite
-    sprite: Structures/Doors/Airlocks/Glass/glass.rsi
+    sprite: _starcup/Structures/Doors/Airlocks/Glass/glass.rsi # Starcup - airlock resprite
   - type: AnimationPlayer
   - type: Fixtures
     fixtures:
@@ -220,8 +223,8 @@
   - type: Construction
     graph: Airlock
     node: glassAirlock
-  - type: PaintableAirlock
-    group: Glass
+  - type: Paintable
+    group: AirlockGlass
   - type: RadiationBlocker
     resistance: 2
   - type: Tag

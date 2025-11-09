@@ -1,0 +1,79 @@
+- type: paintableGroup
+  id: AirlockStandard
+  time: 3
+  cost: 3
+  defaultStyle: basic
+  styles:
+    # Begin Starcup changes - airlock resprite
+    armory:                   AirlockArmory
+    atmospherics:             AirlockAtmospherics
+    bartender:                AirlockBartender
+    basic:                    Airlock
+    chief-engineer:           AirlockChiefEngineer
+    chemistry:                AirlockChemistry
+    combat-medic:             AirlockBrigmedic
+    courier:                  AirlockCourier
+    command:                  AirlockCommandSyndie
+    command-maintenance:      AirlockMaintCommand
+    engineering:              AirlockEngineering
+    freezer:                  AirlockFreezer
+    head-of-personnel:        AirlockHeadOfPersonnel
+    head-of-security:         AirlockHeadOfSecurity
+    hydroponics:              AirlockHydroponics
+    janitorial:               AirlockJanitor
+    kitchen:                  AirlockKitchen
+    logistics:                AirlockCargo
+    logistics-maintenance:    AirlockMaintCargo
+    logistics-officer:        AirlockQuartermaster
+    maintenance:              AirlockMaint
+    medical:                  AirlockMedical
+    medical-maintenance:      AirlockMaintMedical
+    paramedic:                AirlockParamedic
+    research-director:        AirlockResearchDirector
+    robotics:                 AirlockRobotics 
+    salvage:                  AirlockSalvage
+    security:                 AirlockSecurity
+    security-maintenance:     AirlockMaintSecurity
+    service:                  AirlockService
+    service-maintenance:      AirlockMaintService
+    science:                  AirlockScience
+    science-maintenance:      AirlockMaintScience
+    virology:                 AirlockVirology
+    # End changes
+
+- type: paintableGroup
+  id: AirlockGlass
+  time: 3
+  cost: 3
+  defaultStyle: basic
+  styles:
+    # Begin The Starcup changes - airlock resprite
+    armory:                   AirlockArmoryGlass
+    atmospherics:             AirlockAtmosphericsGlass
+    bartender:                AirlockBartenderGlass
+    basic:                    AirlockGlass
+    chief-engineer:           AirlockChiefEngineerGlass
+    chemistry:                AirlockChemistryGlass
+    combat-medic:             AirlockBrigmedicGlass
+    courier:                  AirlockCourierGlass
+    command:                  AirlockCommandGlass
+    glass:                    AirlockGlass
+    engineering:              AirlockEngineeringGlass
+    head-of-personnel:        AirlockHeadOfPersonnelGlass
+    head-of-security:         AirlockHeadOfSecurityGlass
+    hydroponics:              AirlockHydroponicsGlass
+    janitorial:               AirlockJanitorGlass
+    kitchen:                  AirlockKitchenGlass
+    logistics:                AirlockCargoGlass
+    logistics-officer:        AirlockQuartermasterGlass
+    maintenance:              AirlockMaintGlass
+    medical:                  AirlockMedicalGlass
+    paramedic:                AirlockParamedicGlass
+    research-director:        AirlockResearchDirectorGlass
+    robotics:                 AirlockRoboticsGlass
+    salvage:                  AirlockSalvageGlass
+    security:                 AirlockSecurityGlass
+    service:                  AirlockServiceGlass
+    science:                  AirlockScienceGlass
+    virology:                 AirlockVirologyGlass
+    # End changes

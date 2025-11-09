@@ -19,9 +19,6 @@
     group: GenericNumber
   - type: StatusEffects
     allowed:
-    - SlowedDown
-    - Stutter
-    - Stun
     - Electrocution
     - TemporaryBlindness
     - RadiationProtection
@@ -38,7 +35,7 @@
   description: A massive beast that uses long tentacles to ensnare its prey, threatening them is not advised under any conditions.
   components:
   - type: Sprite
-    sprite: Mobs/Aliens/Asteroid/goliath.rsi
+    sprite: _DV/Mobs/Aliens/Asteroid/goliath.rsi # DeltaV - upstream uses ancient goliath sprites for some reason
     layers:
     - map: ["enum.DamageStateVisualLayers.Base"]
       state: goliath
@@ -57,7 +54,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      250: Dead
+      250: Dead # starcup: revert salvage damage nerf (150 > 250)
   - type: MeleeWeapon
     soundHit:
       path: "/Audio/Weapons/smash.ogg"
@@ -68,6 +65,7 @@
       types:
         Slash: 10
         Piercing: 10
+    range: 1.12 # Goob - Allows kinetic crushers to fight them without taking guaranteed damage.
   - type: NpcFactionMember
     factions:
     - SimpleHostile
@@ -378,7 +376,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      75: Dead
+      75: Dead # starcup: revert salvage damage nerf (45 > 75)
   - type: MeleeWeapon
     angle: 0
     animation: WeaponArcBite
@@ -428,3 +426,4 @@
     - id: DiamondOre1
       amount: 1
       maxAmount: 3
+

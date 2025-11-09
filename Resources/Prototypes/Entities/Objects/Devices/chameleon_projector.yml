@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseItem, BaseSyndicateContraband]
+  parent: [BaseItem, BaseTraitorContraband] # starcup: shared contraband level with nt gear
   id: ChameleonProjector
   name: chameleon projector
   description: Holoparasite technology used to create a hard-light replica of any object around you. Disguise is destroyed when picked up or deactivated.
@@ -15,10 +15,16 @@
       tags:
       - Bot # for funny bot moments
     blacklist:
-      components:
+      components: # TODO: This blacklist should be cut down by a lot once Chameleon Projector code is less buggy. See #40510
       - ChameleonDisguise # no becoming kleiner
+      - Door # no faking doors
       - MindContainer # no
       - Pda # PDAs currently make you invisible /!\
+      - SubFloorHide # no hiding under the floor
+      tags:
+      - Catwalk # Catwalks make you invisible
+      - Wall # Walls make you invisible
+      - Window # Windows make you invisible
     disguiseProto: ChameleonDisguise
   - type: StaticPrice
     price: 5000
