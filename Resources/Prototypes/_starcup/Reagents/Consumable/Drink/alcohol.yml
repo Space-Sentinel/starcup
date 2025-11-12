@@ -2,9 +2,9 @@
   id: AdiosMotherfucker
   name: reagent-name-adios-motherfucker
   parent: BaseAlcohol
-  desc: reagent-desc-adios-motherfucker
+  desc: reagent-desc-adios-motherfucker # TODO: needs description text
   physicalDesc: reagent-physical-desc-strong-smelling
-  flavor: adios-motherfucker
+  flavor: adios-motherfucker # TODO: needs flavor text
   color: "#1bdaf7"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/adiosmotherfucker.rsi
@@ -21,36 +21,37 @@
         reagent: Ethanol
         amount: 0.13
 
-# - type: reagent
-#   id: Afterburner
-#   name: reagent-name-afterburner
-#   parent: BaseAlcohol
-#   desc: reagent-desc-afterburner
-#   physicalDesc: reagent-physical-desc-oily
-#   flavor: afterburner
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/afterburner.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: ?
+- type: reagent
+  id: Afterburner
+  name: reagent-name-afterburner
+  parent: BaseAlcohol
+  desc: reagent-desc-afterburner # TODO: needs description text
+  physicalDesc: reagent-physical-desc-oily
+  flavor: afterburner
+  color: "#fb6948"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/afterburner.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.1
 
+# TODO: needs sprite
 # - type: reagent
 #   id: Ambrosia
 #   name: reagent-name-ambrosia
 #   parent: BaseAlcohol
 #   desc: reagent-desc-ambrosia
 #   physicalDesc: reagent-physical-desc-exhilarating
-#   flavor: ambrosia
+#   flavor: ambrosia # TODO: needs flavor text
 #   color: "#XXXXXX"
 #   metamorphicSprite:
 #     sprite: _starcup/Objects/Consumable/Drinks/ambrosia.rsi
@@ -73,7 +74,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-appletini
   physicalDesc: reagent-physical-desc-citric
-  flavor: appletini
+  flavor: appletini # TODO: needs flavor text
   color: "#a6f037"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/appletini.rsi
@@ -94,9 +95,9 @@
   id: Aviation
   name: reagent-name-aviation
   parent: BaseAlcohol
-  desc: reagent-desc-aviation
+  desc: reagent-desc-aviation # TODO: needs description text
   physicalDesc: reagent-physical-desc-strong-smelling
-  flavor: aviation
+  flavor: aviation # TODO: needs flavor text
   color: "#d0b8d9"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/aviation.rsi
@@ -117,9 +118,9 @@
   id: BlackVelvet
   name: reagent-name-black-velvet
   parent: BaseAlcohol
-  desc: reagent-desc-black-velvet
+  desc: reagent-desc-black-velvet # TODO: needs description text
   physicalDesc: reagent-physical-desc-fizzy
-  flavor: blackvelvet
+  flavor: blackvelvet # TODO: needs flavor text
   color: "#5c4439"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/blackvelvet.rsi
@@ -134,7 +135,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-blue-lagoon
   physicalDesc: reagent-physical-desc-citric
-  flavor: bluelagoon
+  flavor: bluelagoon # TODO: needs flavor text
   color: "#32A8F2"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/bluelagoon.rsi
@@ -151,6 +152,7 @@
         reagent: Ethanol
         amount: 0.08
 
+# TODO: needs sprite
 # - type: reagent
 #   id: BrainScrambler
 #   name: reagent-name-brain-scrambler
@@ -180,7 +182,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-bramble
   physicalDesc: reagent-physical-desc-aromatic
-  flavor: bramble
+  flavor: bramble # TODO: needs flavor text
   color: "#bb2442"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/bramble.rsi
@@ -203,7 +205,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-buzzed-bunny
   physicalDesc: reagent-physical-desc-vibrant
-  flavor: buzzedbunny
+  flavor: buzzedbunny # TODO: needs flavor text
   color: "#ED6205"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/buzzedbunny.rsi
@@ -226,7 +228,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-cactus
   physicalDesc: reagent-physical-desc-vibrant
-  flavor: cactus
+  flavor: cactus # TODO: needs flavor text
   color: "#9fd13b"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/cactus.rsi
@@ -235,28 +237,28 @@
   metamorphicFillBaseName: fill-
   metamorphicChangeColor: true
 
-# - type: reagent
-#   id: CherryBomb
-#   name: reagent-name-cherry-bomb
-#   parent: BaseAlcohol
-#   desc: reagent-desc-cherry-bomb
-#   physicalDesc: reagent-physical-desc-vibrant
-#   flavor: cherrybomb
-#   color: "#XXXXXX"
-#   metamorphicSprite:
-#     sprite: _starcup/Objects/Consumable/Drinks/cherrybomb.rsi
-#     state: icon_empty
-#   metamorphicMaxFillLevels: ?
-#   metamorphicFillBaseName: fill-
-#   metamorphicChangeColor: ?
-#   metabolisms:
-#     Drink:
-#       effects:
-#       - !type:SatiateThirst
-#         factor: 2
-#       - !type:AdjustReagent
-#         reagent: Ethanol
-#         amount: 0.13
+- type: reagent
+  id: CherryBomb
+  name: reagent-name-cherry-bomb
+  parent: BaseAlcohol
+  desc: reagent-desc-cherry-bomb
+  physicalDesc: reagent-physical-desc-vibrant
+  flavor: cherrybomb # TODO: needs flavor text
+  color: "#c92c39"
+  metamorphicSprite:
+    sprite: _starcup/Objects/Consumable/Drinks/cherrybomb.rsi
+    state: icon_empty
+  metamorphicMaxFillLevels: 4
+  metamorphicFillBaseName: fill-
+  metamorphicChangeColor: false
+  metabolisms:
+    Drink:
+      effects:
+      - !type:SatiateThirst
+        factor: 2
+      - !type:AdjustReagent
+        reagent: Ethanol
+        amount: 0.08
 
 - type: reagent
   id: CorpseReviver
@@ -310,7 +312,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-earthquake
   physicalDesc: reagent-physical-desc-strong-smelling
-  flavor: earthquake
+  flavor: earthquake # TODO: needs flavor text
   color: "#bcbc00"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/earthquake.rsi
@@ -333,7 +335,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-eclipse
   physicalDesc: reagent-physical-desc-crisp
-  flavor: eclipse
+  flavor: eclipse # TODO: needs flavor text
   color: "#DF4600"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/eclipse.rsi
@@ -354,9 +356,9 @@
   id: EmeraldBreeze
   name: reagent-name-emerald-breeze
   parent: BaseAlcohol
-  desc: reagent-desc-emerald-breeze
+  desc: reagent-desc-emerald-breeze # TODO: needs description text
   physicalDesc: reagent-physical-desc-crisp
-  flavor: emeraldbreeze
+  flavor: emeraldbreeze # TODO: needs flavor text
   color: "#9ADA4E"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/emeraldbreeze.rsi
@@ -373,11 +375,12 @@
         reagent: Ethanol
         amount: 0.12
 
+# TODO: needs sprite
 # - type: reagent
 #   id: Feywild
 #   name: reagent-name-feywild
 #   parent: BaseAlcohol
-#   desc: reagent-desc-feywild
+#   desc: reagent-desc-feywild # TODO: needs description text
 #   physicalDesc: reagent-physical-desc-exotic-smelling
 #   flavor: feywild
 #   color: "#XXXXXX"
@@ -396,6 +399,7 @@
 #         reagent: Ethanol
 #         amount: 0.1
 
+# TODO: needs sprite
 # - type: reagent
 #   id: GoblinsBrew
 #   name: reagent-name-goblins-brew
@@ -425,7 +429,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-moon-mist
   physicalDesc: reagent-physical-desc-shiny
-  flavor: moonmist
+  flavor: moonmist # TODO: needs flavor text
   color: "#c8a5d4"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/moonmist.rsi
@@ -442,13 +446,14 @@
         reagent: Ethanol
         amount: 0.1
 
+# TODO: needs sprite
 # - type: reagent
 #   id: Mushburger
 #   name: reagent-name-mushburger
 #   parent: BaseAlcohol
 #   desc: reagent-desc-mushburger
 #   physicalDesc: reagent-physical-desc-murky
-#   flavor: mushburger
+#   flavor: mushburger # TODO: needs flavor text
 #   color: "#XXXXXX"
 #   metamorphicSprite:
 #     sprite: _starcup/Objects/Consumable/Drinks/mushburger.rsi
@@ -457,13 +462,14 @@
 #   metamorphicFillBaseName: fill-
 #   metamorphicChangeColor: ?
 
+# TODO: needs sprite
 # - type: reagent
 #   id: Necropolitan
 #   name: reagent-name-necropolitan
 #   parent: BaseAlcohol
-#   desc: reagent-desc-necropolitan
+#   desc: reagent-desc-necropolitan # TODO: needs description text
 #   physicalDesc: reagent-physical-desc-necrotic
-#   flavor: necropolitan
+#   flavor: necropolitan # TODO: needs flavor text
 #   color: "#XXXXXX"
 #   metamorphicSprite:
 #     sprite: _starcup/Objects/Consumable/Drinks/necropolitan.rsi
@@ -501,7 +507,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-rainbow-shooter
   physicalDesc: reagent-physical-desc-colorful
-  flavor: rainbowshooter
+  flavor: rainbowshooter # TODO: needs flavor text
   color: "#916877" # yes this is what you get when you mix all the component colors
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/rainbowshooter.rsi
@@ -516,7 +522,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-red-dog
   physicalDesc: reagent-physical-desc-dark-red
-  flavor: reddog
+  flavor: reddog # TODO: needs flavor text
   color: "#8f1802"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/reddog.rsi
@@ -531,7 +537,7 @@
   parent: BaseAlcohol
   desc: reagent-desc-red-eye
   physicalDesc: reagent-physical-desc-cloudy
-  flavor: redeye
+  flavor: redeye # TODO: needs flavor text
   color: "#ae3235"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/redeye.rsi
@@ -544,7 +550,7 @@
   id: SakuraMartini
   name: reagent-name-sakura-martini
   parent: BaseAlcohol
-  desc: reagent-desc-sakura-martini
+  desc: reagent-desc-sakura-martini # TODO: needs description text
   physicalDesc: reagent-physical-desc-aromatic
   flavor: sakuramartini
   color: "#e6d5df"
@@ -567,9 +573,9 @@
   id: Snakebite
   name: reagent-name-snakebite
   parent: BaseAlcohol
-  desc: reagent-desc-snakebite
+  desc: reagent-desc-snakebite # TODO: needs description text
   physicalDesc: reagent-physical-desc-fizzy
-  flavor: snakebite
+  flavor: snakebite # TODO: needs flavor text
   color: "#845830"
   metamorphicSprite:
     sprite: _starcup/Objects/Consumable/Drinks/snakebite.rsi

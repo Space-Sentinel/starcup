@@ -177,21 +177,21 @@
     sprite: _starcup/Objects/Consumable/Drinks/adiosmotherfucker.rsi
     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkAfterburner
-#   suffix: afterburner
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: Afterburner
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/afterburner.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkAfterburner
+  suffix: afterburner
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: Afterburner
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/afterburner.rsi
+    state: icon
 
 # - type: entity
 #   parent: DrinkGlass
@@ -337,21 +337,21 @@
     sprite: _starcup/Objects/Consumable/Drinks/cactus.rsi
     state: icon
 
-# - type: entity
-#   parent: DrinkGlass
-#   id: DrinkCherryBomb
-#   suffix: cherry bomb
-#   components:
-#   - type: SolutionContainerManager
-#     solutions:
-#       drink:
-#         maxVol: 30
-#         reagents:
-#         - ReagentId: CherryBomb
-#           Quantity: 30
-#   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/cherrybomb.rsi
-#     state: icon
+- type: entity
+  parent: DrinkGlass
+  id: DrinkCherryBomb
+  suffix: cherry bomb
+  components:
+  - type: SolutionContainerManager
+    solutions:
+      drink:
+        maxVol: 30
+        reagents:
+        - ReagentId: CherryBomb
+          Quantity: 30
+  - type: Icon
+    sprite: _starcup/Objects/Consumable/Drinks/cherrybomb.rsi
+    state: icon
 
 - type: entity
   parent: DrinkGlass

@@ -21,7 +21,7 @@ reagent-desc-tonic-water-starcup = Originally used as a medicine, then drank rec
 reagent-desc-water-starcup = A colorless liquid that most biological lifeforms need in order to survive.
 
 reagent-name-cherry-limeade = cherry limeade
-reagent-desc-cherry-limeade = The tarter and meaner cousin to lemonade.
+reagent-desc-cherry-limeade = Lemonade's tart, fizzy cousin.
 
 reagent-name-evil-princess = evil princess
 reagent-desc-evil-princess = For holding daintily in one hand while dismissively sentencing people you don't like to the dungeon.

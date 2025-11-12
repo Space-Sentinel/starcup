@@ -36,7 +36,7 @@
   parent: BaseDrink
   desc: reagent-desc-cherry-limeade
   physicalDesc: reagent-physical-desc-fizzy
-  flavor: cherrylimeade
+  flavor: cherrylimeade # TODO: needs flavor text
   color: "#fa1800"
   metabolisms:
     Drink:

@@ -18,10 +18,12 @@
       amount: 2
     JuiceLime:
       amount: 1
+    SodaWater:
+      amount: 1
     Sugar:
       amount: 1
   products:
-    CherryLimeade: 4
+    CherryLimeade: 5
 
 - type: reaction
   id: EvilPrincess
@@ -66,11 +68,11 @@
     Hotsauce:
       amount: 1
     Vodka:
-      amount: 1
+      amount: 2
     WeldingFuel:
       amount: 1
   products:
-    Afterburner: 3
+    Afterburner: 4
 
 - type: reaction
   id: Ambrosia
@@ -201,12 +203,14 @@
 - type: reaction
   id: CherryBomb
   reactants:
-    Vodka:
+    Whiskey:
       amount: 2
-    JuiceCherry:
+    SodaWater:
       amount: 1
+    JuiceCherry:
+      amount: 2
   products:
-    CherryBomb: 3
+    CherryBomb: 5
 
 - type: reaction
   id: CorpseReviver

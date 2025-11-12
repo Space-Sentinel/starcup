@@ -16,6 +16,7 @@ flavor-complex-bramble = like placeholder text
 flavor-complex-buzzed-bunny = like placeholder text
 flavor-complex-cactus = like placeholder text
 flavor-complex-cherry-bomb = like placeholder text
+flavor-complex-cherry-limeade = like placeholder text
 flavor-complex-corpse-reviver = strong enough to wake the dead
 flavor-complex-cryptid = like something dark and mysterious
 flavor-complex-earthquake = like placeholder text
