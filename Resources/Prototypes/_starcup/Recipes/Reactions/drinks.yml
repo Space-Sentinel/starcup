@@ -287,7 +287,7 @@
     EmeraldBreeze: 3
 
 - type: reaction
-  id: Feywild
+  id: FaeriesCheer
   requiredMixerCategories:
   - Stir
   reactants:
@@ -300,7 +300,7 @@
     SodaWater:
       amount: 1
   products:
-    Feywild: 5
+    FaeriesCheer: 5
 
 - type: reaction
   id: GoblinsBrew

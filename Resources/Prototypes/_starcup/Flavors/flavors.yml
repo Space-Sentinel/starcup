@@ -116,9 +116,9 @@
   description: flavor-complex-evil-princess
 
 - type: flavor
-  id: feywild
+  id: faeriescheer
   flavorType: Complex
-  description: flavor-complex-feywild
+  description: flavor-complex-faeries-cheer
 
 - type: flavor
   id: goblinsbrew

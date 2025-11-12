@@ -1,9 +1,9 @@
 # New Drinks
 reagent-name-adios-motherfucker = adios, motherfucker
-reagent-desc-adios-motherfucker = This is placeholder text!
+reagent-desc-adios-motherfucker = Much has been said about this cocktail's name, but at least no one can say that it isn't honest.
 
 reagent-name-afterburner = afterburner
-reagent-desc-afterburner = This is placeholder text!
+reagent-desc-afterburner = Originally mixed on a dare, then drank on a second, much more disastrous dare.
 
 reagent-name-ambrosia = ambrosia
 reagent-desc-ambrosia = Dragons may not be gods, but their taste can only be described as divine.
@@ -12,10 +12,10 @@ reagent-name-appletini = appletini
 reagent-desc-appletini = Not technically a kind of martini. Not typically made with real apples, either.
 
 reagent-name-aviation = aviation
-reagent-desc-aviation = This is placeholder text!
+reagent-desc-aviation = Ironically sends more people falling to the ground than lifting off of it.
 
 reagent-name-black-velvet = black velvet
-reagent-desc-black-velvet = This is placeholder text!
+reagent-desc-black-velvet = For the classier, more discerning moody alcoholic.
 
 reagent-name-blue-lagoon = Blue Lagoon
 reagent-desc-blue-lagoon = Best known from Electra's attempts at trademarking the recipe during their resort world developments.
@@ -48,10 +48,10 @@ reagent-name-eclipse = eclipse
 reagent-desc-eclipse = Hot as a corona, cool as the dark side of a moon.
 
 reagent-name-emerald-breeze = emerald breeze
-reagent-desc-emerald-breeze = This is placeholder text!
+reagent-desc-emerald-breeze = Inspired by and named after the brilliant viridian storms of Jupiter-Psi.
 
-reagent-name-feywild = feywild
-reagent-desc-feywild = This is placeholder text!
+reagent-name-faeries-cheer = faerie's cheer
+reagent-desc-faeries-cheer = For moonlit revels and meeting charming strangers in the woods.
 
 reagent-name-goblins-brew = goblin's brew
 reagent-desc-goblins-brew = A concoction of a strange and terribly powerful nature.
@@ -63,7 +63,7 @@ reagent-name-mushburger = mushburger
 reagent-desc-mushburger = Even looking at this thing is enough to make you feel sick.
 
 reagent-name-necropolitan = necropolitan
-reagent-desc-necropolitan = This is placeholder text!
+reagent-desc-necropolitan = A taste to die for!
 
 reagent-name-paradise-lost = paradise lost
 reagent-desc-paradise-lost = Hail, horrors, hail.
@@ -78,10 +78,10 @@ reagent-name-red-eye = red eye
 reagent-desc-red-eye = It might look unappetizing, but as the "inventor" of this "cocktail" was known to say: Anything else is always something better.
 
 reagent-name-sakura-martini = sakura martini
-reagent-desc-sakura-martini = This is placeholder text!
+reagent-desc-sakura-martini = A frequent sight during moonlit seasonal festivals across a few different planets.
 
 reagent-name-snakebite = snakebite
-reagent-desc-snakebite = This is placeholder text!
+reagent-desc-snakebite = First invented by a Gothic priestess, whose faith happens to have a fairly substantial amount of symbolism involving snakes and the consumption of apples.
 
 # Rewritten Drinks
 reagent-desc-amasec-starcup = In the grim darkness of neocapitalism, there is only war.

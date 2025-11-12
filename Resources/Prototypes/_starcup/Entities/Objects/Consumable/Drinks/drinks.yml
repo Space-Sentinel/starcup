@@ -435,18 +435,18 @@
 
 # - type: entity
 #   parent: DrinkGlass
-#   id: DrinkFeywild
-#   suffix: feywild
+#   id: DrinkFaeriesCheer
+#   suffix: faerie's cheer
 #   components:
 #   - type: SolutionContainerManager
 #     solutions:
 #       drink:
 #         maxVol: 30
 #         reagents:
-#         - ReagentId: Feywild
+#         - ReagentId: FaeriesCheer
 #           Quantity: 30
 #   - type: Icon
-#     sprite: _starcup/Objects/Consumable/Drinks/feywild.rsi
+#     sprite: _starcup/Objects/Consumable/Drinks/faeriescheer.rsi
 #     state: icon
 
 # - type: entity
