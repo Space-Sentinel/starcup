@@ -89,6 +89,14 @@
     softness: 2
     color: "#FF8A0C"
 
+- type: entity
+  id: PoweredLightPostSmallAmbientSensingWarm
+  parent: PoweredLightPostSmallWarm
+  suffix: "Warm, Ambient Sensing"
+  components:
+  - type: AmbientSensingLight
+    lightLevelThreshold: 0.8
+
 # cold
 - type: entity
   id: PoweredLightPostSmallCold
