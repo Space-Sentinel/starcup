@@ -21,7 +21,7 @@ public sealed class MailMetricsCartridgeSystem : EntitySystem
 
         SubscribeLocalEvent<MailMetricsCartridgeComponent, CartridgeUiReadyEvent>(OnUiReady);
         SubscribeLocalEvent<LogisticStatsUpdatedEvent>(OnLogisticsStatsUpdated);
-        SubscribeLocalEvent<DeliveryComponent, MapInitEvent>(OnMapInit); // starcup: changed to DeliveryComponent
+        // SubscribeLocalEvent<DeliveryComponent, MapInitEvent>(OnMapInit); // starcup: remove unneeded subscription
     }
 
     private void OnUiReady(Entity<MailMetricsCartridgeComponent> ent, ref CartridgeUiReadyEvent args)
