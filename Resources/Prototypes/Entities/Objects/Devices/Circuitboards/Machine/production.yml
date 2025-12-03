@@ -1380,7 +1380,7 @@
     stackRequirements:
       # begin starcup: preserve matter bin, capacitor, and manipulators
       Capacitor: 1
-      Matter Bin: 1
+      MatterBin: 1
       Steel: 5
       # end starcup
 
