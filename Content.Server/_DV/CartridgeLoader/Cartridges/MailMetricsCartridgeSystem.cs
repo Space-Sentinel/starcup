@@ -4,7 +4,9 @@ using Content.Server.Station.Systems;
 using Content.Server.CartridgeLoader;
 using Content.Shared.CartridgeLoader;
 using Content.Shared.CartridgeLoader.Cartridges;
-using Content.Server._DV.Mail.Components;
+using Content.Shared.Delivery; // starcup: upstream mail refactor
+// using Content.Server._DV.Mail.Components; // starcup: upstream mail refactor
+
 
 namespace Content.Server._DV.CartridgeLoader.Cartridges;
 
@@ -19,7 +21,7 @@ public sealed class MailMetricsCartridgeSystem : EntitySystem
 
         SubscribeLocalEvent<MailMetricsCartridgeComponent, CartridgeUiReadyEvent>(OnUiReady);
         SubscribeLocalEvent<LogisticStatsUpdatedEvent>(OnLogisticsStatsUpdated);
-        SubscribeLocalEvent<MailComponent, MapInitEvent>(OnMapInit);
+        SubscribeLocalEvent<DeliveryComponent, MapInitEvent>(OnMapInit); // starcup: changed to DeliveryComponent
     }
 
     private void OnUiReady(Entity<MailMetricsCartridgeComponent> ent, ref CartridgeUiReadyEvent args)
@@ -32,7 +34,7 @@ public sealed class MailMetricsCartridgeSystem : EntitySystem
         UpdateAllCartridges(args.Station);
     }
 
-    private void OnMapInit(EntityUid uid, MailComponent mail, MapInitEvent args)
+    private void OnMapInit(EntityUid uid, DeliveryComponent mail, MapInitEvent args) // starcup: changed to DeliveryComponent
     {
         if (_station.GetOwningStation(uid) is { } station)
             UpdateAllCartridges(station);
@@ -70,7 +72,7 @@ public sealed class MailMetricsCartridgeSystem : EntitySystem
     {
         var unopenedMail = 0;
 
-        var query = EntityQueryEnumerator<MailComponent>();
+        var query = EntityQueryEnumerator<DeliveryComponent>(); // starcup: changed to DeliveryComponent
 
         while (query.MoveNext(out var uid, out var comp))
         {
