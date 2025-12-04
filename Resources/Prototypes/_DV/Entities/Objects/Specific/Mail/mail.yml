@@ -1698,6 +1698,132 @@
 #  - type: Mail
 #    contents:
 #    - id: ClothingOuterWinterCoat
+#    - id: UniformSchoolgirlBlack
+#      orGroup: Color
+#    - id: UniformSchoolgirlBlue
+#      orGroup: Color
+#    - id: UniformSchoolgirlCyan
+#      orGroup: Color
+#    - id: UniformSchoolgirlGreen
+#      orGroup: Color
+#    - id: UniformSchoolgirlOrange
+#      orGroup: Color
+#    - id: UniformSchoolgirlPink
+#      orGroup: Color
+#    - id: UniformSchoolgirlPurple
+#      orGroup: Color
+#    - id: UniformSchoolgirlRed
+#      orGroup: Color
+# 
+#- type: entity
+#  parent: BaseMail
+#  id: MailFlowers
+#  suffix: flowers
+#  components:
+#  - type: Mail
+#    contents:
+#    # TODO actual flowers
+#    - id: ClothingHeadHatFlowerWreath
+#      orGroup: Flowers
+#    - id: FoodPoppy
+#      orGroup: Flowers
+#    - id: FoodLily
+#
+#- type: entity
+#  parent: BaseMail
+#  id: MailSignallerKit
+#  suffix: signallerkit
+#  components:
+#  - type: Mail
+#    contents:
+#    - id: Multitool
+#    - id: RemoteSignaller
+#
+#- type: entity
+#  parent: BaseMail
+#  id: MailNoir
+#  suffix: noir
+#  components:
+#  - type: Mail
+#    contents:
+#    - id: ClothingUniformJumpsuitDetectiveGrey
+#    - id: ClothingUniformJumpskirtDetectiveGrey
+#    - id: ClothingHeadHatBowlerHat
+#    - id: ClothingOuterCoatGentle
+#
+#- type: entity
+#  parent: BaseMail
+#  id: MailRestraints
+#  suffix: restraints
+#  components:
+#  - type: Mail
+#    contents:
+#    - id: Handcuffs
+#    - id: ClothingMaskMuzzle
+#    - id: ClothingEyesBlindfold
+#
+#- type: entity
+#  parent: BaseMail
+#  id: MailFishingCap
+#  suffix: fishingcap
+#  components:
+#  - type: Mail
+#    contents:
+#    - id: ClothingHeadFishCap
+#
+#- type: entity
+#  parent: BaseMail
+#  id: MailFlashlight
+#  suffix: Flashlight
+#  components:
+#  - type: Mail
+#    contents:
+#    - id: FlashlightLantern
+#    # begin starcup: add misc tools & tweaks
+#      orGroup: LightingItem
+#    - id: FlashlightLanternGreen
+#      orGroup: LightingItem
+#    - id: FlashlightLanternTeal
+#      orGroup: LightingItem
+#    - id: FlashlightLanternPurple
+#      orGroup: LightingItem
+#    - id: FlashlightLanternRed
+#      orGroup: LightingItem
+#    - id: FlashlightBig
+#      orGroup: LightingItem
+#    # end starcup: add misc tools & tweaks
+#
+#- type: entity
+#  parent: BaseMail
+#  id: MailSpaceVillainDIY
+#  suffix: spacevilliandiy
+#  components:
+#  - type: Mail
+#    contents:
+#    - id: SpaceVillainArcadeComputerCircuitboard
+#
+#- type: entity
+#  parent: BaseMail
+#  id: MailSunglasses
+#  suffix: Sunglasses
+#  components:
+#  - type: Mail
+#    contents:
+#    - id: ClothingEyesGlassesSunglasses
+#
+#- type: entity
+#  parent: BaseMail
+#  id: MailWinterCoat
+#  suffix: wintercoat
+#  components:
+#  - type: Mail
+#    contents:
+#    - id: ClothingOuterWinterCoat
+#      orGroup: Coat
+##    - id: ClothingOuterWinterCoatLong # starcup - commenting out for now
+##      orGroup: Coat
+##    - id: ClothingOuterWinterCoatPlaid # starcup - commenting out for now
+#
 #      orGroup: Coat
 ##    - id: ClothingOuterWinterCoatLong # starcup - commenting out for now
 ##      orGroup: Coat
