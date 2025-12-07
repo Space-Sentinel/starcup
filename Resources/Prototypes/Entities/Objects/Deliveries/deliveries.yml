@@ -39,6 +39,8 @@
   - type: Label
     examinable: false
   - type: FingerprintReader
+    ignoreGloves: true  # starcup
+
   - type: Delivery
   - type: DeliveryRandomMultiplier
   - type: ContainerContainer
