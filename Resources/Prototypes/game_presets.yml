@@ -146,9 +146,9 @@
   rules:
   - DummyNonAntagChance
   - Traitor
-  - SubGamemodesRuleNoWizard
-  - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- SubGamemodesRuleNoWizard # starcup: disabled
+  - TroubleStationEventScheduler # starcup: replaced event scheduler with trouble version
+  - SlowMeteorSwarmScheduler # starcup: replaced basic meteor scheduler with slow version
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 

@@ -1,3 +1,65 @@
+# Antags
+- type: entity
+  parent: BaseGameRule
+  id: TraitorRandom
+  components:
+  - type: DynamicRule
+    startingBudgetMin: 100
+    startingBudgetMax: 100
+    table: !type:AllSelector
+      children:
+      - !type:GroupSelector
+        conditions:
+        - !type:RoundDurationCondition
+          max: 1
+        children:
+        - id: TraitorNT
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
+        - id: TraitorSyndie
+          conditions:
+          - !type:HasBudgetCondition
+          - !type:MaxRuleOccurenceCondition
+
+- type: entity
+  parent: BaseTraitorRule
+  id: TraitorNT
+  components:
+  - type: GameRule
+    minPlayers: 5
+    delay:
+      min: 240
+      max: 420
+  - type: AntagSelection
+    selectionTime: IntraPlayerSpawn
+    definitions:
+    - prefRoles: [ TraitorNT ]
+      max: 8
+      playerRatio: 10
+      blacklist:
+        components:
+        - AntagImmune
+      lateJoinAdditional: false
+      mindRoles:
+      - MindRoleTraitorNT
+
+- type: entity
+  id: TraitorReinforcementNT
+  parent: BaseTraitorRule
+  components:
+  - type: TraitorRule
+    giveUplink: false
+    giveCodewords: false # It would actually give them a different set of codewords than the regular traitors, anyway
+    giveBriefing: false
+  - type: AntagSelection
+    definitions:
+    - prefRoles: [ TraitorNT ]
+      mindRoles:
+      - MindRoleTraitorReinforcementNT
+
+# Basic Schedulers
+
 - type: entity
   id: CalmStationEventScheduler
   parent: BaseGameRule

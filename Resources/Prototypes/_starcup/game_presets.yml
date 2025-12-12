@@ -47,51 +47,51 @@
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
-## "False" Gamemodes, for Admin Use
 - type: gamePreset
-  id: SecretEmpty # runs Empty but shows "Secret" in lobby.
+  id: TraitorSyndie
   alias:
-    - secretempty
-  name: secret-title
-  showInVote: false #Admin Use
-  description: secret-description
+  - traitorsyndicate
+  - syndicatetraitor
+  name: traitor-title
+  description: traitor-description
+  showInVote: false
   rules:
-  - BasicRoundstartVariation
-
-- type: gamePreset
-  id: SecretCalm # runs Calm but shows "Secret" in lobby.
-  alias:
-    - secretcalm
-  name: secret-title
-  showInVote: false #Admin Use
-  description: secret-description
-  rules:
-  - CalmStationEventScheduler
-  - SpaceTrafficControlFriendlyEventScheduler
-  - BasicRoundstartVariation
-
-- type: gamePreset
-  id: SecretTrouble # runs Trouble but shows "Secret" in lobby.
-  alias:
-    - secrettrouble
-  name: secret-title
-  showInVote: false #Admin Use
-  description: secret-description
-  rules:
+  - DummyNonAntagChance
+  - TraitorSyndie
   - TroubleStationEventScheduler
   - SlowMeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
-  id: SecretDanger # runs Danger but shows "Secret" in lobby.
+  id: TraitorNT
   alias:
-    - secretdanger
-  name: secret-title
-  showInVote: false #Admin Use
-  description: secret-description
+  - traitornt
+  - traitornanotrasen
+  - nanotrasentraitor
+  name: traitor-title
+  description: traitor-description
+  showInVote: false
   rules:
-  - DangerStationEventScheduler
-  - MeteorSwarmScheduler
+  - DummyNonAntagChance
+  - TraitorNT
+  - TroubleStationEventScheduler
+  - SlowMeteorSwarmScheduler
+  - SpaceTrafficControlEventScheduler
+  - BasicRoundstartVariation
+
+- type: gamePreset
+  id: TraitorRandom
+  alias:
+  - traitorsyndicate
+  - traitorsyndie
+  name: traitor-title
+  description: traitor-description
+  showInVote: false
+  rules:
+  - DummyNonAntagChance
+  - TraitorNT
+  - TroubleStationEventScheduler
+  - SlowMeteorSwarmScheduler
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation

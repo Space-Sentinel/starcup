@@ -195,7 +195,7 @@
 
 - type: entity
   parent: BaseTraitorRule
-  id: Traitor
+  id: TraitorSyndie # starcup: renamed for clarity
   components:
   - type: GameRule
     minPlayers: 5

@@ -33,6 +33,7 @@
     - id: KingRatMigration
     - id: ParadoxCloneSpawn
     - id: SleeperAgents
+    - id: SleeperAgentsNT
     - !type:NestedSelector
       tableId: DerelictBorgEventTable
 
@@ -47,3 +48,31 @@
         - id: DerelictJanitorCyborgSpawn
         - id: DerelictMedicalCyborgSpawn
         - id: DerelictMiningCyborgSpawn
+
+- type: entity
+  parent: BaseTraitorRule
+  id: SleeperAgentsNT
+  components:
+  - type: StationEvent
+    earliestStart: 30
+    weight: 6
+    minimumPlayers: 20
+    maxOccurrences: 1 # can only happen once per round
+    startAnnouncement: station-event-communication-interception
+    startAudio:
+      path: /Audio/Announcements/intercept.ogg
+    duration: null # the rule has to last the whole round not 1 second
+    occursDuringRoundEnd: false
+  - type: AlertLevelInterceptionRule
+  - type: AntagSelection
+    definitions:
+    - prefRoles: [ TraitorSleeperNT ]
+      fallbackRoles: [ TraitorNT ]
+      min: 1
+      max: 1 # only 1 since there are two different sleeper events
+      playerRatio: 10
+      blacklist:
+        components:
+        - AntagImmune
+      mindRoles:
+      - MindRoleTraitorSleeperNT
