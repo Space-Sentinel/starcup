@@ -9,8 +9,8 @@ admin-verb-make-thief = Make the target into a thief.
 admin-verb-make-paradox-clone = Create a Paradox Clone ghost role of the target.
 admin-verb-make-changeling = Make the target into a Changeling.
 
-
-admin-verb-text-make-traitor = Make Traitor
+# starcup: specified syndie traitor
+admin-verb-text-make-traitor = Make Traitor (Syndie)
 admin-verb-text-make-initial-infected = Make Initial Infected
 admin-verb-text-make-zombie = Make Zombie
 admin-verb-text-make-nuclear-operative = Make Nuclear Operative

@@ -22,7 +22,8 @@ public sealed partial class AdminVerbSystem
     [Dependency] private readonly GameTicker _gameTicker = default!;
     [Dependency] private readonly OutfitSystem _outfit = default!;
 
-    private static readonly EntProtoId DefaultTraitorRule = "Traitor";
+    private static readonly EntProtoId DefaultTraitorRule = "TraitorSyndie"; // starcup
+    private static readonly EntProtoId DefaultTraitorRuleNanotrasen = "TraitorNT"; // starcup
     private static readonly EntProtoId DefaultInitialInfectedRule = "Zombie";
     private static readonly EntProtoId DefaultNukeOpRule = "LoneOpsSpawn";
     private static readonly EntProtoId DefaultRevsRule = "Revolutionary";
@@ -61,6 +62,23 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", traitorName, Loc.GetString("admin-verb-make-traitor")),
         };
         args.Verbs.Add(traitor);
+
+        // begin starcup: NT traitor verb
+        var traitorNanotrasenName = Loc.GetString("admin-verb-text-make-traitor-nanotrasen");
+        Verb traitorNanotrasen = new()
+        {
+            Text = traitorNanotrasenName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/Interface/Misc/job_icons.rsi"), "Nanotrasen"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<TraitorRuleComponent>(targetPlayer, DefaultTraitorRuleNanotrasen);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", traitorName, Loc.GetString("admin-verb-make-traitor-nanotrasen")),
+        };
+        args.Verbs.Add(traitorNanotrasen);
+        // end starcup
 
         var initialInfectedName = Loc.GetString("admin-verb-text-make-initial-infected");
         Verb initialInfected = new()
