@@ -5,10 +5,10 @@
   name: Traitor Role (NanoTrasen)
   components:
   - type: MindRole
-    antagPrototype: Traitor
+    antagPrototype: TraitorNT
     exclusiveAntag: true
     subtype: role-subtype-traitor
-  - type: TraitorRoleNT
+  - type: TraitorRole
 
 - type: entity
   parent: MindRoleTraitor
