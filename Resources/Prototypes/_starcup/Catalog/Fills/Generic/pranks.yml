@@ -1,0 +1,6 @@
+- type: entityTable
+  id: RandomPrankHarmlessSmallTable
+  table: !type:GroupSelector
+    children:
+    - id: SmallCritterHarmlessTable
+    - id: AdminInstantEffectSmoke10

@@ -10,6 +10,53 @@
       tableId: RandomMedicalTable
     - !type:NestedSelector
       tableId: RandomStandardPowerCellTable
+    - !type:NestedSelector
+      tableId: RandomSignalTechTable
+    - !type:GroupSelector
+      - id: ResearchDisk5000
+      - id: TechnologyDisk
+
+- type: entityTable
+  id: RandomSmallToolTable
+  table: !type:GroupSelector
+    children:
+    - id: Wirecutter
+    - id: Screwdriver
+    - id: ItemHammer
+    - id: Crowbar
+    - id: Multitool
+    - id: Welder
+    - id: Flare
+    - id: Beaker
+    - id: GasAnalyzer
+    - id: trayScanner
+    - id: GeigerCounter
+    - id: HandheldGPSBasic
+    - id: HandLabeler
+    - id: GlowstickBase
+    - id: RadioHandheld
+    - id: AppraisalTool
+    - id: ModularReceiver
+    - !type:NestedSelector
+      tableId: InsulsTable
+    - !type:GroupSelector
+      children:
+        - id: CableHVStack
+        - id: CableMVStack
+        - id: CableApcStack
+    - !type:GroupSelector
+      children:
+        - id: Wrench
+        - id: HeavyWrench
+        - id: MonkeyWrench
+        - id: PipeWrench
+    - !type:GroupSelector
+      children:
+        - id: FlashlightLantern
+        - id: FlashlightLanternGreen
+        - id: FlashlightLanternPurple
+        - id: FlashlightLanternTeal
+        - id: FlashlightLanternRed
 
 - type: entityTable
   id: RandomStandardPowerCellTable # excludes anything that could be considered a straightforward improvement over the medium cell

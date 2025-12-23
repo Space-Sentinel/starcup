@@ -1,0 +1,73 @@
+- type: entityTable
+  id: RandomCombatGearSmallTable
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: RandomKnifeTable
+    - !type:NestedSelector
+      tableId: RandomAmmoTable
+    - !type:NestedSelector
+      tableId: RandomGrenadeTable
+    - !type:GroupSelector
+      children:
+      - id: ModularReceiver
+      - id: RifleStock
+
+- type: entityTable
+  id: RandomKnifeTable
+  table: !type:GroupSelector
+    children:
+    - id: KitchenKnife
+    - id: CombatKnife
+    - id: SurvivalKnife
+    - id: KukriKnife
+    - id: Shiv
+    - id: ReinforcedShiv
+    - id: PlasmaShiv
+    - id: UraniumShiv
+
+- type: entityTable
+  id: RandomAmmoTable
+  table: !type:GroupSelector
+    children:
+    - id: MagazinePistol
+    - id: MagazinePistolPractice
+    - id: MagazinePistolIncendiary
+    - id: MagazinePistolSubMachineGun
+    - id: MagazinePistolSubMachineGunPractice
+    - id: MagazinePistolSubMachineGunIncendiary
+    - id: MagazineLightRifle
+    - id: MagazineLightRiflePractice
+    - id: MagazineLightRifleIncendiary
+    - id: MagazineRifle
+    - id: MagazineRiflePractice
+    - id: MagazineRifleIncendiary
+    - id: SpeedLoaderMagnum
+    - id: SpeedLoaderMagnumPractice
+    - id: SpeedLoaderMagnumIncendiary
+    - id: CartridgeAntiMateriel
+    - id: ShellShotgun
+    - id: ShellShotgunBeanbag
+    - id: ShellShotgunSlug
+    - id: ShellShotgunFlare
+    - id: ShellShotgunIncendiary
+    - id: ShellTranquilizer
+
+- type: entityTable
+  id: RandomGrenadeTable
+  table: !type:GroupSelector
+    children:
+    - !type:AllSelector # make your own!
+      children:
+      - !type:GroupSelector
+        children:
+        - id: TimerTrigger
+        - id: SignalTrigger
+        - id: VoiceTrigger
+      - !type:GroupSelector
+        children:
+        - id: ChemicalPayload
+        - id: FlashPayload
+    - id: GrenadeFlashbang
+    - id: SmokeGrenade
+    - id: TearGasGrenade

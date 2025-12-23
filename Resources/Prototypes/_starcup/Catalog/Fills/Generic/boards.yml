@@ -13,12 +13,14 @@
   id: RandomCommonBoardTable
   table: !type:GroupSelector
     children:
-    - !type:NestedSelector
-      tableId: RandomCommonBoardTable
-    - !type:NestedSelector
-      tableId: RandomDepartmentBoardTable
-    - !type:NestedSelector
-      tableId: RandomRestrictedBoardTable
+      - id: SpaceHeaterMachineCircuitBoard
+      - id: JukeboxCircuitBoard
+      - id: DawInstrumentMachineCircuitboard
+      - id: AutolatheMachineCircuitboard
+      - id: MicrowaveMachineCircuitboard
+      - id: ReagentGrinderMachineCircuitboard
+      - id: PortableGeneratorJrPacmanMachineCircuitboard
+      - id: DoorElectronics
 
 - type: entityTable
   id: RandomDepartmentBoardTable
@@ -43,14 +45,22 @@
       tableId: RandomCommandBoardTable
     - !type:NestedSelector
       tableId: RandomSecurityBoardTable
-
-- type: entityTable
-  id: RandomCommonBoardTable
-  table: !type:GroupSelector
-    children:
-    - id: SpaceHeaterMachineCircuitBoard
+    - id: CargoShuttleConsoleCircuitboard
+    - id: SolarControlComputerCircuitboard
+    - id: MedicalTechFabCircuitboard
+    - id: ResearchComputerCircuitboard
+    - id: RoboticsConsoleCircuitboard
+    - id: MedicalRecordsComputerCircuitboard
 
 # Departmental
+- type: entityTable
+  id: RandomCommandBoardTable
+  table: !type:GroupSelector
+    children:
+      - id: CommsComputerCircuitboard
+      - id: StationRecordsComputerCircuitboard
+      - id: IDComputerCircuitboard
+
 - type: entityTable
   id: RandomEngineeringBoardTable
   table: !type:GroupSelector
@@ -59,7 +69,11 @@
     - id: SubstationMachineCircuitboard
     - id: WallmountSubstationElectronics
     - id: FreezerElectronics
-
+    - id: AlertsComputerCircuitboard
+    - id: AtmosMonitoringComputerCircuitboard
+    - id: PowerComputerCircuitboard
+    - id: PortableGeneratorPacmanMachineCircuitboard
+    - id: HolopadMachineCircuitboard
 
 - type: entityTable
   id: RandomLogisticsBoardTable
@@ -89,15 +103,27 @@
     - id: ExosuitFabricatorMachineCircuitboard
     - id: CutterMachineCircuitboard
     - id: BorgChargerCircuitboard
+    - id: APECircuitboard
+    - id: ArtifactAnalyzerMachineCircuitboard
+    - id: AnomalyVesselCircuitboard
+    - id: AnalysisComputerCircuitboard
+
+- type: entityTable
+  id: RandomSecurityBoardTable
+  table: !type:GroupSelector
+    children:
+      - id: CriminalRecordsComputerCircuitboard
+      - id: SecurityTechFabCircuitboard
 
 - type: entityTable
   id: RandomServiceBoardTable
   table: !type:GroupSelector
     children:
     - id: BiogeneratorMachineCircuitboard
-    - id: MicrowaveMachineCircuitboard
-    - id: ReagentGrinderMachineCircuitboard
     - id: ElectricGrillMachineCircuitboard
     - id: BoozeDispenserMachineCircuitboard
     - id: SodaDispenserMachineCircuitboard
     - id: SmartFridgeCircuitboard
+    - id: HydroponicsTrayMachineCircuitboard
+    - id: SeedExtractorMachineCircuitboard
+

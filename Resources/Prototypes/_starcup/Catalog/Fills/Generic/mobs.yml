@@ -1,29 +1,22 @@
 - type: entityTable
-  id: SmallCritterEntityTable
+  id: SmallCritterHarmlessTable
   table: !type:GroupSelector
     children:
     - id: MobMothroach
-    # begin starcup: add borderworld cockroach
     - !type:GroupSelector
       children:
       - id: MobCockroach
       - id: MobCockroachHL
-    # end starcup
     - !type:GroupSelector
       children:
       - id: MobMouse
       - id: MobMouse1
       - id: MobMouse2
-    # begin starcup
-    #  - id: MobMouseCancer
-    #    weight: 0.05
-    # end starcup
     - !type:GroupSelector
       children:
       - id: MobSnail
       - id: MobSnailSpeed
       - id: MobSnailMoth
-    # begin starcup additions
     - id: MobFlySwarm
     - id: MobBeeSwarm
     - id: MobFireflySwarm
@@ -35,3 +28,13 @@
       - id: MobBeetleRhino
       - id: MobBeetleJune
       - id: MobLadybug
+    - id: MobLizard
+    - id: MobFrog
+    - id: MobSnake
+
+
+- type: entityTable
+  id: SmallCritterDangerousTable
+  table: !type:GroupSelector
+    children:
+    -

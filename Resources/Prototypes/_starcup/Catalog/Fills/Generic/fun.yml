@@ -10,6 +10,8 @@
       tableId: RandomLighterTable
     - !type:NestedSelector
       tableId: SlipTable
+    - !type:NestedSelector
+      tableId: RandomSmokeablesTable
 
 - type: entityTable
   id: RandomCollectibleTable
@@ -28,3 +30,32 @@
     - id: FlippoLighter
     - id: FlippoEngravedLighter
     - id: MysteryLighterBox
+
+- type: entityTable
+  id: RandomSmokeablesTable
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      children:
+      - id: CigPackGreen
+      - id: CigPackRed
+      - id: CigPackBlue
+      - id: CigPackBlack
+      - id: CigPackSyndicate
+      - id: CigPackMixed
+    - !type:GroupSelector
+      children:
+      - id: Joint
+      - id: JointRainbow
+      - id: Blunt
+      - id: BluntRainbow
+    - !type:GroupSelector
+      children:
+      - id: CigarCase
+      - id: CigarGoldCase
+    - !type:GroupSelector
+      children:
+      - id: SmokingPipeFilledTobacco
+      - id: SmokingPipeFilledCannabis
+      - id: SmokingPipeFilledCannabisRainbow
+    - id: Vape

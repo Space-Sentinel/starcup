@@ -1,0 +1,33 @@
+- type: entityTable
+  id: RandomAccessoryTable
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector
+      children:
+      - id: FoodPoppy
+      - id: FoodLily
+      - id: ClothingHeadHatHairflower
+      - id: ClothingHeadHatFlowerWreath
+    - id: ClothingEyesGlassesSunglasses
+    - id: ClothingEyesGlassesMirrorshades
+    - id: ClothingEyesGlassesMercenary
+    - id: ClothingEyesGlassesJensen
+    - id: ClothingEyesGlassesJamjar
+    - id: ClothingEyesGlassesGar
+    - id: ClothingEyesGlassesGarOrange
+    - id: ClothingEyesGlassesGarGiga
+    - id: ClothingEyesEyepatch
+    - id: ClothingEyesGlassesNoir
+    - id: ClothingEyesGlassesOutlawGlasses
+    - id: ClothingHeadHatBunny
+    - id: ClothingHeadHatCatEars
+    - id: ClothingHeadHatDogEars
+    - id: ClothingMaskItalianMoustache
+    - id: ClothingHeadHatAnimalHeadslime
+    - id: ClothingHandsGlovesFingerless
+    - id: ClothingHandsGlovesMercFingerless
+    - id: ClothingShoesSlippersDuck
+    - id: ClothingShoesSlippersLizard
+    - id: ClothingShoesSlippers
+    - id: ClothingShoesFlippers
+
