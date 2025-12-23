@@ -1,0 +1,22 @@
+- type: entityTable
+  id: RandomFoodDrinkSmallTable
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: RandomSnackTable
+    - !type:NestedSelector
+      tableId: RandomCandyTable
+    - !type:NestedSelector
+      tableId: RandomAllSodaTable
+    - !type:NestedSelector
+      tableId: RandomCookiesTable
+
+- type: entityTable
+  id: RandomCookiesTable
+  table: !type:GroupSelector
+    children:
+    - id: FoodBakedCookie
+    - id: FoodBakedCookieImitation
+    - id: FoodBakedCookieOatmeal
+    - id: FoodBakedCookieRaisin
+    - id: FoodBakedCookieSugar

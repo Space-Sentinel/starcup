@@ -1,0 +1,21 @@
+- type: entityTable
+  id: RandomUsableFunSmallTable
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: AllMiscToysTable
+    - !type:NestedSelector
+      tableId: AllToySoundMakerTable
+    - !type:NestedSelector
+      tableId: RandomLighterTable
+    - !type:NestedSelector
+      tableId: SlipTable
+
+- type: entityTable
+  id: RandomCollectibleTable
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: AllFigurinesTable
+    - !type:NestedSelector
+      tableId: AllPlushiesTable

@@ -57,109 +57,78 @@
       weight: 0.1
 
 ### Loot Tables
+# begin starcup: completely redid all of these tables
+
 # Letters
 - type: entityTable
-  id: LetterCommonEntityTable # Basically trash and spam mail, maybe something barely useful here and there
+  id: LetterCommonEntityTable
   table: !type:GroupSelector
     children:
-    - !type:NestedSelector # Don't you love getting mailed trash?
-      tableId: GenericTrashItems
     - !type:NestedSelector
-      weight: 4
       tableId: SpamMailTable
     - !type:NestedSelector
-      weight: 2
-      tableId: RandomBookTable
+      tableId: RandomFoodDrinkSmallTable
     - !type:NestedSelector
-      weight: 2
-      tableId: RandomSnackTable
+      tableId: RandomUsableFunSmallTable
     - !type:NestedSelector
-      weight: 2
-      tableId: RandomAllSodaTable
+      tableId: RandomCollectibleTable
 
-- type: entityTable # TODO: Add more variety!
-  id: LetterUncommonEntityTable # Some more varied things, should never be more expensive than 100 spesos
+- type: entityTable
+  id: LetterUncommonEntityTable
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: RandomSafePillTable
+      tableId: RandomUsablePracticalSmallTable
     - !type:NestedSelector
-      tableId: RandomSafeSyringeTable
+      tableId: RandomPrankHarmlessSmallTable
     - !type:NestedSelector
-      tableId: UncommonLetterBundleTable
-    - id: SpaceCash100
-    - id: Joint
+      tableId: RandomAccessoryTable
 
-- type: entityTable # TODO: Add more variety!
-  id: LetterRareEntityTable # Interesting things that can actually be of use, should never be more expensive than 500 spesos
+- type: entityTable
+  id: LetterRareEntityTable
   table: !type:GroupSelector
     children:
-    - id: ResearchDisk5000
-    - id: JointRainbow
-    - id: StrangePill
-      amount: !type:RangeNumberSelector
-        range: 1, 3
-    - !type:GroupSelector
-      children:
-      - id: Brutepack
-      - id: Ointment
-      - id: Gauze
-      - id: Bloodpack
-    - id: SyndicateBusinessCard
-      weight: 0.5
+    - !type:NestedSelector
+      tableId: RandomCombatGearSmallTable
+    - !type:NestedSelector
+      tableId: RandomPrankDangerousSmallTable
+    - !type:NestedSelector
+      tableId: RandomUsableDangerousSmallTable
 
 # Packages
-# TODO: Currently mostly maints loot, should be updated in the future.
-- type: entityTable # TODO: Add more variety!
+- type: entityTable
   id: PackageCommonEntityTable
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MaintToolsTable
-      rolls: !type:RangeNumberSelector
-        range: 1, 2
+      tableId: RandomUsableFunTable
     - !type:NestedSelector
-      tableId: FoodRandomCakeTable
-      weight: 2
-    - id: FoodBoxPizzaFilled
+      tableId: RandomCollectibleTable
+    - !type:NestedSelector
+      tableId: RandomFoodDrinkTable
 
 - type: entityTable
   id: PackageUncommonEntityTable
   table: !type:GroupSelector
     children:
     - !type:NestedSelector
-      tableId: MaintFluffTable
-      weight: 0.4
-      rolls: !type:RangeNumberSelector
-        range: 1, 2
+      tableId: RandomCostumeTable
     - !type:NestedSelector
-      tableId: AllPlushiesTable
-      weight: 0.4
+      tableId: RandomUsablePracticalTable
     - !type:NestedSelector
-      tableId: RandomAllAlcoholTable
-      weight: 0.2
-      rolls: !type:RangeNumberSelector
-        range: 2, 3
-    - !type:NestedSelector
-      tableId: InsulsTable #Uncommon since it's weighted towards budget/fingerless
-      weight: 0.2
+      tableId: RandomPrankHarmlessTable
 
-- type: entityTable # TODO: Add more variety!
+- type: entityTable
   id: PackageRareEntityTable
   table: !type:GroupSelector
     children:
-    - id: MedkitAdvancedFilled # TODO: Replace with PackageRareGeneralBundlesTable for when something doesn't fit with a department. (Like a bundle of bed sheets, dunno)
-    - id: PipeBomb # TODO: PackageRarePunishmentTable, including things like pipebombs and other potentially harmful things (the pipebomb should also get primed when unpacked)
     - !type:NestedSelector
-      tableId: SmallCritterEntityTable
-    #- !type:NestedSelector # TODO: Uncomment after all the rare department bundles are done (medical, security, etc...)
-    #  tableId: PackageRareDepartmentBundlesTable
+      tableId: RandomPrankDangerousTable
     - !type:NestedSelector
-      tableId: AnimalMaskTable
+      tableId: RandomCombatGearTable
     - !type:NestedSelector
-      tableId: MaintWeaponTable
-      weight: 0.5
+      tableId: RandomUsableDangerousTable
     - !type:NestedSelector
       tableId: SyndieMaintLoot
-      weight: 0.5
-      
+
+# end starcup
