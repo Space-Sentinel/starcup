@@ -1,0 +1,103 @@
+- type: entityTable
+  id: RandomBoardTable
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: RandomCommonBoardTable
+    - !type:NestedSelector
+      tableId: RandomDepartmentalBoardTable
+    - !type:NestedSelector
+      tableId: RandomRestrictedBoardTable
+
+- type: entityTable
+  id: RandomCommonBoardTable
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: RandomCommonBoardTable
+    - !type:NestedSelector
+      tableId: RandomDepartmentBoardTable
+    - !type:NestedSelector
+      tableId: RandomRestrictedBoardTable
+
+- type: entityTable
+  id: RandomDepartmentBoardTable
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: RandomEngineeringBoardTable
+    - !type:NestedSelector
+      tableId: RandomLogisticsBoardTable
+    - !type:NestedSelector
+      tableId: RandomMedicalBoardTable
+    - !type:NestedSelector
+      tableId: RandomScienceBoardTable
+    - !type:NestedSelector
+      tableId: RandomServiceBoardTable
+
+- type: entityTable
+  id: RandomRestrictedBoardTable
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: RandomCommandBoardTable
+    - !type:NestedSelector
+      tableId: RandomSecurityBoardTable
+
+- type: entityTable
+  id: RandomCommonBoardTable
+  table: !type:GroupSelector
+    children:
+    - id: SpaceHeaterMachineCircuitBoard
+
+# Departmental
+- type: entityTable
+  id: RandomEngineeringBoardTable
+  table: !type:GroupSelector
+    children:
+    - id: SMESMachineCircuitboard
+    - id: SubstationMachineCircuitboard
+    - id: WallmountSubstationElectronics
+    - id: FreezerElectronics
+
+
+- type: entityTable
+  id: RandomLogisticsBoardTable
+  table: !type:GroupSelector
+    children:
+    - id: CargoRequestComputerCircuitboard
+    - id: OreProcessorMachineCircuitboard
+    - id: SalvageMagnetMachineCircuitboard
+
+- type: entityTable
+  id: RandomMedicalBoardTable
+  table: !type:GroupSelector
+    children:
+    - id: ElectrolysisUnitMachineCircuitboard
+    - id: CentrifugeMachineCircuitboard
+    - id: ChemDispenserMachineCircuitboard
+    - id: ChemMasterMachineCircuitboard
+    - id: CondenserMachineCircuitBoard
+    - id: HotplateMachineCircuitboard
+
+- type: entityTable
+  id: RandomScienceBoardTable
+  table: !type:GroupSelector
+    children:
+    - id: ProtolatheMachineCircuitboard
+    - id: CircuitImprinterMachineCircuitboard
+    - id: ExosuitFabricatorMachineCircuitboard
+    - id: CutterMachineCircuitboard
+    - id: BorgChargerCircuitboard
+
+- type: entityTable
+  id: RandomServiceBoardTable
+  table: !type:GroupSelector
+    children:
+    - id: BiogeneratorMachineCircuitboard
+    - id: MicrowaveMachineCircuitboard
+    - id: ReagentGrinderMachineCircuitboard
+    - id: ElectricGrillMachineCircuitboard
+    - id: BoozeDispenserMachineCircuitboard
+    - id: SodaDispenserMachineCircuitboard
+    - id: SmartFridgeCircuitboard

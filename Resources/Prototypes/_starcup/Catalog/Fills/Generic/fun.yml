@@ -19,3 +19,12 @@
       tableId: AllFigurinesTable
     - !type:NestedSelector
       tableId: AllPlushiesTable
+
+- type: entityTable
+  id: RandomLighterTable
+  table: !type:GroupSelector
+    children:
+    - id: CheapLighter
+    - id: FlippoLighter
+    - id: FlippoEngravedLighter
+    - id: MysteryLighterBox

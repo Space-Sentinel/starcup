@@ -1,0 +1,21 @@
+- type: entityTable
+  id: RandomUsablePracticalSmallTable
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: RandomBoardTable
+    - !type:NestedSelector
+      tableId: RandomSmallToolTable
+    - !type:NestedSelector
+      tableId: RandomMedicalTable
+    - !type:NestedSelector
+      tableId: RandomStandardPowerCellTable
+
+- type: entityTable
+  id: RandomStandardPowerCellTable # excludes anything that could be considered a straightforward improvement over the medium cell
+  table: !type:GroupSelector
+    children:
+    - id: PowerCellPotato
+    - id: PowerCellSmall
+    - id: PowerCellSmallNuclear
+    - id: PowerCellMedium
