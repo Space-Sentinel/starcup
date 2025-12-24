@@ -5,8 +5,6 @@
   description: You shouldn't see this.
   categories: [HideSpawnMenu]
   components:
-  - type: UseDelay
-    delay: 10.0
   - type: Bible
   - type: Prayable
     bibleUserOnly: true
