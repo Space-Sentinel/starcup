@@ -1,0 +1,39 @@
+- type: entity
+  parent: BaseEntitySpellAction
+  id: ActionSanctifyItem
+  name: Sanctify Item
+  description: Designates an item as your holy object.
+  components:
+  - type: Action
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Magic/disintegrate.ogg #TODO: change this
+    icon:
+      sprite: Objects/Magic/magicactions.rsi #TODO: change this
+      state: gib
+  - type: EntityTargetAction
+    event: !type:SanctifyItemEvent
+    whitelist:
+      components:
+      - Item
+    blacklist:
+      components:
+      - MobState
+
+- type: entity
+  parent: BaseEntitySpellAction
+  id: ActionBlessedHealing
+  name: Blessed Healing
+  description: Heals the target using your holy implement.
+  components:
+  - type: Action
+    sound: !type:SoundPathSpecifier
+      path: /Audio/Magic/disintegrate.ogg #TODO: change this
+    icon:
+      sprite: Objects/Magic/magicactions.rsi #TODO: change this
+      state: gib
+    useDelay: 10
+  - type: EntityTargetAction
+    event: !type:BlessedHealingEvent
+    whitelist:
+      components:
+      - MobState
