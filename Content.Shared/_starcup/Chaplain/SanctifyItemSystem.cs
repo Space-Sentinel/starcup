@@ -6,6 +6,8 @@ using Content.Shared.IdentityManagement;
 using Content.Shared.NameModifier.EntitySystems;
 using Content.Shared.Popups;
 using Content.Shared.Weapons.Melee;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.Manager;
 
@@ -19,6 +21,7 @@ public sealed class SanctifyItemSystem : EntitySystem
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
     [Dependency] private readonly NameModifierSystem _nameMod = default!;
+    [Dependency] private readonly SharedAudioSystem _audio = default!;
 
     public static readonly EntProtoId BaseHolyItemProtoId = "BaseHolyItem";
     public static readonly EntProtoId SanctifyActionProtoId = "ActionSanctifyItem";
@@ -102,8 +105,10 @@ public sealed class SanctifyItemSystem : EntitySystem
 
         var successMessage = Loc.GetString("sanctify-success",
             ("target", Identity.Entity(ev.Target, EntityManager)));
-
         _popup.PopupEntity(successMessage, ev.Performer, ev.Performer, PopupType.Large);
+
+        var sanctifySound = new SoundPathSpecifier("/Audio/_starcup/Magic/sanctify.ogg");
+        _audio.PlayPvs(sanctifySound, ev.Performer);
 
         _actions.RemoveAction(ev.Performer, ev.Action!);
     }
@@ -128,8 +133,10 @@ public sealed class SanctifyItemSystem : EntitySystem
 
         var destroyedMessage = Loc.GetString("sanctified-item-destroyed",
             ("target", Identity.Entity(entity, EntityManager)));
-
         _popup.PopupEntity(destroyedMessage, entity.Comp.OwnerUid.Value, entity.Comp.OwnerUid.Value, PopupType.Large);
+
+        var destroyedSound = new SoundPathSpecifier("/Audio/_starcup/Magic/sanctify_lost.ogg");
+        _audio.PlayPvs(destroyedSound, entity.Comp.OwnerUid.Value);
 
         _actions.AddAction(entity.Comp.OwnerUid.Value, SanctifyActionProtoId);
     }

@@ -19,5 +19,5 @@ public sealed partial class SanctifiedComponent : Component
     public DamageSpecifier Damage = default!;
 
     [DataField]
-    public SoundSpecifier HealSound = new SoundPathSpecifier("/Audio/Effects/holy.ogg");
+    public SoundSpecifier HealSound = new SoundPathSpecifier("/Audio/Magic/staff_healing.ogg");
 }
