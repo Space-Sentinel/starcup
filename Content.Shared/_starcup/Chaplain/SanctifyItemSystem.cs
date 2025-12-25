@@ -3,6 +3,7 @@ using Content.Shared.Bible.Components;
 using Content.Shared.Damage;
 using Content.Shared.Destructible;
 using Content.Shared.IdentityManagement;
+using Content.Shared.NameModifier.EntitySystems;
 using Content.Shared.Popups;
 using Content.Shared.Weapons.Melee;
 using Robust.Shared.Prototypes;
@@ -17,6 +18,7 @@ public sealed class SanctifyItemSystem : EntitySystem
     [Dependency] private readonly IComponentFactory _componentFactory = default!;
     [Dependency] private readonly SharedActionsSystem _actions = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly NameModifierSystem _nameMod = default!;
 
     public static readonly EntProtoId BaseHolyItemProtoId = "BaseHolyItem";
     public static readonly EntProtoId SanctifyActionProtoId = "ActionSanctifyItem";
@@ -28,6 +30,7 @@ public sealed class SanctifyItemSystem : EntitySystem
         SubscribeLocalEvent<SanctifiedComponent, GetItemActionsEvent>(OnGetActions);
         SubscribeLocalEvent<SanctifiedComponent, ComponentRemove>(OnDestroyed);
         SubscribeLocalEvent<BibleUserComponent, ComponentStartup>(OnBibleUserSpawn);
+        SubscribeLocalEvent<SanctifiedComponent, RefreshNameModifiersEvent>(OnRefreshNameModifiers);
     }
 
     private void OnBibleUserSpawn(Entity<BibleUserComponent> entity, ref ComponentStartup args)
@@ -76,6 +79,8 @@ public sealed class SanctifyItemSystem : EntitySystem
         EnsureComp<SanctifiedComponent>(ev.Target, out var sanctified);
         sanctified.OwnerUid = ev.Performer;
 
+        _nameMod.RefreshNameModifiers(ev.Target);
+
         if (EnsureComp<MeleeWeaponComponent>(ev.Target, out var meleeWeapon))
         {
             meleeWeapon.Damage.DamageDict["Holy"] = 25f;
@@ -109,6 +114,11 @@ public sealed class SanctifyItemSystem : EntitySystem
             return;
 
         args.AddAction(ref entity.Comp.HealingActionUid, HealActionProtoId);
+    }
+
+    private void OnRefreshNameModifiers(Entity<SanctifiedComponent> entity, ref RefreshNameModifiersEvent args)
+    {
+        args.AddModifier("sanctified-item-prefix");
     }
 
     private void OnDestroyed(Entity<SanctifiedComponent> entity, ref ComponentRemove args)
