@@ -2,7 +2,7 @@
   parent: BaseEntitySpellAction
   id: ActionSanctifyItem
   name: Sanctify Item
-  description: Designates an item as your holy object.
+  description: Designates an item as your sanctified archetype, making it a conduit for special powers. If your sanctified item is destroyed, you must find another of the EXACT SAME item!
   components:
   - type: Action
     sound: !type:SoundPathSpecifier
@@ -23,7 +23,7 @@
   parent: BaseEntitySpellAction
   id: ActionBlessedHealing
   name: Blessed Healing
-  description: Heals the target using your holy implement.
+  description: Heals the target using your sanctified item.
   components:
   - type: Action
     sound: !type:SoundPathSpecifier

@@ -28,18 +28,18 @@ public sealed class BlessedHealingSystem : EntitySystem
 
         var uid = entity.Owner;
         var success = _damageableSystem.TryChangeDamage(ev.Target, entity.Comp.Damage, true, origin: uid);
-        var othersMessageKey = success ? "bible-heal-success-others" : "bible-heal-success-none-others";
-        var selfMessageKey = success ? "bible-heal-success-self" : "bible-heal-success-none-self";
+        var othersMessageKey = success ? "blessed-heal-success-others" : "blessed-heal-success-none-others";
+        var selfMessageKey = success ? "blessed-heal-success-self" : "blessed-heal-success-none-self";
 
         var othersMessage = Loc.GetString(othersMessageKey,
             ("user", Identity.Entity(ev.Performer, EntityManager)),
             ("target", Identity.Entity(ev.Target, EntityManager)),
-            ("bible", uid));
-        _popupSystem.PopupEntity(othersMessage, ev.Performer, Filter.PvsExcept(ev.Performer),true, PopupType.Medium);
+            ("item", uid));
+        _popupSystem.PopupEntity(othersMessage, ev.Performer, Filter.PvsExcept(ev.Performer), true, PopupType.Medium);
 
         var selfMessage = Loc.GetString(selfMessageKey,
             ("target", Identity.Entity(ev.Target, EntityManager)),
-            ("bible", uid));
+            ("item", uid));
         _popupSystem.PopupEntity(selfMessage, ev.Performer, ev.Performer, PopupType.Large);
 
         if (success)
