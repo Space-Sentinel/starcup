@@ -1,7 +1,7 @@
 # archetypal holy item from which to base sanctified items on
 - type: entity
-  id: BaseHolyItem
-  name: BaseHolyItem
+  id: BaseSanctifiedItem
+  name: base sanctified item
   description: You shouldn't see this.
   categories: [HideSpawnMenu]
   components:

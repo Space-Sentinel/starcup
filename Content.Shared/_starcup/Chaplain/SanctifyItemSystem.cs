@@ -23,7 +23,7 @@ public sealed class SanctifyItemSystem : EntitySystem
     [Dependency] private readonly NameModifierSystem _nameMod = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
-    public static readonly EntProtoId BaseHolyItemProtoId = "BaseHolyItem";
+    public static readonly EntProtoId BaseSanctifiedItemProtoId = "BaseSanctifiedItem";
     public static readonly EntProtoId SanctifyActionProtoId = "ActionSanctifyItem";
     public static readonly EntProtoId HealActionProtoId = "ActionBlessedHealing";
 
@@ -62,7 +62,7 @@ public sealed class SanctifyItemSystem : EntitySystem
             }
         }
 
-        if (!_protoMan.Resolve(BaseHolyItemProtoId, out var prototype))
+        if (!_protoMan.Resolve(BaseSanctifiedItemProtoId, out var prototype))
             return;
 
         // take each prototype provided to the base holy item and apply it to the sanctified item
