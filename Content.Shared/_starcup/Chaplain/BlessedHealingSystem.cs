@@ -27,7 +27,7 @@ public sealed class BlessedHealingSystem : EntitySystem
         ev.Handled = true;
 
         var uid = entity.Owner;
-        var success = !_damageableSystem.TryChangeDamage(ev.Target, entity.Comp.Damage, true, origin: uid);
+        var success = _damageableSystem.TryChangeDamage(ev.Target, entity.Comp.Damage, true, origin: uid);
         var othersMessageKey = success ? "bible-heal-success-others" : "bible-heal-success-none-others";
         var selfMessageKey = success ? "bible-heal-success-self" : "bible-heal-success-none-self";
 
