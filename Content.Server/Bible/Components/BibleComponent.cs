@@ -18,7 +18,7 @@ namespace Content.Server.Bible.Components
         [DataField]
         public SoundSpecifier BibleHitSound = new SoundCollectionSpecifier(DefaultBibleHit, AudioParams.Default.WithVolume(-4f));
 
-        // begin starcup: replaced with blessed healing action
+        // begin starcup: replaced with blessed healing action (needs to be commented out because damage specifiers are required)
         // /// <summary>
         // /// Damage that will be healed on a success
         // /// </summary>

@@ -91,7 +91,7 @@ namespace Content.Server.Bible
             }
         }
 
-        // begin starcup: replaced with blessed healing action
+        // begin starcup: replaced with blessed healing action (needs to be commented out because damage specifiers are required)
         // private void OnAfterInteract(EntityUid uid, BibleComponent component, AfterInteractEvent args)
         // {
         //     if (!args.CanReach)

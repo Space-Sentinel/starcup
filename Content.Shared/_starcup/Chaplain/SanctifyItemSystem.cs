@@ -65,6 +65,7 @@ public sealed class SanctifyItemSystem : EntitySystem
         if (!_protoMan.Resolve(BaseHolyItemProtoId, out var prototype))
             return;
 
+        // take each prototype provided to the base holy item and apply it to the sanctified item
         foreach (var (name, entry) in prototype.Components)
         {
             var reg = _componentFactory.GetRegistration(name);
@@ -79,15 +80,18 @@ public sealed class SanctifyItemSystem : EntitySystem
                 );
         }
 
+        // apply the sanctified component to the item, and assign it an owner
         EnsureComp<SanctifiedComponent>(ev.Target, out var sanctified);
         sanctified.OwnerUid = ev.Performer;
 
+        // if the item can already be used as a melee weapon, give it an additional holy damage value
         if (EnsureComp<MeleeWeaponComponent>(ev.Target, out var meleeWeapon))
         {
             meleeWeapon.Damage.DamageDict["Holy"] = 25f;
             Dirty(ev.Target, meleeWeapon);
         }
         else
+        // if it can't, give it a damage dictionary with a single entry for holy damage
         {
             meleeWeapon.Damage = new DamageSpecifier
             {
@@ -108,13 +112,16 @@ public sealed class SanctifyItemSystem : EntitySystem
         var sanctifySound = new SoundPathSpecifier("/Audio/_starcup/Magic/sanctify.ogg");
         _audio.PlayPvs(sanctifySound, ev.Performer);
 
+        // prompts OnRefreshNameModifiers so the item can be given a prefix
         _nameMod.RefreshNameModifiers(ev.Target);
 
+        // remove the sanctify action from the player
         _actions.RemoveAction(ev.Performer, ev.Action!);
     }
 
     private void OnGetActions(Entity<SanctifiedComponent> entity, ref GetItemActionsEvent args)
     {
+        // if a non-chaplain acquires a sanctified item, the action won't appear for them
         if (!HasComp<BibleUserComponent>(args.User))
             return;
 
@@ -138,6 +145,7 @@ public sealed class SanctifyItemSystem : EntitySystem
         var destroyedSound = new SoundPathSpecifier("/Audio/_starcup/Magic/sanctify_lost.ogg");
         _audio.PlayPvs(destroyedSound, entity.Comp.OwnerUid.Value);
 
+        // give them the sanctify action back
         _actions.AddAction(entity.Comp.OwnerUid.Value, SanctifyActionProtoId);
     }
 }
