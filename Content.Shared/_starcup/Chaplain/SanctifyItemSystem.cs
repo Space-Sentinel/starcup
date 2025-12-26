@@ -82,8 +82,6 @@ public sealed class SanctifyItemSystem : EntitySystem
         EnsureComp<SanctifiedComponent>(ev.Target, out var sanctified);
         sanctified.OwnerUid = ev.Performer;
 
-        _nameMod.RefreshNameModifiers(ev.Target);
-
         if (EnsureComp<MeleeWeaponComponent>(ev.Target, out var meleeWeapon))
         {
             meleeWeapon.Damage.DamageDict["Holy"] = 25f;
@@ -109,6 +107,8 @@ public sealed class SanctifyItemSystem : EntitySystem
 
         var sanctifySound = new SoundPathSpecifier("/Audio/_starcup/Magic/sanctify.ogg");
         _audio.PlayPvs(sanctifySound, ev.Performer);
+
+        _nameMod.RefreshNameModifiers(ev.Target);
 
         _actions.RemoveAction(ev.Performer, ev.Action!);
     }
