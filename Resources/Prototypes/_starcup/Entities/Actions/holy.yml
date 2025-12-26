@@ -29,8 +29,8 @@
     sound: !type:SoundPathSpecifier
       path: /Audio/Magic/disintegrate.ogg #TODO: change this
     icon:
-      sprite: Objects/Magic/magicactions.rsi #TODO: change this
-      state: gib
+      sprite: _starcup/Structures/Wallmounts/Signs/tg.rsi
+      state: bluecross2
     useDelay: 10
   - type: EntityTargetAction
     event: !type:BlessedHealingEvent
