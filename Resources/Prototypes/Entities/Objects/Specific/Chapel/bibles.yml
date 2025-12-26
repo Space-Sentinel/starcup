@@ -61,28 +61,30 @@
     stealGroup: Bible
 
 - type: entity
-  parent: [Bible, BaseTraitorContraband] # starcup: shared contraband level with nt gear
+  parent: Bible # starcup: removed as a traitor item
   name: necronomicon
   description: "There's a note: Klatuu, Verata, Nikto -- Don't forget it again!"
   id: BibleNecronomicon
   components:
-  - type: Bible
-    damage:
-      types:
-        Caustic: 20 ## ~15 dps
-    damageOnFail:
-      groups:
-        Brute: 15
-        Airloss: 25
-    damageOnUntrainedUse:
-      types:
-        Caustic: 50
-    failChance: 0
-    locPrefix: "necro"
-    healSound: "/Audio/Effects/lightburn.ogg"
-  - type: Summonable
-    specialItem: SpawnPointGhostCerberus
-    respawnTime: 300
+  # begin starcup: removed as a traitor item
+  # - type: Bible
+  #   damage:
+  #     types:
+  #       Caustic: 20 ## ~15 dps
+  #   damageOnFail:
+  #     groups:
+  #       Brute: 15
+  #       Airloss: 25
+  #   damageOnUntrainedUse:
+  #     types:
+  #       Caustic: 50
+  #   failChance: 0
+  #   locPrefix: "necro"
+  #   healSound: "/Audio/Effects/lightburn.ogg"
+  # - type: Summonable
+  #   specialItem: SpawnPointGhostCerberus
+  #   respawnTime: 300
+  # end
   - type: Sprite
     sprite: Objects/Specific/Chapel/necronomicon.rsi
   - type: Item
