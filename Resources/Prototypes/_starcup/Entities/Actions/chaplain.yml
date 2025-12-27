@@ -10,6 +10,7 @@
     icon:
       sprite: _starcup/Interface/Actions/actions_chaplain.rsi
       state: sanctify
+    useDelay: 5
   - type: EntityTargetAction
     event: !type:SanctifyItemEvent
     whitelist:
