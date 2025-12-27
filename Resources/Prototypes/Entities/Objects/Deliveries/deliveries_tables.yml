@@ -103,8 +103,6 @@
     - !type:NestedSelector
       tableId: RandomUsableFunTable
     - !type:NestedSelector
-      tableId: RandomCollectibleTable
-    - !type:NestedSelector
       tableId: RandomFoodDrinkTable
 
 - type: entityTable

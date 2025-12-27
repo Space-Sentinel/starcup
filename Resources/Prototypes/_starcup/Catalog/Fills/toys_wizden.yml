@@ -74,6 +74,15 @@
       tableId: RandomBikeHornTable
 
 - type: entityTable # copied from upstream pr #41840
+  id: AllBoardGamesTable
+  table: !type:GroupSelector
+    children:
+    - id: BackgammonBoard
+    - id: ChessBoard
+    - id: ParchisBoard
+    - id: CheckerBoard
+
+- type: entityTable # copied from upstream pr #41840
   id: AllFigurinesTable
   table: !type:GroupSelector
     children:
@@ -160,6 +169,65 @@
     - id: ToyOdysseus
     - id: ToyPhazon
     - id: ToyReticence
+
+- type: entityTable # copied from upstream pr #41840
+  id: AllToyWeaponsTable
+  table: !type:GroupSelector
+    children:
+    - !type:GroupSelector # Swords type group
+      children:
+      - id: ToyHammer
+      - id: ToySword
+      - id: FoamBlade
+      - id: FoamCutlass
+      - id: CardSword
+    - !type:GroupSelector # Throwing type group
+      rolls: 2 # Expendables need restocks
+      children:
+      - id: SnapPopBox
+      - id: BoxDarts
+      - id: GrenadeFoamDart
+      - !type:GroupSelector # REAL fake grenades
+        weight: 0.05 # 2 in 186. Rare in order to not spoil the surprise
+        children:
+        - id: GrenadeDummy
+        - id: SyndieTrickyBomb
+    - !type:GroupSelector # Guns type group
+      children:
+      - id: WeaponStickyHand
+      - !type:GroupSelector # Water subgroup
+        children:
+        - id: WeaponWaterBlaster
+        - id: WeaponWaterPistol
+      - !type:NestedSelector
+        tableId: RandomFoamGunTable
+      - !type:NestedSelector
+        tableId: RandomCapGunTable
+
+- type: entityTable # copied from upstream pr #41840
+  id: RandomFoamGunTable
+  table: !type:AllSelector # Need to spawn with ammo
+    children:
+    - !type:GroupSelector
+      children:
+      - id: FoamCrossbow
+      - id: WeaponRifleFoam
+    - id: BoxDonkSoftBox
+
+- type: entityTable # copied from upstream pr #41840
+  id: RandomCapGunTable
+  table: !type:AllSelector
+    children:
+    - !type:GroupSelector # real or fake?
+      children:
+      - id: RevolverCapGun
+      - id: RevolverCapGunFake
+        weight: 0.01 # 1 in 101
+    - !type:GroupSelector # ready for reload
+      prob: 0.9
+      children:
+      - id: SpeedLoaderCap
+      - id: BoxCartridgeCap
 
 - type: entityTable # copied from upstream pr #41783
   id: SlipTable
