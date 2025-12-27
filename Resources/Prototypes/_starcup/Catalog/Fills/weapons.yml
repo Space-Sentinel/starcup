@@ -71,3 +71,4 @@
     - id: GrenadeFlashbang
     - id: SmokeGrenade
     - id: TearGasGrenade
+    - id: GrenadeStinger

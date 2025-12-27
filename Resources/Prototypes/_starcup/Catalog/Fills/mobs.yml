@@ -31,10 +31,15 @@
     - id: MobLizard
     - id: MobFrog
     - id: MobSnake
-
+    - id: MobArgocyteSlurva
 
 - type: entityTable
   id: SmallCritterDangerousTable
   table: !type:GroupSelector
     children:
-    -
+    - id: MobMosquitoSwarm
+    - id: MobTick
+    - !type:GroupSelector
+      children:
+      - id: MobArgocyteSkitter
+      - id: MobArgocyteBarrier

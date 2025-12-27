@@ -12,9 +12,20 @@
       tableId: RandomStandardPowerCellTable
     - !type:NestedSelector
       tableId: RandomSignalTechTable
+    - !type:NestedSelector
+      tableId: BasicReagentBottlesTable
     - !type:GroupSelector
       - id: ResearchDisk5000
       - id: TechnologyDisk
+
+- type: entityTable
+  id: RandomUsableDangerousSmallTable
+  table: !type:GroupSelector
+    children:
+    - !type:NestedSelector
+      tableId: RandomHudTable
+    - !type:NestedSelector
+      tableId: RandomSecurityToolTable
 
 - type: entityTable
   id: RandomSmallToolTable
@@ -66,3 +77,32 @@
     - id: PowerCellSmall
     - id: PowerCellSmallNuclear
     - id: PowerCellMedium
+
+- type: entityTable
+  id: RandomHudTable
+  table: !type:GroupSelector
+    children:
+    - id: ClothingEyesHudMedical
+    - id: ClothingEyesGlassesMeson
+    - id: ClothingEyesGlassesChemical
+    - id: ClothingEyesHudBeer
+    - !type:GroupSelector
+      children:
+      - id: ClothingEyesHudSecurity
+      - id: ClothingEyesGlassesSecurity
+    - !type:GroupSelector
+      children:
+      - id: ClothingEyesHudCommandSyndie
+      - id: ClothingEyesGlassesCommandSyndie
+
+- type: entityTable
+  id: RandomSecurityToolTable
+  table: !type:GroupSelector
+    children:
+    - id: ClothingEyesBlindfold
+    - id: ClothingMaskMuzzle
+    - id: Handcuffs
+    - id: Flash
+    - id: FlashlightSeclite
+    - id: Zipties
+    - id: Bola

@@ -4,7 +4,7 @@
     children:
     - id: SmallCritterHarmlessTable
     - !type:GroupSelector
-    children:
+      children:
       - id: AdminInstantEffectSmoke10
       - id: AdminInstantEffectBluespace
       - id: AdminInstantEffectFlash
