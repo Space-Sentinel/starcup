@@ -38,7 +38,7 @@
   - BaseStationRecords
   #  - BaseStationArrivals
   - BaseStationGateway
-#  - BaseStationCentcomm # this is meant for SyndComm, so we can't be spawning a second SyndComm.
+  - BaseStationCentcomm
   - BaseStationAlertLevels
   - BaseStationSiliconLawCrewsimov
 #  - BaseStationAllEventsEligible # we don't want any interruptions
