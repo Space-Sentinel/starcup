@@ -3,4 +3,15 @@
   table: !type:GroupSelector
     children:
     - id: SmallCritterHarmlessTable
-    - id: AdminInstantEffectSmoke10
+    - !type:GroupSelector
+    children:
+      - id: AdminInstantEffectSmoke10
+      - id: AdminInstantEffectBluespace
+      - id: AdminInstantEffectFlash
+
+- type: entityTable
+  id: RandomPrankDangerousSmallTable
+  table: !type:GroupSelector
+    children:
+    - id: SmallCritterDangerousTable
+    - id: AdminInstantEffectEMP
