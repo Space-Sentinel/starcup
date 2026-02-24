@@ -3091,3 +3091,31 @@
   id: 8414
   time: '2026-02-20T22:02:34.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/768
+- author: princesspengy
+  changes:
+  - message: cat/dog ears are no longer a joke item and have been removed from the
+      uplink and certain super-rare loot spawns
+    type: Tweak
+  - message: tail-less versions of cat and dog ears can now be found in the theaterdrobe,
+      along with their tailed versions
+    type: Add
+  - message: passengers can now select cat/dog ears in their loadouts
+    type: Add
+  id: 8415
+  time: '2026-02-23T03:28:24.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/770
+- author: Psymbiote
+  changes:
+  - message: The skittering of small bugs like roaches and crabs is much quieter now,
+      as it should've been from the start.
+    type: Tweak
+  id: 8416
+  time: '2026-02-23T23:34:36.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/780
+- author: Psymbiote
+  changes:
+  - message: Typing the action (such as @purrs or @coughs) triggers voice emotes again.
+    type: Fix
+  id: 8417
+  time: '2026-02-24T00:13:06.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/781
