@@ -3221,3 +3221,11 @@
   id: 8421
   time: '2026-02-25T06:30:49.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/777
+- author: Space-Sentinel
+  changes:
+  - message: Glacier has been heavily renovated, all departments have been updated
+      with the Chapel and Library redesigned.
+    type: Tweak
+  id: 8422
+  time: '2026-02-25T08:47:22.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/740
