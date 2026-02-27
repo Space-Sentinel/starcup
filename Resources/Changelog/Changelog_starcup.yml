@@ -3229,3 +3229,12 @@
   id: 8422
   time: '2026-02-25T08:47:22.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/740
+- author: princesspengy
+  changes:
+  - message: the passive battery drain for mkcs has been greatly decreased
+    type: Tweak
+  - message: decreased the time it takes for mkcs to drain batteries
+    type: Tweak
+  id: 8423
+  time: '2026-02-26T15:34:01.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/786
