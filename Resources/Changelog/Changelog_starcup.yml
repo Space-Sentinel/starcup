@@ -3417,3 +3417,15 @@
   id: 8440
   time: '2026-03-06T06:56:54.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/800
+- author: princesspengy
+  changes:
+  - message: humans, doptera, unathi, and slimes have had their marking point limits
+      increased across many categories to match other species!
+    type: Tweak
+  - message: harpy tails no longer render over their wings
+    type: Fix
+  - message: felinids can no longer have every kind of nose at once
+    type: Fix
+  id: 8441
+  time: '2026-03-06T18:04:00.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/778
