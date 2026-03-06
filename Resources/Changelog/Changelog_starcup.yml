@@ -3407,3 +3407,13 @@
   id: 8439
   time: '2026-03-06T02:39:51.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/798
+- author: Psymbiote
+  changes:
+  - message: Added new doptera sounds from Impstation.
+    type: Add
+  - message: Changed the doptera's Flutter emote sounds added very recently from bird
+      ones to more fitting bug ones.
+    type: Tweak
+  id: 8440
+  time: '2026-03-06T06:56:54.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/800
