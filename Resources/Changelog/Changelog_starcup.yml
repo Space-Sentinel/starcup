@@ -3378,3 +3378,11 @@
   id: 8436
   time: '2026-03-06T01:23:16.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/799
+- author: Psymbiote
+  changes:
+  - message: Added a new dial-up emote for when your friendly stationhood silicon
+      is really stunned by the absurdity of the situation.
+    type: Add
+  id: 8437
+  time: '2026-03-06T01:57:12.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/802
