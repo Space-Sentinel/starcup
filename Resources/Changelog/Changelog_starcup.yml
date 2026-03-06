@@ -3386,3 +3386,24 @@
   id: 8437
   time: '2026-03-06T01:57:12.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/802
+- author: Eightballll
+  changes:
+  - message: Ported Spaceblades from New Frontier! Let it drip!
+    type: Add
+  - message: Added a few Starcup Original spaceblades
+    type: Add
+  - message: Space Blade mystery box added to various random spawns, a cargo crate,
+      and the inventory of a Good Clean Fun
+    type: Add
+  id: 8438
+  time: '2026-03-06T02:20:37.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/718
+- author: princesspengy
+  changes:
+  - message: closet skeletons (now called lost skeletons) have had their name list,
+      accent, and ghost role description adjusted to be less silly and more in line
+      with starcup's narrative tone!
+    type: Tweak
+  id: 8439
+  time: '2026-03-06T02:39:51.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/798
