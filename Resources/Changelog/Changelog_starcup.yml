@@ -3429,3 +3429,17 @@
   id: 8441
   time: '2026-03-06T18:04:00.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/778
+- author: Oxdeception
+  changes:
+  - message: Footprints should now point the correct direction again
+    type: Fix
+  id: 8442
+  time: '2026-03-08T08:22:08.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/808
+- author: Psymbiote
+  changes:
+  - message: Storms are going to sound a little bit different...
+    type: Add
+  id: 8443
+  time: '2026-03-08T08:44:11.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/807
