@@ -3443,3 +3443,43 @@
   id: 8443
   time: '2026-03-08T08:44:11.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/807
+- author: princesspengy
+  changes:
+  - message: fixed MKCs metabolizing all reagents, not just whitelisted ones
+    type: Fix
+  id: 8444
+  time: '2026-03-12T07:12:30.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/810
+- author: Space-Sentinel
+  changes:
+  - message: New pets have come to Glacier!
+    type: Add
+  - message: Updated Glacier as per employee feedback.
+    type: Tweak
+  - message: Glacier has been further modernized, courtesy of Electra Dynamics.
+    type: Tweak
+  - message: The Robotics Lab has been slightly renovated after the accident.
+    type: Tweak
+  - message: Glacier now abides by emergency procedures.
+    type: Fix
+  - message: After concerns from local space elk, a Station Anchor has been installed.
+    type: Fix
+  id: 8445
+  time: '2026-03-12T07:21:29.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/803
+- author: Psymbiote
+  changes:
+  - message: Lowered the volume a bit on doptera speech sounds. The mothfolk of the
+      Chailce may be more chittery than in other sectors, but that shouldn't make
+      them so much louder.
+    type: Tweak
+  id: 8446
+  time: '2026-03-13T00:10:29.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/812
+- author: Psymbiote
+  changes:
+  - message: Added more trees and vegetation.
+    type: Add
+  id: 8447
+  time: '2026-03-12T08:22:48.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/585
