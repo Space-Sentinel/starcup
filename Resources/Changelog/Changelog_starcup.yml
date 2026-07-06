@@ -3804,3 +3804,57 @@
   id: 8481
   time: '2026-06-30T00:03:46.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/886
+- author: KoboldCatgirl
+  changes:
+  - message: Fixed various Banana Station object rotations.
+    type: Fix
+  - message: Added Lawyer and Paramedic slots to Banana.
+    type: Tweak
+  - message: Added various QOL bits and bobs to Banana, *slightly* expanding Science
+      in the process.
+    type: Tweak
+  - message: Banana's Botany now has a pet firebot. Not that we don't trust you, but...
+    type: Add
+  id: 8482
+  time: '2026-06-30T03:43:39.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/879
+- author: KoboldCatgirl
+  changes:
+  - message: Fixed initialization issues with Lavaland's fax machine, air alarms,
+      and containers.
+    type: Fix
+  id: 8483
+  time: '2026-06-30T04:04:06.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/915
+- author: Psymbiote
+  changes:
+  - message: Slimes can now sign up at SyndComm using their traditional, single-word
+      onomatopoeic names of old. (That is to say, they have new names in the random
+      generator.)
+    type: Add
+  id: 8484
+  time: '2026-07-02T01:21:42.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/916
+- author: Psymbiote
+  changes:
+  - message: Water deals more damage to slimes. Stay out of the mist!
+    type: Tweak
+  id: 8485
+  time: '2026-07-03T10:15:23.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/917
+- author: KoboldCatgirl
+  changes:
+  - message: 'Added two new fillable lines to the Records tab: Security Flags and
+      Medical Needs!'
+    type: Add
+  id: 8486
+  time: '2026-07-05T15:56:03.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/920
+- author: KoboldCatgirl
+  changes:
+  - message: Cleaned up some vending descriptions' grammar and removed Salvage Vend's
+      mention of dwarves.
+    type: Fix
+  id: 8487
+  time: '2026-07-05T15:56:03.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/919
