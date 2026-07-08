@@ -3858,3 +3858,26 @@
   id: 8487
   time: '2026-07-05T15:56:03.0000000+00:00'
   url: https://github.com/teamstarcup/starcup/pull/919
+- author: Psymbiote
+  changes:
+  - message: Vulpekin have red blood again.
+    type: Fix
+  id: 8488
+  time: '2026-07-08T00:38:52.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/929
+- author: Psymbiote
+  changes:
+  - message: The broken vents, dens and hives left behind by intrusive vent fauna
+      can now be deconstructed for repairs. Exomorph goop and aberrant flesh messes
+      vents up beyond repair though, and the only recourse then is smashing.
+    type: Fix
+  id: 8489
+  time: '2026-07-08T21:12:32.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/924
+- author: Psymbiote
+  changes:
+  - message: Spiders will no longer make noises when they walk.
+    type: Tweak
+  id: 8490
+  time: '2026-07-08T21:24:45.0000000+00:00'
+  url: https://github.com/teamstarcup/starcup/pull/932
