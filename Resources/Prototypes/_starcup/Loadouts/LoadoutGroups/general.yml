@@ -64,6 +64,8 @@
   - CosmeticsPridePin
   - CosmeticsJewelry
   - CosmeticsTowel
+  - CosmeticsRibbons
+  - CosmeticsHairpins
   id: Cosmetics
   name: loadout-group-cosmetics
   minLimit: 0
@@ -80,7 +82,44 @@
   - MimeMaskScaredTrinket
 
 # Abstract Groups (for parenting purposes)
-## Plushies
+
+## Neck Ribbons & Bows
+- type: loadoutGroup
+  abstract: true
+  id: RibbonsNeck
+  loadouts:
+  - BowtieRedNeck
+  - BowtieBlackNeck
+  - RibbonRedNeck
+  - RibbonBlackNeck
+  - BowBlackNeck
+  - BowRedNeck
+
+## Hair Ribbons & Bows
+- type: loadoutGroup
+  abstract: true
+  id: RibbonsHead
+  loadouts:
+  - BowtieRedHead
+  - BowtieBlackHead
+  - RibbonRedHead
+  - RibbonBlackHead
+  - BowBlackHead
+  - BowRedHead
+  - RibbonLargeBlackHead
+  - RibbonLargeRedHead
+
+## Hairpins
+- type: loadoutGroup
+  abstract: true
+  id: HairpinsWorn
+  loadouts:
+  - HairpinWorn
+  - HairpinCloverWorn
+  - HairpinButterflyWorn
+  - HairpinMagneticWorn
+
+  ## Plushies
 - type: loadoutGroup
   abstract: true
   id: PlushiesWorn
@@ -211,6 +250,35 @@
   - GoldRing
   - SilverRing
   - Wristwatch
+  - NecklaceChainSilver
+  - NecklaceChainGold
+  - NecklaceSilver
+  - NecklaceGold
+  - PendantGoldRuby
+
+## Hairpins
+- type: loadoutGroup
+  abstract: true
+  id: CosmeticsHairpins
+  loadouts:
+  - Hairpin
+  - HairpinClover
+  - HairpinButterfly
+  - HairpinMagnetic
+
+## Bows and Ribbons
+- type: loadoutGroup
+  abstract: true
+  id: CosmeticsRibbons
+  loadouts:
+  - BowtieRed
+  - BowtieBlack
+  - RibbonRed
+  - RibbonBlack
+  - BowBlack
+  - BowRed
+  - RibbonLargeBlack
+  - RibbonLargeRed
 
 - type: loadoutGroup
   abstract: true
@@ -326,3 +394,74 @@
   - BrownTurtleneckSkirt
   - MaroonTurtleneckSuit
   - MaroonTurtleneckSkirt
+
+## Goggles
+- type: loadoutGroup
+  abstract: true
+  id: SurplusGoggles
+  loadouts:
+  - SurpBallisticsB
+  - SurpBallisticsG
+  - SurpBallisticsY
+
+## Colored bags
+- type: loadoutGroup
+  abstract: true
+  id: ColoredBackpacks
+  loadouts:
+  - CommonBackpackBlue
+  - CommonBackpackBrown
+  - CommonBackpackGreen
+  - CommonBackpackOrange
+  - CommonBackpackPink
+  - CommonBackpackPurple
+  - CommonBackpackRed
+  - CommonBackpackTeal
+  - CommonBackpackYellow
+  - CommonBackpackWhite
+
+- type: loadoutGroup
+  abstract: true
+  id: ColoredSatchels
+  loadouts:
+  - CommonSatchelBlue
+  - CommonSatchelBrown
+  - CommonSatchelGreen
+  - CommonSatchelOrange
+  - CommonSatchelPink
+  - CommonSatchelPurple
+  - CommonSatchelRed
+  - CommonSatchelTeal
+  - CommonSatchelYellow
+  - CommonSatchelWhite
+
+- type: loadoutGroup
+  abstract: true
+  id: ColoredDuffels
+  loadouts:
+  - CommonDuffelBlue
+  - CommonDuffelBrown
+  - CommonDuffelGreen
+  - CommonDuffelOrange
+  - CommonDuffelPink
+  - CommonDuffelPurple
+  - CommonDuffelRed
+  - CommonDuffelTeal
+  - CommonDuffelYellow
+  - CommonDuffelWhite
+
+- type: loadoutGroup
+  abstract: true
+  id: ColoredPurses
+  loadouts:
+  - CommonPurseBlack
+  - CommonPurseBlue
+  - CommonPurseBrown
+  - CommonPurseGreen
+  - CommonPurseOrange
+  - CommonPursePink
+  - CommonPursePurple
+  - CommonPurseRed
+  - CommonPurseTeal
+  - CommonPurseYellow
+  - CommonPurseWhite

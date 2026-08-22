@@ -8,6 +8,7 @@
   components:
   - type: VendingMachine
     pack: SyndCommDrobeInventory
+  - type: VendingMachineVisuals
     offState: off
     brokenState: broken
     normalState: normal-unshaded
@@ -26,4 +27,4 @@
     energy: 1.6
     color: "#D9A336"
   - type: AccessReader
-    access: [["CentralCommand"]]
+    access: [["SyndicateCommunications"]]

@@ -6,3 +6,13 @@
   components:
     - type: MimePowers
       invisibleWallAction: null # No invisible walls while not on mime duty.
+
+- type: trait
+  id: Sleepy
+  name: trait-sleepy-name
+  description: trait-sleepy-desc
+  category: Quirks
+  excludedSpecies:
+  - Ovinia
+  components:
+    - type: Rest

@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   id: KitchenSpike
   parent: BaseStructure
-  name: meat spike
-  description: A spike for collecting meat from creatures larger or more unwieldy than a typical animal. # starcup: rewritten for clarity with butchering changes
+  name: butchering station
+  description: A large station for the humane killing and cutting up of larger animals. # starcup: rewritten for "not a spike" changes
   components:
   - type: InteractionOutline
   - type: Sprite
@@ -13,16 +13,11 @@
     - state: spike
       map: ["base"]
   - type: Damageable
-    damageContainer: StructuralInorganic
     damageModifierSet: Metallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 200
-      behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
         damage: 100

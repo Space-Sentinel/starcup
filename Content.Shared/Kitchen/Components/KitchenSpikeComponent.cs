@@ -7,6 +7,7 @@ using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom;
+using Content.Shared.Tools;
 
 namespace Content.Shared.Kitchen.Components;
 
@@ -26,7 +27,13 @@ public sealed partial class KitchenSpikeComponent : Component
     /// <summary>
     /// Default sound to play when the victim is butchered.
     /// </summary>
-    private static readonly ProtoId<SoundCollectionPrototype> DefaultSpikeButcher = new("SpikeButcher");
+    private static readonly SoundSpecifier DefaultSpikeButcher = new SoundPathSpecifier("/Audio/Items/Culinary/chop.ogg"); /// starcup
+
+    /// <summary>
+    /// Tool quality that required for the entity that used for butchering.
+    /// </summary>
+    [DataField]
+    public ProtoId<ToolQualityPrototype> RequiredToolQuality = "Slicing";
 
     /// <summary>
     /// ID of the container where the victim will be stored.
@@ -50,7 +57,7 @@ public sealed partial class KitchenSpikeComponent : Component
     /// Sound to play when the victim is butchered.
     /// </summary>
     [DataField, AutoNetworkedField]
-    public SoundSpecifier ButcherSound = new SoundCollectionSpecifier(DefaultSpikeButcher);
+    public SoundSpecifier ButcherSound = new SoundPathSpecifier("/Audio/Items/Culinary/chop.ogg"); /// starcup
 
     /// <summary>
     /// Damage that will be applied to the victim when they are hooked or unhooked.
@@ -60,7 +67,7 @@ public sealed partial class KitchenSpikeComponent : Component
     {
         DamageDict = new()
         {
-            { "Piercing", 10 },
+            { "Piercing", 250 }, /// starcup
         },
     };
 

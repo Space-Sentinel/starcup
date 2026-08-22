@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ SimpleMobBase, MobCombat ]
+  parent: [ SimpleMobBase, MobCombat, BaseSlicingRefinable, BaseMobDestructible ]
   id: BaseMobFlesh
   name: aberrant flesh
   description: A shambling mass of flesh, animated through anomalous energy.
@@ -44,10 +44,9 @@
   - type: Stamina
     baseCritThreshold: 50
     animationThreshold: 25
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: FoodMeat
-      amount: 1
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:
@@ -70,10 +69,9 @@
     speechSounds: FleshSpeechSounds
     allowedEmotes: ['CreatureScream', 'CreatureBark', 'Squish', 'Simmer']
   - type: Vocal
-    sounds:
-      Unsexed: FleshSpeechEmotes
+    emoteSounds: FleshSpeechEmotes
     screamId: CreatureScream
-    screamAction: ActionEmitSound
+    emoteAction: ActionEmitSound
   - type: AutoEmote
     emotes:
     - ScreamAutoEmote
@@ -95,6 +93,10 @@
         Base: dead
       Dead:
         Base: dead
+  - type: Butcherable # begin starcup
+    spawned:
+    - id: FoodMeat
+      amount: 1 # end starcup
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
@@ -124,6 +126,10 @@
     thresholds:
       0: Alive
       50: Dead
+  - type: Butcherable # begin starcup
+    spawned:
+    - id: FoodMeat
+      amount: 1 # end starcup
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
@@ -210,6 +216,10 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 1.5
     baseSprintSpeed: 2.5
+  - type: Butcherable # begin starcup
+    spawned:
+    - id: FoodMeat
+      amount: 1 # end starcup
   - type: MeleeWeapon
     soundHit:
         path: /Audio/Weapons/Xeno/alien_claw_flesh3.ogg
@@ -220,7 +230,7 @@
         Blunt: 10
 
 - type: entity
-  parent: [ SimpleSpaceMobBase, MobCombat ]
+  parent: [ SimpleSpaceMobBase, MobCombat, BaseSlicingRefinable, BaseMobDestructible ]
   id: BaseMobFleshSalvage #This one is immune to space!
   name: aberrant flesh
   suffix: "Salvage Ruleset"
@@ -260,10 +270,9 @@
   - type: Stamina
     baseCritThreshold: 50
     animationThreshold: 25
-  - type: Butcherable
-    spawned:
+  - type: ToolRefinable
+    refineResult:
     - id: FoodMeat
-      amount: 1
   - type: Bloodstream
     bloodReferenceSolution:
       reagents:

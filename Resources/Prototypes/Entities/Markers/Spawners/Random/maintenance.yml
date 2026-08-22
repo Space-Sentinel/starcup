@@ -187,10 +187,16 @@
         - id: CandyBucketPailGhost
         - id: CandyBucketPailPumpkin
         - id: CandyBucketPailSkeleton
+      # cheap jewelry
+      - !type:GroupSelector
+        children:
+        - id: ClothingHeadHatPinClover
+        - id: ClothingHeadHatPinButterfly
+        - id: ClothingNeckNecklacePendantGoldRuby
       # end starcup
     # Rare Group
     - !type:GroupSelector
-      weight: 2
+      weight: 15
       children:
       - id: DrinkMugDog
       - id: CigarGold
